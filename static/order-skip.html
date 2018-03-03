@@ -30,7 +30,10 @@
   <script>
   $(function() {
  $( "#datepicker" ).datepicker({
- beforeShowDay: $.datepicker.noWeekends
+		beforeShowDay: $.datepicker.noWeekends,
+       dateFormat: 'dd/mm/y',//check change
+  changeMonth: true,
+  changeYear: true
  });
  });
   </script>
