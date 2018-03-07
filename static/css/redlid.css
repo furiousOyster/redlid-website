@@ -933,6 +933,7 @@ display: none!important;
 	background: #fff;
 	border-radius: 0 15px;
 	border: 5px #e31b23 solid;
+	display: none;
 }
 
     .ui-datepicker table {
