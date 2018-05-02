@@ -100,8 +100,8 @@
 
 		<div class="row redder">
 
-			<form>
-
+			<form action="https://redlid-orders.herokuapp.com/submitOrder/" method="post" enctype="json">
+				<input name="ordertype" id="prodId" type="hidden" value="bin">
 				<div class="form-group">
 					<label for="firstname">First name*</label>
 					<input type="text" class="form-control" id="firstname" placeholder="First name">
@@ -217,7 +217,8 @@
 								emptying your Bin or Bag until your prepaid period expires. No refund will be given if the service is cancelled before
 								the $60 advance payment has been used.</p>
 							<p>On cancellation you agree to allow us access to the property for the purpose of collecting and removing our Bin or
-								Bag.</p>
+								Bag.
+							</p>
 							<h3>7.    No access policy</h3>
 							<p>If we are not able to collect/empty your Bin or Bag due to restricted access for example Bin or Bag is behind locked
 								gates, dogs are running free or a vehicle is blocking access, please email or phone the office and we will collect
