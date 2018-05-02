@@ -104,39 +104,40 @@
 				<input name="ordertype" id="prodId" type="hidden" value="bin">
 				<div class="form-group">
 					<label for="firstname">First name*</label>
-					<input type="text" class="form-control" id="firstname" placeholder="First name">
+					<input name="First Name" type="text" class="form-control" id="firstname" placeholder="First name">
 				</div>
 				<div class="form-group">
 					<label for="surname">Surname*</label>
-					<input type="text" class="form-control" id="surname" placeholder="Surname">
+					<input name="Last Name" type="text" class="form-control" id="surname" placeholder="Surname">
 				</div>
 				<div class="form-group">
 					<label for="address">Address*</label>
-					<input type="text" class="form-control" id="Street" placeholder="Street number and name">
+					<input name="Address" type="text" class="form-control" id="Street" placeholder="Street number and name">
 				</div>
 				<div class="form-group">
-					<input type="text" class="form-control" id="Suburb" placeholder="Suburb">
+					<input name="Suburb" type="text" class="form-control" id="Suburb" placeholder="Suburb">
 				</div>
 				<div class="form-group">
-					<input type="text" class="form-control" id="Town" placeholder="Town">
+					<input name="Town" type="text" class="form-control" id="Town" placeholder="Town">
 				</div>
 				<div class="form-group">
-					<input type="text" class="form-control" id="Postcode" placeholder="Postcode">
+					<input name="Postcode" type="text" class="form-control" id="Postcode" placeholder="Postcode">
 				</div>
 
 				<div class="form-group">
 					<label for="phone">Phone</label>
-					<input type="tel" class="form-control" id="phone" placeholder="Phone">
+					<input name="Phone" type="tel" class="form-control" id="phone" placeholder="Phone">
 				</div>
 				<div class="form-group">
 					<label for="mobile">Mobile*</label>
-					<input type="tel" class="form-control" id="mobile" placeholder="Mobile">
+					<input name="Mobile" type="tel" class="form-control" id="mobile" placeholder="Mobile">
 				</div>
 				<div class="form-group">
 					<label for="email">Email address*</label>
-					<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+					<input name="Email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
 					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 				</div>
+
 				<div class="form-group">
 					<label for="pickupcycle">Pick up cycle</label>
 					<select class="form-control" id="pickupcycle" name="pickupcycle">
@@ -160,7 +161,7 @@
 
 				<div class="form-group">
 					<label for="payment">Payment method</label>
-					<select class="form-control" id="payment" name="payment">
+					<select name="Payment" class="form-control" id="payment" name="payment">
 						<option>Internet banking</option>
 						<option>Cash</option>
 						<option>Cheque</option>
@@ -168,10 +169,9 @@
 					</select>
 					<small class="form-text text-muted" id="cc">We will contact you by phone for your credit card details.</small>
 				</div>
-
 				<div class="form-check">
 					<label class="form-check-label">
-						<input type="checkbox" class="form-check-input" id="the-terms" /> I have read and agree to the
+						<input name="Terms" type="checkbox" class="form-check-input" id="the-terms" /> I have read and agree to the
 						<a data-toggle="modal" data-target="#exampleModal" href="#">terms and conditions.</a>
 
 					</label>
