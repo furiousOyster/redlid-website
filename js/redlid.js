@@ -10,7 +10,7 @@ $(document).ready(function() {
     });
 }); 
 
-$('select[name=pickupcycle]').change(function () {
+$('select[id=pickupcycle]').change(function () {
     if ($(this).val() == 'eightweekly') {
         $('#eightweekly').show();
     } 
