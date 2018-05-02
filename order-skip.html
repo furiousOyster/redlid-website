@@ -125,44 +125,44 @@
 
 					<div class="form-group">
 						<label for="firstname">First name*</label>
-						<input name="First name" type="text" class="form-control" id="firstname" placeholder="First name">
+						<input name="First Name" type="text" class="form-control" id="firstname" placeholder="First name">
 					</div>
 					<div class="form-group">
 						<label for="surname">Surname*</label>
-						<input name = "Surname" type="text" class="form-control" id="surname" placeholder="Surname">
+						<input name = "Last Name" type="text" class="form-control" id="surname" placeholder="Surname">
 					</div>
 					<div class="form-group">
 						<label for="address">Address*</label>
-						<input type="text" class="form-control" id="Street" placeholder="Street number and name">
+						<input name="Address" type="text" class="form-control" id="Street" placeholder="Street number and name">
 					</div>
 					<div class="form-group">
-						<input type="text" class="form-control" id="Suburb" placeholder="Suburb">
+						<input name="Suburb" type="text" class="form-control" id="Suburb" placeholder="Suburb">
 					</div>
 					<div class="form-group">
-						<input type="text" class="form-control" id="Town" placeholder="Town">
+						<input name="Town" type="text" class="form-control" id="Town" placeholder="Town">
 					</div>
 					<div class="form-group">
-						<input type="text" class="form-control" id="Postcode" placeholder="Postcode">
+						<input name="Postcode" type="text" class="form-control" id="Postcode" placeholder="Postcode">
 						<small id="addressHelp" class="form-text text-muted">Skips are only available in Hamilton and Cambridge at this stage.</small>
 					</div>
 
 
 					<div class="form-group">
 						<label for="date">Which date would you like the skip delivered?</label>
-						<input class="form-control" type="text" id="datepicker">
+						<input name="Date" class="form-control" type="text" id="datepicker">
 					</div>
 
 					<div class="form-group">
 						<label for="phone">Phone</label>
-						<input type="tel" class="form-control" id="phone" placeholder="Phone">
+						<input name="Phone" type="tel" class="form-control" id="phone" placeholder="Phone">
 					</div>
 					<div class="form-group">
 						<label for="mobile">Mobile*</label>
-						<input type="tel" class="form-control" id="mobile" placeholder="Mobile">
+						<input name="Mobile" type="tel" class="form-control" id="mobile" placeholder="Mobile">
 					</div>
 					<div class="form-group">
 						<label for="email">Email address*</label>
-						<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+						<input name="Email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
 						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 					</div>
 
@@ -170,7 +170,7 @@
 
 					<div class="form-group">
 						<label for="wastetype">Type of waste</label>
-						<select class="form-control" id="wastetype" name="wastetype">
+						<select name="Waste type" class="form-control" id="wastetype" name="wastetype">
 							<option value="gen">General rubbish</option>
 							<option value="green">Green waste</option>
 							<option value="hard">Hard fill</option>
@@ -181,7 +181,7 @@
 
 					<div class="form-group" id="gen">
 						<label for="skipsize-gen">Skip size</label>
-						<select class="form-control" id="skipsize-gen">
+						<select name="Skip size general" class="form-control" id="skipsize-gen">
 							<option>9 cubic metres - $350</option>
 							<option>6 cubic metres - $280</option>
 							<option>3 cubic metres - $230</option>
@@ -194,7 +194,7 @@
 
 					<div class="form-group" id="green">
 						<label for="skipsize-green">Skip size</label>
-						<select class="form-control" id="skipsize-green">
+						<select name="Skip size green" class="form-control" id="skipsize-green">
 							<option>9 cubic metres - $280</option>
 							<option>6 cubic metres - $230</option>
 							<option>3 cubic metres - $190</option>
@@ -206,7 +206,7 @@
 
 					<div class="form-group" id="hard">
 						<label for="skipsize-hard">Skip size</label>
-						<select class="form-control" id="skipsize-hard">
+						<select name="Skip size hard" class="form-control" id="skipsize-hard">
 							<option>3 cubic metres only - $190</option>
 						</select>
 						<small class="form-text text-muted">Hardfill - no weight limit</small>
@@ -216,12 +216,12 @@
 
 					<div class="form-group">
 						<label for="exampleFormControlTextarea1">Where would you like the skip placed?</label>
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="For example: As far up the driveway as possible, on the right"></textarea>
+						<textarea name="Instructions" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="For example: As far up the driveway as possible, on the right"></textarea>
 					</div>
 
 					<div class="form-group">
 						<label for="payment">Payment method</label>
-						<select class="form-control" id="payment" name="payment">
+						<select name="Payment" class="form-control" id="payment" name="payment">
 							<option>Internet banking</option>
 							<option>Cash</option>
 							<option>Cheque</option>
@@ -232,7 +232,7 @@
 
 					<div class="form-check">
 						<label class="form-check-label">
-							<input type="checkbox" class="form-check-input" id="the-terms" /> I have read and agree to the
+							<input name="Terms" type="checkbox" class="form-check-input" id="the-terms" /> I have read and agree to the
 							<a data-toggle="modal" data-target="#exampleModal" href="#">terms and conditions.</a>
 
 						</label>
