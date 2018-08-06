@@ -21,7 +21,7 @@ $('select[id=pickupcycle]').change(function () {
 });
 
 $('select[name=wastetype]').change(function () {
-    if ($(this).val() == 'gen') {
+    if ($(this).val() == 'general') {
         $('#gen').show();
     } 
 	else {
