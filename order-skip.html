@@ -27,8 +27,8 @@
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script>
-	
-	
+		
+
 		$(function () {
 			$("#datepicker").datepicker({
 				beforeShowDay: $.datepicker.noWeekends,
@@ -36,6 +36,11 @@
 				changeMonth: true,
 				changeYear: true
 			});
+			
+			
+	
+			
+			
 		});
 	
 	</script>
@@ -152,6 +157,7 @@
 					<div class="form-group">
 						<label for="date">Which date would you like the skip delivered?</label>
 						<input name="Date" class="form-control" type="text" id="datepicker">
+						<small class="form-text text-muted">If you choose to have a skip delivered on a public holiday, we will need to deliver it the day before.</small>
 					</div>
 
 					<div class="form-group">
