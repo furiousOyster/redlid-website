@@ -355,6 +355,10 @@ a:hover {
 color: #000;
 }
 
+p.subtitle {
+font-style: italic;
+}
+
 /* TYPE TABLETS */ @media (min-width: 576px) {
 
 
