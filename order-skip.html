@@ -129,7 +129,7 @@
 
 			<div class="row redder">
 
-				<form action="https://redlid-orders.herokuapp.com/submitOrder/" method="post" enctype="json">
+				<form action="https://redlid-orders.herokuapp.com/submitOrder/" method="post" enctype="json" name="orderform">
 					<input name="ordertype" id="prodId" type="hidden" value="skip">
 					<div class="form-group">
 						<label for="firstname">First name*</label>
@@ -155,8 +155,8 @@
 					</div>
 
 					<div class="form-group">
-						<label for="date">Which date would you like the skip delivered?</label>
-						<input name="Date" class="form-control" type="text" id="datepicker">
+						<label for="datepicker">Which date would you like the skip delivered?</label>
+						<input name="Date" class="form-control" type="text" id="datepicker" required>
 						<small class="form-text text-muted">If you choose to have a skip delivered on a public holiday, we will need to deliver it the day before.</small>
 					</div>
 
