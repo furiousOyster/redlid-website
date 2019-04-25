@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+			<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Order a skip for general rubbish, garden waste or hardfill. Easy online booking.">
+		<meta name="author" content="Cre8ve Online">
+		<link rel="icon" href="img/favicon.ico">
+
+		<title>Order a RedLid skip</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<!-- Icons CSS -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Font CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="css/redlid.css" rel="stylesheet">
+
+
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+		
+/* create datepicker */
+jQuery(document).ready(function() {
+	jQuery('#datepicker').datepicker({
+		minDate: new Date(),
+		maxDate: new Date(3333, 5, 31),
+		dateFormat: 'DD, MM, d, yy',
+		constrainInput: false,
+	});
+});
+	
+	</script>
+
+
+
+</head>
+
+<body>
+
+
+
+
+	<body class="int">
+
+		<nav class="clearfix">
+			<a class="callnow" href="tel:0800733543">
+				<i class="material-icons">phone_android</i>
+				拨打我们的电话:
+				<span>0800 REDLID</span>
+			</a>
+			<a class="logo" href="/">
+				<img src="img/redlidlogo.png" alt="Hamilton Garden Bags and Red Lid Bins" />
+			</a>
+			<p class="description">
+				<span>Green Waste Recyclers</span> 公司，服务Hamilton, Cambridge, Te Awamutu, Morrinsville, Matamata, Ngaruawahia, Ohaupo, Matangi and Tamahere等地区
+			</p>
+			<div class="menus cf">
+				<a href="how-it-works.html">
+					<i class="material-icons">info</i> 我们如何为您服务</a>
+				<a href="bins-and-bags-prices.html">
+					<i class="material-icons">local_atm</i> 服务 &amp; 收费</a>
+				<a href="order-online.html">
+					<i class="material-icons">shopping_cart</i> 在线订购</a>
+				<a href="service-manager.html" class="myaccount">
+					<i class="material-icons">settings</i> My Account</a>
+			</div>
+
+			<a class="logo skips cf" href="order-skip.html">
+				<img src="img/redlidskipslogo.png" alt="Hamilton Red Lid Skips" />
+			</a>
+			<p class="description skipdesc">
+				<span>服务于Hamilton 和 Cambridge地区，</span> 处理一般垃圾、绿色垃圾和硬填料
+			</p>
+
+			<div class=" sm cf">
+				<a class="fb" href="https://www.facebook.com/redlidbins/">
+					<img src="img/fb-logo.png" alt="Red Lid on Facebook" />
+				</a>
+				<a class="ig" href="https://www.instagram.com/redlid.waikato/">
+					<img src="img/ig-logo.png" alt="Red Lid on Instagram" />
+				</a>
+			</div>
+
+		</nav>
+		<a class="trasnlation-btn" href="../order-skip.html">
+				Switch to English
+			</a>
+		<main role="main" class="order">
+
+			<a class="callnow" href="tel:0800733543">
+				<i class="material-icons">call</i>
+				拨打我们的电话:
+				<span>0800 REDLID</span>
+			</a>
+
+
+			<h1>网上订购</h1>
+
+			<p>任何大型废料桶订单均视供应情况而定。 我们会通过电子邮件确认您的订单和交货日期。</p>
+			<p>正常办公时间（周一至周四下午8点至下午5点和周五下午8点至下午3点）以外订单 将在下一个工作日给予确认。</p>
+			<div class="row">
+				<a class="order clearfix" href="order-online.html">
+					<img src="img/bin.png" alt="240 Litre Wheelie Bin" />
+					<p>240升垃圾桶（Wheelie Bin）</p>
+				</a>
+
+				<a class="order clearfix" href="order-bag.html">
+					<img src="img/bag.png" alt="600 Litre Garden Bag" />
+					<p>600升花园垃圾袋（Garden Bag）</p>
+				</a>
+
+				<a class="order active clearfix" href="order-skip.html">
+					<img src="img/skip.png" alt="3, 6 or 9 Metre Skip" />
+					<p>3, 6 or 9 米废料桶（ Skip）</p>
+				</a>
+			</div>
+
+			<div class="row redder">
+
+				<form action="https://redlid-orders.herokuapp.com/submitOrder/" method="post" enctype="json" name="orderform">
+					<input name="ordertype" id="prodId" type="hidden" value="skip">
+					<div class="form-group">
+						<label for="firstname">名字*</label>
+						<input name="First Name" type="text" class="form-control" id="firstname" placeholder="名字">
+					</div>
+					<div class="form-group">
+						<label for="surname">姓*</label>
+						<input name="Last Name" type="text" class="form-control" id="surname" placeholder="姓">
+					</div>
+					<div class="form-group">
+						<label for="address">地址*</label>
+						<input name="Address" type="text" class="form-control" id="Street" placeholder="街道名称和号码">
+					</div>
+					<div class="form-group">
+						<input name="Suburb" type="text" class="form-control" id="Suburb" placeholder="区">
+					</div>
+					<div class="form-group">
+						<input name="Town" type="text" class="form-control" id="Town" placeholder="镇">
+					</div>
+					<div class="form-group">
+						<input name="Postcode" type="text" class="form-control" id="Postcode" placeholder="邮编">
+						<small id="addressHelp" class="form-text text-muted">现阶段，大型废料桶仅在Hamilton and Cambridge地区提供。</small>
+					</div>
+
+					<div class="form-group">
+						<label for="datepicker">您希望大型废料桶在什么时间送达？</label>
+						<input name="Date" class="form-control" type="text" id="datepicker" required>
+						<small class="form-text text-muted">如果您选择在公共假期日运送大型废料桶，我们会在前一天送达。</small>
+					</div>
+
+					<div class="form-group">
+						<label for="phone">电话</label>
+						<input name="Phone" type="tel" class="form-control" id="phone" placeholder="电话">
+					</div>
+					<div class="form-group">
+						<label for="mobile">手机*</label>
+						<input name="Mobile" type="tel" class="form-control" id="mobile" placeholder="手机">
+					</div>
+					<div class="form-group">
+						<label for="email">电子邮件地址*</label>
+						<input name="Email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="输入邮箱">
+						<small id="emailHelp" class="form-text text-muted">我们绝不会将您的电子邮箱地址告知他人</small>
+					</div>
+					<div class="form-group">
+						<label for="wastetype">垃圾类型</label>
+						<select class="form-control" id="wastetype" name="wastetype">
+							<option value="general">一般垃圾</option>
+							<option value="green">绿色垃圾</option>
+							<option value="hard">硬填料</option>
+						</select>
+					</div>
+					<img src="img/comp.jpg" style="width:100%;" alt="Skip size comparison" />
+					<div class="form-group" id="gen">
+						<label for="skipsize-gen">废料桶规格</label>
+						<select name="Skip size general" class="form-control" id="skipsize-gen">
+							<option>9立方米 -  $ 360</option>
+							<option>6立方米 -  $ 290</option>
+							<option>3立方米 -  $ 240</option>
+						</select>
+						<small id="gw9" class="form-text text-muted">9立方米 -  限重1500千克</small>
+						<small id="gw6" class="form-text text-muted">6立方米 -  限重1000千克</small>
+						<small id="gw3" class="form-text text-muted">3立方米 -  限重500千克</small>
+						
+						
+					</div>
+					<div class="form-group" id="green">
+						<label for="skipsize-green">废料桶规格</label>
+						<select name="Skip size green" class="form-control" id="skipsize-green">
+							<option>9立方米 - $280</option>
+							<option>6立方米 - $230</option>
+							<option>3立方米 - $190</option>
+						</select>
+                        <small id="gw9" class="form-text text-muted">9立方米 -  限重1500千克</small>
+						<small id="gw6" class="form-text text-muted">6立方米 -  限重1000千克</small>
+						<small id="gw3" class="form-text text-muted">3立方米 -  限重500千克</small>
+					</div>
+					<div class="form-group" id="hard">
+						<label for="skipsize-hard">废料桶规格</label>
+						<select name="Skip size hard" class="form-control" id="skipsize-hard">
+							<option>仅3立方米 - $190</option>
+						</select>
+						<small class="form-text text-muted">Hardfill  - 没有重量限制</small>
+					</div>
+					
+					<div class="form-group">
+						<label for="exampleFormControlTextarea1">你想我们把废料桶放在哪里？</label>
+						<textarea name="Instructions" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="例如：在尽可能远的右边车道上"></textarea>
+					</div>
+					
+					<div class="form-group">
+						<label for="payment">付款方法</label>
+						<select class="form-control" id="payment" name="payment">
+							<option>网上银行</option>
+							<option value="cc">信用卡（3％附加费）</option>
+						</select>
+						<small class="form-text text-muted" id="cc">We will contact you by phone for your credit card details.</small>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input name="Terms" type="checkbox" class="form-check-input" id="the-terms" /> 我已阅读并同意
+							<a data-toggle="modal" data-target="#exampleModal" href="#">条款和条件。</a>
+
+						</label>
+					</div>
+					
+					<div class="form-group">
+				<small id="captcha" class="form-text text-muted">证明你是人:</small>
+						<label for="number">三加四等于多少？</label>
+				<input name="number" id="number" required="required" class="form-control"
+         pattern="7" title="Please answer the question to prove you are human">
+					</div>
+					
+					<div class="g-recaptcha" data-sitekey="6LfaExgTAAAAABiF-IDAjdkVe4ppxB6ReE7vDuun"></div>
+					<button type="submit" class="btn btn-primary" disabled="disabled" id="submitBtn">提交订单</button>
+
+				</form>
+
+
+
+
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">条款和条件</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>感谢您选择Red Lid Skips公司, 并支持我们这个由家族拥并经营的业务。 为确保我们为您提供高效安全的服务，请遵守以下条款和条件：</p>
+								<p>租用废料桶(Skips)的标准时长可长达5天。 如果您希望延长租用时间，请联系我们的办公室，我们会并视供给情况延长您的租赁时间。延长租赁时间，每天将额外收取$50的费用。</p>
+								<p>您需在我们交付废料桶之前支付废料桶的租金</p>
+								<p>禁止在普通废料桶中放入混凝土、土壤、砖块、岩石和旧堆肥以及诸如石棉、油漆、电池，石油等化学品，也禁止放入车辆发动机或轮胎（除非您提前安排我们移除）。 如果在废料桶内发现石棉，废料桶将会被立即退还给您，而您也需承担退还的相关费用。</p>
+								<p>禁止将一般垃圾放入硬填料废料桶中。</p>
+								<p>禁止将硬填料垃圾放入一般垃圾桶中。</p>
+								<p>如果在绿色垃圾废料桶中中发现任何普通垃圾或硬填料，我们将按照普通垃圾收集价格收取费用。</p>
+								<p>所有废料桶都有限重，请参考您的预订信息或向办公室咨询废料桶的限重。 出于健康和安全考虑，不可将废料桶填置过满。 如果超过限重，在Red Lid Skips公司认为有必要的情况下，您需同意为每公斤的超额额外支付 $0.15c。</p>
+								<p>在我们9米的废料桶中有一条6米的水平线。 这意味着如果您订购了6米的废料桶，您只可将废料倾倒至6米线内。 您也可以将9米的废料桶倒满，但我们会收取额外费用。</p>
+								<p>只能将混凝土或土壤等物放入硬填料桶中。任何形式的垃圾都禁止放入硬填料桶中。</p>
+								<p>仅可将垃圾填充至废料桶顶端或者废料桶所示的尺寸填充线标记。 我们会留下超过标记线的溢出物，或者按照每立方米的运行费率对溢出物收费。 出于运输安全需要，废料不要超过限额或标记线。</p>
+								<p>如完好交付的废料桶在租用期间遭到损坏，由客户承担损失费用。</p>
+								<p>基于我们的保险公司的公共责任要求，废料桶的放置位置由司机自行决定，我们会尽力将废料桶放置在您方便使用的位置。</p>
+								<p>许可证 - 在道路上放置废料桶需有许可证，该许可证需由客户提供。</p>
+								<p>不可将废料桶从交付位置移开，同时必须保持通道畅通从而使我们可以安全的收集 废料桶。不遵守规定将产生额外的$100的呼叫费。 我们需将废料桶重新安置到可以用卡车回收废料桶的位置，由此产生的相关费用将有租赁者承担。</p>
+								<p>不可在废料桶中点火。</p>
+								<p>废料桶一旦交付使用，租赁者将对废料桶负责。
+									<br> 退款政策 - 取消订单，请至少需要提前24小时通知我们。 废料桶一旦交付，将不予退款。</p>
+								<p>任何违反这些条款和条件的行为都将导致额外费用的产生。</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">关</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+			</div>
+
+
+
+
+
+
+
+			<div class="test row">
+
+				<img src="img/test4.jpg" alt="Testimonial" />
+
+				<div class="tcol">
+					<p>Superb service at such a reasonable rate - many thanks.</p>
+					<p class="tester">Lynnette, Harrowfield</p>
+				</div>
+			</div>
+
+
+
+			<div class="row contactbox">
+				<h2>联系我们</h2>
+
+				<div class="row">
+					<div class="col-sm address">Red Lid Garden Bins & Bags 公司
+						<br /> P.O. Box 24087
+						<br /> Hillcrest
+						<br /> Hamilton 3253
+					</div>
+
+					<div class="col-sm nos">
+						<table>
+							<tbody>
+								<tr>
+									<td>电话</td>
+									<td>
+										<a href="tel:078340191">(07)&nbsp;834&nbsp;0191</a>
+									</td>
+								</tr>
+								<tr>
+									<td>免费热线</td>
+									<td>
+										<a href="tel:0800733543">0800 REDLID (0800&nbsp;733543)</a>
+									</td>
+								</tr>
+								<tr>
+									<td>电子邮箱</td>
+									<td>
+										<a href="mailto:service@redlid.co.nz">service@redlid.co.nz</a>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<p>如有任何需要或需要进一步说明，请随时与我们联系。
+
+					<p class="officehours">办公时间为周一至周四上午8点至下午5点，周五上午8点至下午3点</p>
+
+<p>如果不在此时间范围，请拨打 <a href="tel:078340191">(07) 834 0191</a> 或 <a href="tel:0800733543">0800 REDLID</a> 电话留言 - 我们会定期查看我们的留言。 我们期待为您提供及时，友好和专业的服务。</p>
+
+			</div>
+
+
+		</main>
+
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/redlid.js"></script>
+
+
+	</body>
+
+</html>

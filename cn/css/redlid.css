@@ -1064,6 +1064,7 @@ font-size: 24px;
 
 }
 
+
 .trasnlation-btn {
     float: right;
     margin-right: 5%;
@@ -1081,15 +1082,13 @@ font-size: 24px;
     margin-right: 5%;
     margin-top: 20px;
     background-color: transparent;
-	border:2px solid #e31b23;
     color: #e31b23;
+	border:2px solid #e31b23;
     padding: 10px 20px;
     border-radius: 0px 15px 0px;
 	text-transform: uppercase;
     font-weight: 700;
 }
-
-
 
 
 

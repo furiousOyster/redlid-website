@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Order a garden waste wheelie bin including scheduled regular pickups. Easy online booking.">
+		<meta name="author" content="Cre8ve Online">
+		<link rel="icon" href="img/favicon.ico">
+
+		<title>Order a RedLid garden bin</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<!-- Icons CSS -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Font CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="css/redlid.css" rel="stylesheet">
+
+</head>
+
+<body class="int">
+
+	<nav class="clearfix">
+		<a class="callnow" href="tel:0800733543">
+			<i class="material-icons">phone_android</i>
+			拨打我们的电话:
+			<span>0800 REDLID</span>
+		</a>
+		<a class="logo" href="/">
+			<img src="img/redlidlogo.png" alt="Hamilton Garden Bags and Red Lid Bins" />
+		</a>
+		<p class="description">
+<span>Green Waste Recyclers</span> 公司，服务Hamilton, Cambridge, Te Awamutu, Morrinsville, Matamata, Ngaruawahia, Ohaupo, Matangi and Tamahere等地区
+		</p>
+		<div class="menus cf">
+			<a href="how-it-works.html">
+				<i class="material-icons">info</i> 我们如何为您服务</a>
+			<a href="bins-and-bags-prices.html">
+				<i class="material-icons">local_atm</i> 服务 &amp; 收费</a>
+			<a href="order-online.html">
+				<i class="material-icons">shopping_cart</i> 在线订购</a>
+			<a href="service-manager.html" class="myaccount">
+				<i class="material-icons">settings</i> My Account</a>
+		</div>
+
+		<a class="logo skips cf" href="order-skip.html">
+			<img src="img/redlidskipslogo.png" alt="Hamilton Red Lid Skips" />
+		</a>
+		<p class="description skipdesc">
+			<span>服务于Hamilton 和 Cambridge地区，</span> 处理一般垃圾、绿色垃圾和硬填料
+		</p>
+
+		<div class=" sm cf">
+			<a class="fb" href="https://www.facebook.com/redlidbins/">
+				<img src="img/fb-logo.png" alt="Red Lid on Facebook" />
+			</a>
+			<a class="ig" href="https://www.instagram.com/redlid.waikato/">
+				<img src="img/ig-logo.png" alt="Red Lid on Instagram" />
+			</a>
+		</div>
+
+	</nav>
+	<a class="trasnlation-btn" href="../order-online.html">
+				Switch to English
+			</a>
+	<main role="main" class="order">
+
+		<a class="callnow" href="tel:0800733543">
+			<i class="material-icons">call</i>
+			拨打我们的电话:
+			<span>0800 REDLID</span>
+		</a>
+
+
+		<h1>网上订购</h1>
+
+		<p>您无需签署任何合同 - 你只需承诺支付价值$60的垃圾收集费用</p>
+
+		<p>我们会联系您安排垃圾桶或袋的运送日，并安排您付款。</p>
+		<div class="row">
+			<a class="order active clearfix" href="order-online.html">
+				<img src="img/bin.png" alt="240 Litre Wheelie Bin" />
+				<p>240升垃圾桶（Wheelie Bin）</p>
+			</a>
+
+			<a class="order clearfix" href="order-bag.html">
+				<img src="img/bag.png" alt="600 Litre Garden Bag" />
+				<p>600升花园垃圾袋（Garden Bag</p>
+			</a>
+
+			<a class="order clearfix" href="order-skip.html">
+				<img src="img/skip.png" alt="3, 6 or 9 Metre Skip" />
+				<p>3, 6 or 9 米废料桶（ Skip）</p>
+			</a>
+		</div>
+
+		<div class="row redder">
+
+			<form action="https://redlid-orders.herokuapp.com/submitOrder/" method="post" enctype="json">
+				<input name="ordertype" id="prodId" type="hidden" value="bin">
+				<div class="form-group">
+					<label for="firstname">名字*</label>
+					<input name="First Name" type="text" class="form-control" id="firstname" placeholder="名字">
+				</div>
+				<div class="form-group">
+					<label for="surname">姓*</label>
+					<input name="Last Name" type="text" class="form-control" id="surname" placeholder="姓">
+				</div>
+				<div class="form-group">
+					<label for="address">地址*</label>
+					<input name="Address" type="text" class="form-control" id="Street" placeholder="街道名称和号码">
+				</div>
+				<div class="form-group">
+					<input name="Suburb" type="text" class="form-control" id="Suburb" placeholder="区">
+				</div>
+				<div class="form-group">
+					<input name="Town" type="text" class="form-control" id="Town" placeholder="镇">
+				</div>
+				<div class="form-group">
+					<input name="Postcode" type="text" class="form-control" id="Postcode" placeholder="邮编">
+				</div>
+
+				<div class="form-group">
+					<label for="phone">电话</label>
+					<input name="Phone" type="tel" class="form-control" id="phone" placeholder="电话">
+				</div>
+				<div class="form-group">
+					<label for="mobile">手机*</label>
+					<input name="Mobile" type="tel" class="form-control" id="mobile" placeholder="手机">
+				</div>
+				<div class="form-group">
+					<label for="email">电子邮件地址*</label>
+					<input name="Email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="输入邮箱">
+					<small id="emailHelp" class="form-text text-muted">我们绝不会将您的电子邮箱地址告知他人</small>
+				</div>
+
+				<div class="form-group">
+					<label for="pickupcycle">收集周期</label>
+					<select name="Pickup Cycle" class="form-control" id="pickupcycle">
+						<option>每周收集@每次$7.50（仅在Hamilton地区）</option>
+						<option>每2周收集@每次$10（不包括 Ngaruawahia地区）</option>
+						<!-- <option>3-weekly (Hamilton only) - $13 per collection</option> -->
+						<option>每4周收集 @每次$15</option>
+						<!-- <option>6-weekly - $18 per collection</option>-->
+						<option value="eightweekly">每8周收集@ 每次$22 （需符合条件）</option>
+						<option>一次性收集（我有自己的垃圾桶）-$ 20</option>
+					</select>
+					<small id="eightweekly" class="form-text text-muted">
+						<b>Conditions:</b>
+						<ol>
+							<li>You cannot miss any scheduled collections</li>
+							<li>Any extra collection will be charged at $22</li>
+							<li> You can change your collection frequency at any stage but you must have a minimum of 4 collections on that frequency</li>
+						</ol>
+					</small>
+				</div>
+
+				<div class="form-group">
+					<label for="payment">付款方法</label>
+					<select class="form-control" id="payment" name="payment">
+						<option>网上银行</option>
+						<option value="cc">信用卡（3％附加费）</option>
+					</select>
+					<small class="form-text text-muted" id="cc">We will contact you by phone for your credit card details.</small>
+				</div>
+				
+				<div class="form-group">
+						<label for="exampleFormControlTextarea1">您有任何意见或特别说明吗？</label>
+						<textarea name="Instructions" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder=""></textarea>
+					</div>
+					
+				<div class="form-check">
+					<label class="form-check-label">
+						<input name="Terms" type="checkbox" class="form-check-input" id="the-terms" /> 我已阅读并同
+						<a data-toggle="modal" data-target="#exampleModal" href="#">意条款和条件。</a>
+
+					</label>
+				</div>
+				
+				<div class="form-group">
+				<small id="captcha" class="form-text text-muted">证明你是人:</small>
+						<label for="number">三加四等于多少？</label>
+				<input name="number" id="number" required="required" class="form-control"
+         pattern="7" title="Please answer the question to prove you are human">
+					</div>
+<div class="g-recaptcha" data-sitekey="6LfaExgTAAAAABiF-IDAjdkVe4ppxB6ReE7vDuun"></div>
+				<button type="submit" class="btn btn-primary" disabled="disabled" id="submitBtn">提交订单</button>
+			</form>
+
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+														<h5 class="modal-title" id="exampleModalLabel">条款和条件</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+
+							<p>如您通过网站订购或亲自购买我们的住宅绿色垃圾收集服务，请参考以下内容：</p>
+							<h3>1. 下单订购</h3>
+<p>当您下订单时，即代表您同意定期的、持续的使用我们的服务，直到您按照第6条条款取消您的服务。您需要提供您的电子邮件地址从而您可以定期查看来自我们的邮件，这是我们双方沟通的最佳方式。</p>
+<h3>2. 垃圾桶或者垃圾袋的运送</h3>
+<p>我们会在下一次去您所在区收集垃圾时为您提供垃圾桶或垃圾袋</p>
+<h3>3. 安排收集垃圾</h3>
+<p>您可以通过电话、邮件或网站安排收集垃圾的时间和收集周期，我们会在您指定的时间和周期内清空您的垃圾桶或垃圾袋，除非我们事先通过电子邮件或者电话短信 通知您日期有所变动。 如果您的预订的垃圾收集日属于公众假期，您的收集日可能会变更，如果有变更的话，您将在预定的收集日之前收到我们的通知。</p>
+<h3>4. 收费</h3>
+<p>价格取决于服务地址，因此服务地址的更改可能导致价格有所变化。 我们的价格包括消费税（GST）。如果收到通知，我们还可以帮您清理额外的垃圾，但您需支付额外费用。</p>
+<h3>5. 付款</h3>
+<p>您收到垃圾桶或垃圾袋后，在我们第一次垃圾收集之前，您需要支付$60。这笔预付款将转入您的帐户，我们会从您的帐户中扣除您的垃圾收集费用。一旦您用完了$60，您只需再付$60。付款可以通过信用卡，支票，网上银行或自动付款方式进行。</p>
+<h3>6. 取消服务</h3>
+<p>一旦我们从您最初支付的$60内开始扣款后，您可以随时通过电子邮件或电话留言终止您的服务。 我们将继续清空您的垃圾桶或垃圾袋，直到您的预付款期限到期为止。 如果在用完$60的预付款之前取消服务，将不予退款。</p>
+<p>取消服务后，您需允许我们进入您的房屋来收回或者移除垃圾箱或垃圾袋</p>
+<h3>7.无法进入条款</h3>
+<p>如果我们因各种原因无法进入您的房屋从而无法收集或者清空您的垃圾桶或垃圾袋，例如垃圾桶或垃圾位于上锁的门后，狗在院内奔跑，或者有车辆挡路。请发送电子邮件或致电我们办公室，我们会在下一个周期收集您的垃圾桶或垃圾袋，且不收取额外费用。 您的垃圾收集日依旧保持不变。</p>
+<h3>8.使用并维护花园垃圾桶或袋</h3>
+<p>请参考如下方法</p>
+<ol>
+  <li>1.请在收集日当天早上7点之前将你的垃圾箱拿出来。</li>
+  <li>2.请将您的垃圾箱放置在最接近我们收集车通过的草地边缘或护堤上，从而使垃圾箱的车轮靠近您的房子，并且盖子靠近马路。请确保垃圾箱周围没有树木和其他障碍物，如停放的汽车或路灯杆。</li>
+  <li>3. 请将垃圾箱或袋内的所有垃圾放入圾箱或袋内，不要让垃圾溢出，并确保垃圾桶的盖子盖好， 垃圾袋内垃圾不要超过垃圾袋的顶部。</li>
+  <li>4. 请确保您的花园垃圾桶或袋中含有如下文第9条所述的经批准的有机废料 。 在预定的收集日，如果您未将您的垃圾 桶放在路边，经过允许后，我们的司机会进入您的房屋收集垃圾 。如果您不希望我们进入您的房屋，请通过电子邮件或电话通知我们，收取的费用将予以保留。</li>
+</ol>
+<p>请勿：</p>
+<ol>
+  <li>1.在垃圾箱或垃圾袋中点火或放置热余烬或热灰。</li>
+  <li>2. 将任何液体及爆炸性的、 危险的、有毒有害的物质放入垃圾箱或袋中。 这包括石棉，酸，溶剂，油漆，未包装的碎玻璃，矿物质，油脂或食用油，石棉或混凝土等材料。</li>
+  <li>3.将垃圾箱装满</li>
+</ol>
+<h3>9.花园垃圾</h3>
+<p>请确保您的花园垃圾箱仅包含经批准的有机垃圾。 我们不能接受 沙子、草皮、泥土或土壤、岩石、家庭垃圾、报纸、旧堆肥、直径大于100毫米的树桩或树枝。 我们不会收集任何含有禁用材料的垃圾箱或垃圾袋，因为这些材料无法被成功地堆肥。 如果在垃圾箱或袋中发现禁用物料，则会收取额外费用。</p>
+<p>如有额外垃圾需要收集，您也可提前联系我们安排额外垃圾收集服务。额外垃圾的收取费用将根据当时的适用费率收取。 当您联系我们时，我们会告知您额外垃圾的收取时间。</p>
+<h3>10. 放置垃圾桶&垃圾袋</h3>
+<p>请不要将花园垃圾桶或垃圾袋放置在难取的地方，例如陡峭的车道，狭窄的通道或者楼梯等任何会妨碍司机清空垃圾箱或垃圾袋的地方，这样会导致我们无法为您提供服务。 打开门并拴好您的狗狗，并使它们远离放置垃圾桶和垃圾袋的地方。</p>
+<p>对于任何我们认为不安全的房屋，我们保留拒绝提供收集服务的权利。</p>
+<h3>11.责任</h3>
+<p>如在您使用期间，垃圾箱或者垃圾袋受损，您将为此负责（合理磨损不包括在内）。同时您也需对因不遵守以上条款为我们造成的损失负责。</p>
+<h3>12.变更</h3>
+<p><strong>条款变更</strong></p>
+<p>我们可能会对条款进行修改，例如添加一些新的条款。 我们确保我们会合理且真诚地行事。 如果我们所做的任何变更可能对您造成不利影响，我们将通过电子邮件或打电话给告知您变更情况，并给您至少28天的提前通知。 同时，在以这种方式通知后，如您继续使用我们的服务则表示您接受了我们变更的条款。 如果您不同意变更的条款，您有权终止协议。</p>
+<p><strong>收费变更</strong></p>
+<p>我们可能会对价格进行调整。 如我们提高服务价格时，我们将通过电子邮件或打电话给告知您收费变更，并给您至少28天的提前通知。</p>
+<p><strong>服务变更</strong></p>
+<p>我们可能会对服务进行调整。 如果更改在可控范围内，我们将通过电子邮件或打电话给告知您服务变更，并给您至少28天的提前通知。</p>
+<h3>3.隐私</h3>
+<p>您授权我们：获取、保留并使用您提供的个人信息来处理付款或者您授权的其他任何目的。 我们遵守《1993年隐私法》，您有权访问和更正您的任何个人信息（可能会收取合理的费用）。</p>
+<p>在这些条款中，“我们”“我们的”或“我们”代表Red Lid Garden Bins＆Bags Ltd（本网站的所有者），“您”代表在本网站上购买Red Lid Garden Bins＆Bags Ltd服务的客户。</p>
+<h3>14.账户恢复</h3>
+<p>如果您的帐户由于未付款而欠款，并被转介到收款机构或者律师事务所， 在该笔债务全额收回（包括法律费用）的情况下，您还需支付25％＋GST的恢复费用。</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of MODAL -->
+
+
+
+
+
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="test row">
+
+			<img src="img/test1.jpg" alt="Testimonial" />
+
+			<div class="tcol">
+				<p>Superb service at such a reasonable rate - many thanks.</p>
+				<p class="tester">Lynnette, Harrowfield</p>
+			</div>
+		</div>
+
+
+
+		<div class="row contactbox">
+			<h2>联系我们</h2>
+
+			<div class="row">
+				<div class="col-sm address">Red Lid Garden Bins & Bags 公司
+					<br /> P.O. Box 24087
+					<br /> Hillcrest
+					<br /> Hamilton 3253
+				</div>
+
+				<div class="col-sm nos">
+					<table>
+						<tbody>
+							<tr>
+								<td>电话</td>
+								<td>
+									<a href="tel:078340191">(07)&nbsp;834&nbsp;0191</a>
+								</td>
+							</tr>
+							<tr>
+								<td>免费热线</td>
+								<td>
+									<a href="tel:0800733543">0800 REDLID (0800&nbsp;733543)</a>
+								</td>
+							</tr>
+							<tr>
+								<td>电子邮箱</td>
+								<td>
+									<a href="mailto:service@redlid.co.nz">service@redlid.co.nz</a>
+								</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<p>如有任何需要或需要进一步说明，请随时与我们联系。
+
+				<p class="officehours">办公时间为周一至周四上午8点至下午5点，周五上午8点至下午3点</p>
+
+				<p>如果不在此时间范围，请拨打 <a href="tel:078340191">(07) 834 0191</a> 或 <a href="tel:0800733543">0800 REDLID</a> 电话留言 - 我们会定期查看我们的留言。 我们期待为您提供及时，友好和专业的服务。</p>
+
+		</div>
+
+
+	</main>
+
+
+	<!-- Bootstrap core JavaScript
+		================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>')</script>
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/redlid.js"></script>
+
+
+
+
+</body>
+
+</html>
