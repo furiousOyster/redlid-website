@@ -21,6 +21,7 @@
 
 	<!-- Custom styles for this template -->
 	<link href="css/redlid.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 </head>
 
@@ -106,15 +107,15 @@
 				<input name="ordertype" id="prodId" type="hidden" value="bag">
 				<div class="form-group">
 					<label for="firstname">First name*</label>
-					<input name="First Name" type="text" class="form-control" id="firstname" placeholder="First name">
+					<input name="First Name" type="text" class="form-control" id="firstname" placeholder="First name" required>
 				</div>
 				<div class="form-group">
 					<label for="surname">Surname*</label>
-					<input name="Last Name" type="text" class="form-control" id="surname" placeholder="Surname">
+					<input name="Last Name" type="text" class="form-control" id="surname" placeholder="Surname" required>
 				</div>
 				<div class="form-group">
 					<label for="address">Address*</label>
-					<input name="Address" type="text" class="form-control" id="Street" placeholder="Street number and name">
+					<input name="Address" type="text" class="form-control" id="Street" placeholder="Street number and name" required>
 				</div>
 				<div class="form-group">
 					<input name="Suburb" type="text" class="form-control" id="Suburb" placeholder="Suburb">
@@ -132,11 +133,11 @@
 				</div>
 				<div class="form-group">
 					<label for="mobile">Mobile*</label>
-					<input name="Mobile" type="tel" class="form-control" id="mobile" placeholder="Mobile">
+					<input name="Mobile" type="tel" class="form-control" id="mobile" placeholder="Mobile" required>
 				</div>
 				<div class="form-group">
 					<label for="email">Email address*</label>
-					<input name="Email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+					<input name="Email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
 					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 				</div>
 
@@ -170,16 +171,28 @@
 
 					</label>
 				</div>
-				
-
-			
 
 				
-                 <div class="g-recaptcha" data-sitekey="6LfaExgTAAAAABiF-IDAjdkVe4ppxB6ReE7vDuun"></div>
+                     <div id="recaptcha" class="g-recaptcha" data-sitekey="6LfaExgTAAAAABiF-IDAjdkVe4ppxB6ReE7vDuun"></div>                    <span class="msg-error error"></span>
 				<button type="submit" class="btn btn-primary" disabled="disabled" id="submitBtn">Submit order</button>
 			</form>
 
-
+								<script>
+					$( '#submitBtn' ).click(function(){
+  var $captcha = $( '#recaptcha' ),
+      response = grecaptcha.getResponse();
+  
+  if (response.length === 0) {
+  $( '.msg-error').text( "reCAPTCHA is mandatory" );
+    if( !$captcha.hasClass( "error" ) ){
+      $captcha.addClass( "error" );
+    }
+       event.preventDefault();
+        event.stopPropagation();
+  } 
+  
+})
+					</script>
 			<!-- Modal -->
 			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div class="modal-dialog" role="document">

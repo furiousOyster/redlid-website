@@ -13,7 +13,6 @@
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
 	<!-- Icons CSS -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -41,8 +40,7 @@ jQuery(document).ready(function() {
 });
 	
 	</script>
-
-
+	
 
 </head>
 
@@ -127,20 +125,37 @@ jQuery(document).ready(function() {
 			</div>
 
 			<div class="row redder">
-
-				<form action="https://redlid-orders.herokuapp.com/submitOrder/" method="post" enctype="json" name="orderform">
+				<form action="https://redlid-orders.herokuapp.com/submitOrder/" method="post" enctype="json" name="orderform" class="needs-validation" novalidate>
 					<input name="ordertype" id="prodId" type="hidden" value="skip">
 					<div class="form-group">
 						<label for="firstname">First name*</label>
-						<input name="First Name" type="text" class="form-control" id="firstname" placeholder="First name">
+						<input name="First Name" type="text" class="form-control" id="firstname" placeholder="First name" required>
+						      <div class="valid-feedback">
+                                Looks good!
+                               </div>
+							   <div class="invalid-feedback">
+                               Please fill in your firstname.
+                               </div>
 					</div>
 					<div class="form-group">
 						<label for="surname">Surname*</label>
-						<input name="Last Name" type="text" class="form-control" id="surname" placeholder="Surname">
+						<input name="Last Name" type="text" class="form-control" id="surname" placeholder="Surname" required>
+											      <div class="valid-feedback">
+                                Looks good!
+                               </div>
+							   <div class="invalid-feedback">
+                               Please fill in your Surname.
+                               </div>
 					</div>
 					<div class="form-group">
 						<label for="address">Address*</label>
-						<input name="Address" type="text" class="form-control" id="Street" placeholder="Street number and name">
+						<input name="Address" type="text" class="form-control" id="Street" placeholder="Street number and name" required>
+											      <div class="valid-feedback">
+                                Looks good!
+                               </div>
+							   <div class="invalid-feedback">
+                               Please fill in your Address.
+                               </div>
 					</div>
 					<div class="form-group">
 						<input name="Suburb" type="text" class="form-control" id="Suburb" placeholder="Suburb">
@@ -165,12 +180,24 @@ jQuery(document).ready(function() {
 					</div>
 					<div class="form-group">
 						<label for="mobile">Mobile*</label>
-						<input name="Mobile" type="tel" class="form-control" id="mobile" placeholder="Mobile">
+						<input name="Mobile" type="tel" class="form-control" id="mobile" placeholder="Mobile" required>
+											      <div class="valid-feedback">
+                                Looks good!
+                               </div>
+							   <div class="invalid-feedback">
+                               Please fill in your Mobile Phone.
+                               </div>
 					</div>
 					<div class="form-group">
 						<label for="email">Email address*</label>
-						<input name="Email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+						<input name="Email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
 						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+								<div class="valid-feedback">
+                                Looks good!
+                               </div>
+							   <div class="invalid-feedback">
+                               Please fill in your Email.
+                               </div>
 					</div>
 					<div class="form-group">
 						<label for="wastetype">Type of waste</label>
@@ -234,14 +261,57 @@ jQuery(document).ready(function() {
 						</label>
 					</div>
 					
-					
-					
-					<div class="g-recaptcha" data-sitekey="6LfaExgTAAAAABiF-IDAjdkVe4ppxB6ReE7vDuun"></div>
+					<div class="form-group">
+
+                     <div id="recaptcha" class="g-recaptcha" data-sitekey="6LfaExgTAAAAABiF-IDAjdkVe4ppxB6ReE7vDuun"></div>
+                    <span class="msg-error error"></span>
+
+					</div>
+
 					<button type="submit" class="btn btn-primary" disabled="disabled" id="submitBtn">Submit order</button>
+					
+					
+					<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+					<script>
+					$( '#submitBtn' ).click(function(){
+  var $captcha = $( '#recaptcha' ),
+      response = grecaptcha.getResponse();
+  
+  if (response.length === 0) {
+  $( '.msg-error').text( "reCAPTCHA is mandatory" );
+    if( !$captcha.hasClass( "error" ) ){
+      $captcha.addClass( "error" );
+    }
+       event.preventDefault();
+        event.stopPropagation();
+  } 
+  
+})
+					</script>
 
 				</form>
 
-
+</div>
 
 
 				<!-- Modal -->
