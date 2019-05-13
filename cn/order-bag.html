@@ -141,18 +141,18 @@
 				<div class="form-group">
 					<label for="pickupcycle">收集周期</label>
 					<select name="Pickup Cycle" class="form-control" id="pickupcycle">
-						<option>每周收集@ 每次$15（仅在Hamilton地区）</option>
-						<option>每2周收集@ 每次$15（不包括 Ngaruawahia地区）</option>
+						<option value="Weekly (Hamilton only) - $15 per collection">每周收集@ 每次$15（仅在Hamilton地区）</option>
+						<option value="2-weekly (Excludes Ngaruawahia) - $15 per collection">每2周收集@ 每次$15（不包括 Ngaruawahia地区）</option>
 						<!-- <option>3-weekly (Hamilton only) - $17 per collection</option>-->
-						<option>每4周收集@ 每次$19</option>
-						<option>一次性收集@ 每次$36 （会在给您垃圾桶后四周内进行垃圾收集）</option>
+						<option value="4-weekly - $19 per collection">每4周收集@ 每次$19</option>
+						<option value="One-off (collection within 4 weeks of dropoff) - $36">一次性收集@ 每次$36 （会在给您垃圾桶后四周内进行垃圾收集）</option>
 					</select>
 				</div>
 
 				<div class="form-group">
 					<label for="payment">付款方法</label>
 					<select class="form-control" id="payment" name="payment">
-						<option>网上银行</option>
+						<option value="Internet banking">网上银行</option>
 						<option value="cc">信用卡（3％附加费）</option>
 					</select>
 					<small class="form-text text-muted" id="cc">We will contact you by phone for your credit card details.</small>
