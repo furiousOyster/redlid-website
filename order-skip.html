@@ -20,8 +20,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
 	<!-- Custom styles for this template -->
-	<link href="css/redlid.css" rel="stylesheet">
 
+	<link href="css/redlid.css" rel="stylesheet">
 
 
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -147,7 +147,6 @@ jQuery(document).ready(function() {
 					</div>
 					<div class="form-group">
 						<input name="Postcode" type="text" class="form-control" id="Postcode" placeholder="Postcode">
-						<small id="addressHelp" class="form-text text-muted">Skips are only available in Hamilton and Cambridge at this stage.</small>
 					</div>
 
 					<div class="form-group">
@@ -169,46 +168,163 @@ jQuery(document).ready(function() {
 						<input name="Email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
 						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 					</div>
+					
+					<!-- Zone selector -->
+					<img src="img/redlidzonemap.png" style="width:100%; padding-bottom: 20px;" alt="Skip size comparison" />
+					
 					<div class="form-group">
-						<label for="wastetype">Type of waste</label>
-						<select class="form-control" id="wastetype" name="wastetype">
-							<option value="general">General rubbish</option>
-							<option value="green">Green waste</option>
-							<option value="hard">Hard fill</option>
-						</select>
+					<label for="zone">What zone are you in?</label>
+					
+						<div class="form-check radiobtn">
+						  <input type="radio" name="zoneselector" id="zone1selector"  value="zone1" onclick="showzone();">
+						  <label class="form-control" for="zone1selector">
+						  <b>Zone 1</b> <br/>
+							Hamilton, Cambridge, Te Awamutu, Pirongia, Ohaupo, Ngaruawahia, Morrinsville
+						  </label>
+						  <input type="radio" name="zoneselector" id="zone2selector" value="zone2" onclick="showzone();">
+						  <label class="form-control" for="zone2selector">
+						   <b>Zone 2</b> <br/>
+							Te Aroha, Matamata, Putaruru, Huntly, Te kauwhata, Otorohanga
+						  </label>
+						  <input type="radio" name="zoneselector" id="zone3selector" value="zone3" onclick="showzone();">
+						  <label class="form-control" for="zone3selector">
+						   <b>Zone 3</b> <br/>
+							Raglan, Tokoroa, Te Kuiti
+						  </label>
+						</div>
 					</div>
-					<img src="img/comp.jpg" style="width:100%;" alt="Skip size comparison" />
-					<div class="form-group" id="gen">
-						<label for="skipsize-gen">Skip size</label>
-						<select name="Skip size general" class="form-control" id="skipsize-gen">
-							<option>9 cubic metres - $360</option>
-							<option>6 cubic metres - $290</option>
-							<option>3 cubic metres - $240</option>
-						</select>
-						<small id="gw9" class="form-text text-muted">9 cubic metres - weight limit of 1500kg</small>
-						<small id="gw6" class="form-text text-muted">6 cubic metres – weight limit of 1000kg</small>
-						<small id="gw3" class="form-text text-muted">3 cubic metre - weight limit – 500kg</small>
+					
+					<!--ZONE 1 -->
+					<div class="zoneoptions" id="zone1">
+					
+						<!--Gen/green/hard Zone 1-->
+						<div class="form-group">
+							<label for="wastetype">Type of waste</label>
+							<select class="form-control" id="wastetype" name="wastetype">
+								<option value="general">General rubbish</option>
+								<option value="green">Green waste</option>
+								<option value="hard">Hard fill</option>
+							</select>
+						</div>
 						
+						<img src="img/comp.jpg" style="width:100%;" alt="Skip size comparison" />
 						
-					</div>
-					<div class="form-group" id="green">
-						<label for="skipsize-green">Skip size</label>
-						<select name="Skip size green" class="form-control" id="skipsize-green">
-							<option>9 cubic metres - $280</option>
-							<option>6 cubic metres - $230</option>
-							<option>3 cubic metres - $190</option>
-						</select>
-						<small id="gw9" class="form-text text-muted">9 cubic metres - weight limit of 1500kg</small>
-						<small id="gw6" class="form-text text-muted">6 cubic metres – weight limit of 1000kg</small>
-						<small id="gw3" class="form-text text-muted">3 cubic metre - weight limit – 500kg</small>
-					</div>
-					<div class="form-group" id="hard">
-						<label for="skipsize-hard">Skip size</label>
-						<select name="Skip size hard" class="form-control" id="skipsize-hard">
-							<option>3 cubic metres only - $190</option>
-						</select>
-						<small class="form-text text-muted">Hardfill - no weight limit</small>
-					</div>
+						<!--Gen-->
+						<div class="form-group gen" id="gen">
+							<label for="skipsize-gen">Skip size</label>
+							<select name="Skip size general" class="form-control" id="skipsize-gen">
+								<option>9 cubic metres - $360</option>
+								<option>6 cubic metres - $290</option>
+								<option>3 cubic metres - $240</option>
+							</select>
+							<small id="gw9" class="form-text text-muted">9 cubic metres - weight limit of 1500kg</small>
+							<small id="gw6" class="form-text text-muted">6 cubic metres – weight limit of 1000kg</small>
+							<small id="gw3" class="form-text text-muted">3 cubic metre - weight limit – 500kg</small>	
+						</div>
+						
+						<!--Green-->
+						<div class="form-group green" id="green">
+							<label for="skipsize-green">Skip size</label>
+							<select name="Skip size green" class="form-control" id="skipsize-green">
+								<option>9 cubic metres - $280</option>
+								<option>6 cubic metres - $230</option>
+								<option>3 cubic metres - $190</option>
+							</select>
+							<small id="gw9" class="form-text text-muted">9 cubic metres - weight limit of 1500kg</small>
+							<small id="gw6" class="form-text text-muted">6 cubic metres – weight limit of 1000kg</small>
+							<small id="gw3" class="form-text text-muted">3 cubic metre - weight limit – 500kg</small>
+						</div>
+						
+						<!--Hard-->
+						<div class="form-group hard" id="hard">
+							<label for="skipsize-hard">Skip size</label>
+							<select name="Skip size hard" class="form-control" id="skipsize-hard">
+								<option>3 cubic metres only - $190</option>
+							</select>
+							<small class="form-text text-muted">Hardfill - no weight limit</small>
+						</div>
+						
+						<!--Gen/green/hard END-->
+					
+					</div><!-- /Zone1 -->
+					
+					<!--ZONE 2 -->
+					<div class="zoneoptions" id="zone2">
+					
+						<!--Gen/green/hard Zone 2-->
+						<div class="form-group">
+							<label for="wastetype">Type of waste</label>
+							<select class="form-control" id="wastetype" name="wastetype">
+								<option value="general">General rubbish</option>
+								<option value="green">Green waste</option>
+							</select>
+						</div>
+						
+						<img src="img/comp.jpg" style="width:100%;" alt="Skip size comparison" />
+						
+						<!--Gen-->
+						<div class="form-group gen" id="gen">
+							<label for="skipsize-gen">Skip size</label>
+							<select name="Skip size general" class="form-control" id="skipsize-gen">
+								<option>9 cubic metres - $410</option>
+							</select>
+							<small id="gw9" class="form-text text-muted">9 cubic metres - weight limit of 1500kg</small>
+						</div>
+						
+						<!--Green-->
+						<div class="form-group green" id="green">
+							<label for="skipsize-green">Skip size</label>
+							<select name="Skip size green" class="form-control" id="skipsize-green">
+								<option>9 cubic metres - $330</option>
+							</select>
+							<small id="gw9" class="form-text text-muted">9 cubic metres - weight limit of 1500kg</small>
+						</div>
+						
+						<!--Gen/green END-->
+					
+					</div><!-- /Zone2 -->
+					
+					
+					<!--ZONE 3 -->
+					<div class="zoneoptions" id="zone3">
+					
+						<!--Gen/green/hard Zone 2-->
+						<div class="form-group">
+							<label for="wastetype">Type of waste</label>
+							<select class="form-control" id="wastetype" name="wastetype">
+								<option value="general">General rubbish</option>
+								<option value="green">Green waste</option>
+							</select>
+						</div>
+						
+						<img src="img/comp.jpg" style="width:100%;" alt="Skip size comparison" />
+						
+						<!--Gen-->
+						<div class="form-group gen" id="gen">
+							<label for="skipsize-gen">Skip size</label>
+							<select name="Skip size general" class="form-control" id="skipsize-gen">
+								<option>9 cubic metres - $490</option>
+							</select>
+							<small id="gw9" class="form-text text-muted">9 cubic metres - weight limit of 1500kg</small>
+						</div>
+						
+						<!--Green-->
+						<div class="form-group green" id="green">
+							<label for="skipsize-green">Skip size</label>
+							<select name="Skip size green" class="form-control" id="skipsize-green">
+								<option>9 cubic metres - $400</option>
+							</select>
+							<small id="gw9" class="form-text text-muted">9 cubic metres - weight limit of 1500kg</small>
+						</div>
+						
+						<!--Gen/green END-->
+					
+					</div><!-- /Zone3 -->
+					
+					
+					
+					
+					
 					
 					<div class="form-group">
 						<label for="exampleFormControlTextarea1">Where would you like the skip placed?</label>
