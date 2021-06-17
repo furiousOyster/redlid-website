@@ -335,7 +335,7 @@
           </div>
 
           <!--ZONE 1 -->
-          <div class="zoneoptions" id="zone1" name="zone1">
+          <fieldset class="zoneoptions" id="zone1" name="zone1">
             <!--Gen/green/hard Zone 1-->
             <div class="form-group">
               <label for="wastetype">Type of waste</label>
@@ -355,7 +355,7 @@
             />
 
             <!--Gen-->
-            <div class="form-group gen" id="gen">
+            <fieldset class="form-group gen" id="gen">
               <label for="skipsize-gen">Skip size</label>
               <select
                 name="Skip size general"
@@ -375,10 +375,10 @@
               <small id="gw3" class="form-text text-muted"
                 >3 cubic metre - weight limit – 500kg</small
               >
-            </div>
+            </fieldset>
 
             <!--Green-->
-            <div class="form-group green" id="green">
+            <fieldset class="form-group green" id="green">
               <label for="skipsize-green">Skip size</label>
               <select
                 name="Skip size green"
@@ -398,10 +398,10 @@
               <small id="gw3" class="form-text text-muted"
                 >3 cubic metre - weight limit – 500kg</small
               >
-            </div>
+            </fieldset>
 
             <!--Hard-->
-            <div class="form-group hard" id="hard">
+            <fieldset class="form-group hard" id="hard">
               <label for="skipsize-hard">Skip size</label>
               <select
                 name="Skip size hard"
@@ -414,14 +414,14 @@
                 ><b>Hardfill</b> - no weight limit. Hardfill includes Concrete,
                 soil, sand, tiles, bricks, stones, rocks.</small
               >
-            </div>
+            </fieldset>
 
             <!--Gen/green/hard END-->
-          </div>
+          </fieldset>
           <!-- /Zone1 -->
 
           <!--ZONE 2 -->
-          <div class="zoneoptions" id="zone2" name="zone2">
+          <fieldset class="zoneoptions" id="zone2" name="zone2">
             <!--Gen/green/hard Zone 2-->
             <div class="form-group">
               <label for="wastetype">Type of waste</label>
@@ -438,7 +438,7 @@
             />
 
             <!--Gen-->
-            <div class="form-group gen" id="gen">
+            <fieldset class="form-group gen" id="gen">
               <label for="skipsize-gen">Skip size</label>
               <select
                 name="Skip size general"
@@ -450,10 +450,10 @@
               <small id="gw9" class="form-text text-muted"
                 >9 cubic metres - weight limit of 1500kg</small
               >
-            </div>
+            </fieldset>
 
             <!--Green-->
-            <div class="form-group green" id="green">
+            <fieldset class="form-group green" id="green">
               <label for="skipsize-green">Skip size</label>
               <select
                 name="Skip size green"
@@ -465,14 +465,14 @@
               <small id="gw9" class="form-text text-muted"
                 >9 cubic metres - weight limit of 1500kg</small
               >
-            </div>
+            </fieldset>
 
             <!--Gen/green END-->
-          </div>
+          </fieldset>
           <!-- /Zone2 -->
 
           <!--ZONE 3 -->
-          <div class="zoneoptions" id="zone3" name="zone3">
+          <fieldset class="zoneoptions" id="zone3" name="zone3">
             <!--Gen/green/hard Zone 2-->
             <div class="form-group">
               <label for="wastetype">Type of waste</label>
@@ -489,7 +489,7 @@
             />
 
             <!--Gen-->
-            <div class="form-group gen" id="gen">
+            <fieldset class="form-group gen" id="gen">
               <label for="skipsize-gen">Skip size</label>
               <select
                 name="Skip size general"
@@ -501,10 +501,10 @@
               <small id="gw9" class="form-text text-muted"
                 >9 cubic metres - weight limit of 1500kg</small
               >
-            </div>
+            </fieldset>
 
             <!--Green-->
-            <div class="form-group green" id="green">
+            <fieldset class="form-group green" id="green">
               <label for="skipsize-green">Skip size</label>
               <select
                 name="Skip size green"
@@ -516,10 +516,10 @@
               <small id="gw9" class="form-text text-muted"
                 >9 cubic metres - weight limit of 1500kg</small
               >
-            </div>
+            </fieldset>
 
             <!--Gen/green END-->
-          </div>
+          </fieldset>
           <!-- /Zone3 -->
 
           <div class="form-group">
@@ -559,7 +559,7 @@
               >
             </label>
           </div>
-
+          <input type="hidden" id="language" name="language" value="en" />
           <div class="form-group">
             <!-- RECAPTCHA -->
 
@@ -582,6 +582,7 @@
 
           <script>
             $("#submitBtn").click(function () {
+              console.log("form data: ", $("form").serializeArray());
               var $captcha = $("#recaptcha"),
                 response = grecaptcha.getResponse();
 

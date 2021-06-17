@@ -8,6 +8,8 @@ $(document).ready(function () {
       $("#submitBtn").attr("disabled", "disabled");
     }
   });
+  document.getElementById("zone1selector").checked = true;
+  showzone();
 });
 
 $("select[id=pickupcycle]").change(function () {
@@ -18,25 +20,33 @@ $("select[id=pickupcycle]").change(function () {
   }
 });
 
-$("select[name=wastetype]").change(function () {
-  if ($(this).val() == "general") {
-    $(".gen").show();
-  } else {
-    $(".gen").hide();
-  }
+$("select[name=wastetype]").change(setWasteTypes);
 
-  if ($(this).val() == "green") {
-    $(".green").show();
-  } else {
-    $(".green").hide();
-  }
+function setWasteTypes() {
+  var zones = ["#zone1", "#zone2", "#zone3"];
+  zones.map(function (id) {
+    var selector = $(id);
+    var type = selector.find("#wastetype").val();
 
-  if ($(this).val() == "hard") {
-    $(".hard").show();
-  } else {
-    $(".hard").hide();
-  }
-});
+    if (type === "general") {
+      selector.find("#gen").show().prop("disabled", false);
+    } else {
+      selector.find("#gen").hide().prop("disabled", true);
+    }
+
+    if (type === "green") {
+      selector.find("#green").show().prop("disabled", false);
+    } else {
+      selector.find("#green").hide().prop("disabled", true);
+    }
+
+    if (type === "hard") {
+      selector.find("#hard").show().prop("disabled", false);
+    } else {
+      selector.find("#hard").hide().prop("disabled", true);
+    }
+  });
+}
 
 $("select[name=payment]").change(function () {
   if ($(this).val() == "cc") {
@@ -49,13 +59,27 @@ $("select[name=payment]").change(function () {
 function showzone() {
   if (document.getElementById("zone1selector").checked) {
     document.getElementById("zone1").style.display = "block";
-  } else document.getElementById("zone1").style.display = "none";
+    document.getElementById("zone1").disabled = false;
+  } else {
+    document.getElementById("zone1").style.display = "none";
+    document.getElementById("zone1").disabled = true;
+  }
 
   if (document.getElementById("zone2selector").checked) {
     document.getElementById("zone2").style.display = "block";
-  } else document.getElementById("zone2").style.display = "none";
+    document.getElementById("zone2").disabled = false;
+  } else {
+    document.getElementById("zone2").style.display = "none";
+    document.getElementById("zone2").disabled = true;
+  }
 
   if (document.getElementById("zone3selector").checked) {
     document.getElementById("zone3").style.display = "block";
-  } else document.getElementById("zone3").style.display = "none";
+    document.getElementById("zone3").disabled = false;
+  } else {
+    document.getElementById("zone3").style.display = "none";
+    document.getElementById("zone3").disabled = true;
+  }
+
+  setWasteTypes();
 }
