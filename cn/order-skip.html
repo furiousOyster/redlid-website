@@ -557,6 +557,7 @@
 
         <script>
           $("#submitBtn").click(function () {
+            console.log("form data: ", $("form").serializeArray());
             var $captcha = $("#recaptcha"),
               response = grecaptcha.getResponse();
 
