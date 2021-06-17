@@ -45,3 +45,17 @@ $("select[name=payment]").change(function () {
     $("#cc").hide();
   }
 });
+
+function showzone() {
+  if (document.getElementById("zone1selector").checked) {
+    document.getElementById("zone1").style.display = "block";
+  } else document.getElementById("zone1").style.display = "none";
+
+  if (document.getElementById("zone2selector").checked) {
+    document.getElementById("zone2").style.display = "block";
+  } else document.getElementById("zone2").style.display = "none";
+
+  if (document.getElementById("zone3selector").checked) {
+    document.getElementById("zone3").style.display = "block";
+  } else document.getElementById("zone3").style.display = "none";
+}
