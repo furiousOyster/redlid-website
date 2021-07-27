@@ -5,7 +5,7 @@ import { Link } from "wouter";
 
 // Our language strings for the header
 const strings = [
-  "Hello React",
+  "Hello Toms",
   "Salut React",
   "Hola React",
   "안녕 React",
