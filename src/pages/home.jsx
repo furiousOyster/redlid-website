@@ -46,7 +46,10 @@ export default function Home() {
   };
   return (
     <>
-      <h1 className="title">{hello}!</h1>
+      <div>
+      
+      </div>
+      <h1 className="title">{hello + ' & peter'}!</h1>
       {/* When the user hovers over the image we apply the wiggle style to it */}
       <animated.div onMouseEnter={trigger} style={style}>
         <img
