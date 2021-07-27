@@ -12,6 +12,7 @@ import { Router, Link } from "wouter";
 */
 
 // Import and apply CSS stylesheet
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./styles/styles.css";
 
 // Where all of our pages come from
