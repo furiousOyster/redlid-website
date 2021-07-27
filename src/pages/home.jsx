@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <Container>
       <Row>
-        <Col>test</Col>
+        <Col>test n stuff</Col>
       </Row>
     </Container>
   );
