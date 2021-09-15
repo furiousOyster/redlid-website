@@ -1,5 +1,7 @@
 import * as React from "react";
 import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Image from "react-bootstrap/Image";
 
 export default () => (
   <Nav
@@ -21,4 +23,26 @@ export default () => (
       </Nav.Link>
     </Nav.Item>
   </Nav>
+  
+<Navbar
+  collapseOnSelect
+  expand="lg"
+  bg="light"
+  variant="light"
+>
+  <Container>
+    <Navbar.Brand href="https://www.redlid.co.nz">
+      <Image src=""
+        
+    
+    </Navbar.Brand>
+    <Navbar.Toggle />
+    <Navbar.Collapse className="justify-content-end">
+      <Navbar.Text>
+        Signed in as: <a href="#login">Mark Otto</a>
+      </Navbar.Text>
+    </Navbar.Collapse>
+  </Container>
+</Navbar>
+  
 );
