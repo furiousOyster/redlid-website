@@ -1,3 +1,7 @@
 .nav-link {color:#f00;}
 
 .nav-item {color:#0f0;}
+
+#ManageServicesBtn {
+  margin-left: 15px;
+}

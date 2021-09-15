@@ -22,9 +22,7 @@ export default () => (
         className="d-inline-block align-top"
       />{" "}
     </Navbar.Brand>
-    <Button variant="outline-secondary" className="justify-content-end">
-      Secondary
-    </Button>
+<div classname="justify-content-end">
     <Navbar.Toggle />
     <Navbar.Collapse>
       <Nav className="me-auto">
@@ -33,5 +31,7 @@ export default () => (
         <Nav.Link href="#pricing">Pricing</Nav.Link>
       </Nav>
     </Navbar.Collapse>
+     <Button variant="outline-secondary" id="ManageServicesBtn">Manage My Services</Button>
+ </div>  
   </Navbar>
 );
