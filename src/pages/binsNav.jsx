@@ -22,7 +22,7 @@ export default () => (
         className="d-inline-block align-top"
       />{" "}
     </Navbar.Brand>
-<div classname="justify-content-end">
+<div classname="justify-content-end rightnav">
     <Navbar.Toggle />
     <Navbar.Collapse>
       <Nav className="me-auto">
