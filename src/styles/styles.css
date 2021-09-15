@@ -14,11 +14,18 @@
 
 .navbar-expand-lg {
   justify-content: space-between;
+  position: relative;
 }
 
-/* 
+.navbar-brand {
+position: absolute;
+  left: 0;  
+    top: 0;
+}
+
 
 @media screen and (min-width: 960px) {
   .navbar-expand-lg {
    flex-direction: row-reverse;
+  justify-content: end;
   }
