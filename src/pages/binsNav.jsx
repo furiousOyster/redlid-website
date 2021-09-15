@@ -29,7 +29,7 @@ export default () => (
     <Navbar.Toggle />
 
     <Navbar.Collapse>
-      <Nav className="me-auto">
+      <Nav className="me-auto CollapsableNav">
         <Nav.Link href="#OrderBins">Order Bins</Nav.Link>
         <Nav.Link href="#OrderSkips">Order Skips</Nav.Link>
         <Nav.Link href="#pricing">Pricing</Nav.Link>
