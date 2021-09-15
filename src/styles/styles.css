@@ -1,14 +1,22 @@
-.nav-link {color:#f00;}
-
-.nav-item {color:#0f0;}
-
-#ManageServicesBtn {
-  margin-left: 15px;
+.nav-link {
+  color: #f00;
 }
 
-.rightnav {
+.nav-item {
+  color: #0f0;
+}
+
+#ManageServicesBtn {
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  #ManageServicesBtn {
+    right: 0px;  
+  }
 }
 
 .navbar-expand-lg {
-  justify-content:  space-between; 
+  justify-content: space-between;
 }
