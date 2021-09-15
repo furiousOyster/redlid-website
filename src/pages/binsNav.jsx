@@ -22,13 +22,14 @@ export default () => (
         className="d-inline-block align-top"
       />{" "}
     </Navbar.Brand>
+    <Button variant="outline-secondary" className="justify-content-end">
+      Secondary
+    </Button>
     <Navbar.Toggle />
-    <Navbar.Collapse className="justify-content-end">
-      
+    <Navbar.Collapse>
       <Nav className="me-auto">
         <Nav.Link href="#OrderBins">Order Bins</Nav.Link>
         <Nav.Link href="#OrderSkips">Order Skips</Nav.Link>
-
         <Nav.Link href="#pricing">Pricing</Nav.Link>
       </Nav>
     </Navbar.Collapse>
