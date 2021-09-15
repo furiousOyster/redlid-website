@@ -24,6 +24,8 @@ export default () => (
     </Nav.Item>
   </Nav>
   
+  <>
+  
 <Navbar
   collapseOnSelect
   expand="lg"
@@ -33,7 +35,7 @@ export default () => (
   <Container>
     <Navbar.Brand href="https://www.redlid.co.nz">
       <Image src=""
-        
+      </Image>
     
     </Navbar.Brand>
     <Navbar.Toggle />
