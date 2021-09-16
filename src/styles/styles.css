@@ -50,15 +50,15 @@ height: calc(100vh - 54px);
 .LandingPagePanel {
 display: flex;
   align-items: center;
-  justify=content: center;  
+  justify-content: center;  
   height: calc(50vh - 27px);
   background: #05c;
 }
 
 .LandingPagePanel h1 {
-display: block;
+
 }
 
 .LandingPagePanel img {
-display: block;
+
 }

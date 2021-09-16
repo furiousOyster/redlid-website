@@ -18,14 +18,16 @@ export default function Home() {
       <Row>
         <MainNav />
         <Col className="LandingPagePanel" sm={12} md={6}>
-          
-          <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fbin.jpg?v=1631831496533" thumbnail />
-          <h1>Red Lid Garden Bins & Bags</h1>
+          <a href="#Bins">
+            <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fbin.jpg?v=1631831496533" />
+            <h1>Red Lid Garden Bins & Bags</h1>
+          </a>
         </Col>
         <Col className="LandingPagePanel" sm={12} md={6}>
-          <h1></h1>
-          <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fskip.jpg?v=1631831496533" thumbnail />
-          <h1>Red Lid Skips</h1>
+          <a href="#Skips">
+            <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fskip.jpg?v=1631831496533" />
+            <h1>Red Lid Skips</h1>
+          </a>
         </Col>
       </Row>
     </Container>
