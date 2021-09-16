@@ -14,16 +14,19 @@ import MainNav from './mainNav'
 
 export default function Home() {
   return (
-    <>
-    <Container>
+
+    <Container fluid>
       <Row>
         <MainNav/>
-        <Col>test n stuff
+        <Col md={12} lg={6}>test n stuff
         <ul><li>test</li>
           </ul>
         </Col>
+        <Col md={12}>
+          Another thing
+        </Col>
       </Row>
     </Container>
+
   );
 }
-    </>

@@ -26,14 +26,6 @@ export default () => (
     <Button variant="outline-secondary" id="ManageServicesBtn">
       Manage Services
     </Button>
-    <Navbar.Toggle />
 
-    <Navbar.Collapse>
-      <Nav className="me-auto CollapsableNav">
-        <Nav.Link href="#OrderBins">Order Bins</Nav.Link>
-        <Nav.Link href="#OrderSkips">Order Skips</Nav.Link>
-        <Nav.Link href="#pricing">Pricing</Nav.Link>
-      </Nav>
-    </Navbar.Collapse>
   </Navbar>
 );
