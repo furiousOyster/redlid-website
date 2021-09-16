@@ -10,23 +10,23 @@ import Row from "react-bootstrap/Row";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Image from "react-bootstrap/Image";
-import MainNav from './mainNav'
+import MainNav from "./mainNav";
 
 export default function Home() {
   return (
-
-    <Container fluid>
+    <Container fluid id="LandingPage">
       <Row>
-        <MainNav/>
-        <Col md={12} lg={6}>test n stuff
-        <ul><li>test</li>
+        <MainNav />
+        <Col className="LandingPagePanel" sm={12} md={6}>
+          test n stuff
+          <ul>
+            <li>test</li>
           </ul>
         </Col>
-        <Col md={12}>
+        <Col className="LandingPagePanel" sm={12} md={6}>
           Another thing
         </Col>
       </Row>
     </Container>
-
   );
 }
