@@ -43,10 +43,15 @@ position: absolute;
 height: calc(100vh - 54px);
 }
 
+#LandingPage #ManageServicesBtn {
+    margin-right: 0;
+}
+
 .LandingPagePanel {
 display: flex;
   align-items: center;
   justify=content: center;  
   height: calc(50vh - 27px);
-  background: #0fc;
+  background: #05c;
 }
+
