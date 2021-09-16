@@ -10,13 +10,14 @@ import Row from "react-bootstrap/Row";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Image from "react-bootstrap/Image";
-import BinsNav from './binsNav'
+import MainNav from './mainNav'
 
 export default function Home() {
   return (
+    <>
     <Container>
       <Row>
-        <BinsNav/>
+        <MainNav/>
         <Col>test n stuff
         <ul><li>test</li>
           </ul>
@@ -25,3 +26,4 @@ export default function Home() {
     </Container>
   );
 }
+    </>
