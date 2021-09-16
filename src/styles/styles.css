@@ -40,9 +40,13 @@ position: absolute;
   }
 
 #LandingPage {
-
+height: calc(100vh - 54px);
 }
 
 .LandingPagePanel {
-  
+display: flex;
+  align-items: center;
+  justify=content: center;  
+  height: calc(50vh - 27px);
+  background: #0fc;
 }

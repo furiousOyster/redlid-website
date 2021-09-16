@@ -18,13 +18,13 @@ export default function Home() {
       <Row>
         <MainNav />
         <Col className="LandingPagePanel" sm={12} md={6}>
-          test n stuff
-          <ul>
-            <li>test</li>
-          </ul>
+          <Image src="holder.js/171x180" thumbnail />
+          <h1>Red Lid Garden Bins & Bags</h1>
         </Col>
         <Col className="LandingPagePanel" sm={12} md={6}>
-          Another thing
+           <h1></h1>
+          <Image src="holder.js/171x180" thumbnail />
+          <h1>Red Lid Skips</h1>
         </Col>
       </Row>
     </Container>
