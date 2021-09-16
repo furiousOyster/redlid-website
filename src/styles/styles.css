@@ -55,6 +55,13 @@ display: flex;
   background: #05c;
 }
 
+.LandingPagePanel a {
+text-align: center;  
+  background: #fff;
+  width: 100%;
+  height: 80%;
+}
+
 .LandingPagePanel h1 {
 
 }
