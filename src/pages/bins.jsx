@@ -18,9 +18,9 @@ export default function Home() {
     <Container>
       <Row>
         <BinsNav/>
-        <Col>test n stuff
-        <ul><li>test</li>
-          </ul>
+        <Col>
+          
+          
         </Col>
       </Row>
     </Container>
