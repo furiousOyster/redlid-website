@@ -21,6 +21,7 @@ export default () => (
         height="38"
         className="d-inline-block align-top"
       />{" "}
+      <span>Reliable Waikato Waste Disposal Services since 1964</span>
     </Navbar.Brand>
 
     <Button variant="outline-secondary" id="ManageServicesBtn">

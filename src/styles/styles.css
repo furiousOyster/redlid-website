@@ -24,6 +24,13 @@
   top: 4px;
 }
 
+.navbar-brand span {
+  width: 100%;
+  display: block;
+  font-size: 3vw;
+  text-align: center;
+}
+
 /* Nav Response*/
 
 @media screen and (min-width: 960px) {
