@@ -24,13 +24,6 @@
   top: 4px;
 }
 
-.navbar-brand span {
-  width: 100%;
-  display: block;
-  font-size: 3vw;
-  text-align: center;
-}
-
 /* Nav Response*/
 
 @media screen and (min-width: 960px) {
@@ -54,6 +47,20 @@
 
 #LandingPage #ManageServicesBtn {
   margin-right: 0;
+}
+
+/* Landing Page Nav Assurance Message*/
+
+.navbar-brand span {
+  display: none;
+}
+
+@media screen and (min-width: 960px) {
+  .navbar-brand span {
+    display: inline-block;
+    padding-top: 8px;
+    font-size: 1rem;
+  }
 }
 
 .LandingPagePanel {
