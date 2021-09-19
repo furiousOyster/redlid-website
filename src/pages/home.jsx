@@ -20,53 +20,56 @@ export default function Home() {
         <BinsNav />
         <Col>
           <Container>
-            <Row className="Header">
-              <h1>Red Lid Garden Bags and Bins</h1>
-              <p>Regular or one-off collections for green and garden waste</p>
-            </Row>
+              <Row className="Header">
+                <h1>Red Lid Garden Bags and Bins</h1>
+                <p>Regular or one-off collections for green and garden waste</p>
+              </Row>
+              <Row>
+                <a className="Product">
+                  <Row>
+                    <h2>240L Garden Bin</h2>
+                  </Row>
+                  <Row>
+                    <Col sm={12} md={4}>
+                      <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fbin.jpg?v=1631831496533" />
+                    </Col>
+                    <Col sm={12} md={8}>
+                      <i>From $8 per collection</i>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nam fermentum, nulla luctus pharetra vulputate, felis
+                        tellus mollis orci, sed rhoncus pronin sapien nunc
+                        accuan eget.
+                      </p>
+                      <Button variant="primary">Order garden waste bins</Button>{" "}
+                    </Col>
+                  </Row>
+                </a>
+              </Row>
+              <Row>
+                <a className="Product">
+                  <Row>
+                    <h2>600L Garden Bag</h2>
+                  </Row>
+                  <Row>
+                    <Col sm={12} md={4}>
+                      <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fbag.jpg?v=1631831496533" />
+                    </Col>
+                    <Col sm={12} md={8}>
+                      <i>From $8 per collection</i>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nam fermentum, nulla luctus pharetra vulputate, felis
+                        tellus mollis orci, sed rhoncus pronin sapien nunc
+                        accuan eget.
+                      </p>
+                      <Button variant="primary">Order garden waste bags</Button>{" "}
+                    </Col>
+                  </Row>
+                </a>
+              </Row>
             <Row>
-              <a className="Product">
-                <Row>
-                  <h2>240L Garden Bin</h2>
-                </Row>
-                <Row>
-                  <Col sm={12} md={4}>
-                    <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fbin.jpg?v=1631831496533" />
-                  </Col>
-                  <Col sm={12} md={8}>
-                    <i>From $8 per collection</i>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nam fermentum, nulla luctus pharetra vulputate, felis
-                      tellus mollis orci, sed rhoncus pronin sapien nunc accuan
-                      eget.
-                    </p>
-                    <Button variant="primary">Browse Skips</Button>{" "}
-                  </Col>
-                </Row>
-              </a>
-            </Row>
-            <Row>
-              <a className="Product">
-                <Row>
-                  <h2>600L Garden Bag</h2>
-                </Row>
-                <Row>
-                  <Col sm={12} md={4}>
-                    <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fbag.jpg?v=1631831496533" />
-                  </Col>
-                  <Col sm={12} md={8}>
-                    <i>From $8 per collection</i>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nam fermentum, nulla luctus pharetra vulputate, felis
-                      tellus mollis orci, sed rhoncus pronin sapien nunc accuan
-                      eget.
-                    </p>
-                    <Button variant="primary">Browse Skips</Button>{" "}
-                  </Col>
-                </Row>
-              </a>
+              
             </Row>
           </Container>
         </Col>
