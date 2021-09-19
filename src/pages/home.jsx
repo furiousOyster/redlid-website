@@ -11,6 +11,13 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
+import Modal from 'react-bootstrap/Modal';
+import ModalDialog from 'react-bootstrap/ModalDialog';
+import ModalHeader from 'react-bootstrap/ModalHeader';
+import ModalTitle from 'react-bootstrap/ModalTitle';
+import ModalBody from 'react-bootstrap/ModalBody';
+import ModalFooter from 'react-bootstrap/ModalFooter';
+
 import BinsNav from "./binsNav";
 
 export default function Home() {
@@ -179,10 +186,63 @@ export default function Home() {
                       class="form-check-input"
                       id="the-terms"
                     />
+                    
                     I have read and agree to the
-                    <a data-toggle="modal" data-target="#exampleModal" href="#">
-                      terms and conditions.
-                    </a>
+                    
+                    function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Modal heading
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h4>Centered Modal</h4>
+        <p>
+          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+          consectetur ac, vestibulum at eros.
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
+function App() {
+  const [modalShow, setModalShow] = React.useState(false);
+
+  return (
+    <>
+      <Button variant="primary" onClick={() => setModalShow(true)}>
+        Launch vertically centered modal
+      </Button>
+
+      <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
+    </>
+  );
+}
+
+render(<App />);
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                   </label>
                 </div>
                 <div
