@@ -20,14 +20,33 @@ export default function Home() {
         <BinsNav />
         <Col>
           <Container>
-            <Row>
+            <Row className="Header">
               <Col>
-                <h1>
-                Red Lid Garden Bags and Bins
-                </h1>
+                <h1>Red Lid Garden Bags and Bins</h1>
+                <p>Regular or one-off collections for green and garden waste</p>
+              </Col>
+            </Row>
+            <Row>
+            <Col>
+              <a className="Product">
+                <Row>
+                <h2>240L Garden Bin</h2>
+                </Row>
+                <Row>
+                <Col>
+                  
+                  
+                  </Col>
+                </Row>
+              
+                
                 
               
+              
+              </a>
+            
               </Col>
+            
             </Row>
           </Container>
         </Col>
