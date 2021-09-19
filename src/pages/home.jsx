@@ -190,7 +190,7 @@ export default function Home() {
                     
                     
                     
-                    
+    /*                
                     
 function Example() {
   const [show, setShow] = useState(false);
@@ -228,7 +228,7 @@ render(<Example />);
                     
                     
                     
-                    
+                    */
                     
                     
                     
