@@ -26,7 +26,7 @@
 
 /* Nav Response*/
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 992px) {
   .navbar-expand-lg {
     flex-direction: row-reverse;
     justify-content: end;
