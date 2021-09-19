@@ -20,56 +20,511 @@ export default function Home() {
         <BinsNav />
         <Col>
           <Container>
-              <Row className="Header">
-                <h1>Red Lid Garden Bags and Bins</h1>
-                <p>Regular or one-off collections for green and garden waste</p>
-              </Row>
-              <Row>
-                <a className="Product">
-                  <Row>
-                    <h2>240L Garden Bin</h2>
-                  </Row>
-                  <Row>
-                    <Col sm={12} md={4}>
-                      <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fbin.jpg?v=1631831496533" />
-                    </Col>
-                    <Col sm={12} md={8}>
-                      <i>From $8 per collection</i>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nam fermentum, nulla luctus pharetra vulputate, felis
-                        tellus mollis orci, sed rhoncus pronin sapien nunc
-                        accuan eget.
-                      </p>
-                      <Button variant="primary">Order garden waste bins</Button>{" "}
-                    </Col>
-                  </Row>
-                </a>
-              </Row>
-              <Row>
-                <a className="Product">
-                  <Row>
-                    <h2>600L Garden Bag</h2>
-                  </Row>
-                  <Row>
-                    <Col sm={12} md={4}>
-                      <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fbag.jpg?v=1631831496533" />
-                    </Col>
-                    <Col sm={12} md={8}>
-                      <i>From $8 per collection</i>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nam fermentum, nulla luctus pharetra vulputate, felis
-                        tellus mollis orci, sed rhoncus pronin sapien nunc
-                        accuan eget.
-                      </p>
-                      <Button variant="primary">Order garden waste bags</Button>{" "}
-                    </Col>
-                  </Row>
-                </a>
-              </Row>
+            <Row className="Header">
+              <h1>Red Lid Garden Bags and Bins</h1>
+              <p>Regular or one-off collections for green and garden waste</p>
+            </Row>
             <Row>
-              
+              <a className="Product">
+                <Row>
+                  <h2>240L Garden Bin</h2>
+                </Row>
+                <Row>
+                  <Col sm={12} md={4}>
+                    <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fbin.jpg?v=1631831496533" />
+                  </Col>
+                  <Col sm={12} md={8}>
+                    <i>From $8 per collection</i>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nam fermentum, nulla luctus pharetra vulputate, felis
+                      tellus mollis orci, sed rhoncus pronin sapien nunc accuan
+                      eget.
+                    </p>
+                    <Button variant="primary">Order garden waste bins</Button>{" "}
+                  </Col>
+                </Row>
+              </a>
+            </Row>
+            <Row>
+              <a className="Product">
+                <Row>
+                  <h2>600L Garden Bag</h2>
+                </Row>
+                <Row>
+                  <Col sm={12} md={4}>
+                    <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fbag.jpg?v=1631831496533" />
+                  </Col>
+                  <Col sm={12} md={8}>
+                    <i>From $8 per collection</i>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nam fermentum, nulla luctus pharetra vulputate, felis
+                      tellus mollis orci, sed rhoncus pronin sapien nunc accuan
+                      eget.
+                    </p>
+                    <Button variant="primary">Order garden waste bags</Button>{" "}
+                  </Col>
+                </Row>
+              </a>
+            </Row>
+            <Row>
+              <form
+                action="https://redlid-orders.herokuapp.com/submitOrder/"
+                method="post"
+                enctype="json"
+              >
+                <input name="ordertype" id="prodId" type="hidden" value="bag" />
+                <div class="form-group">
+                  <label for="address">Address*</label>
+                  <input
+                    name="Address"
+                    type="text"
+                    class="form-control"
+                    id="Street"
+                    placeholder="Start entering your address or Postcode"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="firstname">First name*</label>
+                  <input
+                    name="First Name"
+                    type="text"
+                    class="form-control"
+                    id="firstname"
+                    placeholder="First name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="surname">Surname*</label>
+                  <input
+                    name="Last Name"
+                    type="text"
+                    class="form-control"
+                    id="surname"
+                    placeholder="Surname"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input
+                    name="Phone"
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="Phone"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email address*</label>
+                  <input
+                    name="Email"
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                    required
+                  />
+                  <small id="emailHelp" class="form-text text-muted">
+                    We'll never share your email with anyone else.
+                  </small>
+                </div>
+                <div class="form-group">
+                  <label for="pickupcycle">Pick up cycle</label>
+                  <select
+                    name="Pickup Cycle"
+                    class="form-control"
+                    id="pickupcycle"
+                  >
+                    <option>Weekly (Hamilton only) - $18 per collection</option>
+                    <option>2-weekly - $20 per collection</option>
+                    <option>4-weekly - $24 per collection</option>
+                    <option>
+                      One-off (collection within 4 weeks of dropoff) - $40
+                    </option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="payment">Payment method</label>
+                  <select class="form-control" id="payment" name="payment">
+                    <option>Internet banking</option>
+                    <option value="cc">Credit card (+3% surcharge)</option>
+                  </select>
+                  <small class="form-text text-muted" id="cc">
+                    We will contact you by phone for your credit card details.
+                  </small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">
+                    Any comments or special instructions?
+                  </label>
+                  <textarea
+                    name="Instructions"
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    placeholder=""
+                  ></textarea>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input
+                      name="Terms"
+                      type="checkbox"
+                      class="form-check-input"
+                      id="the-terms"
+                    />
+                    I have read and agree to the
+                    <a data-toggle="modal" data-target="#exampleModal" href="#">
+                      terms and conditions.
+                    </a>
+                  </label>
+                </div>
+                <div
+                  id="recaptcha"
+                  class="g-recaptcha"
+                  data-sitekey="6LdXC_IUAAAAAHzZhOlhxpVLRBEDEVddO00nIUpx"
+                ></div>
+                <span class="msg-error error"></span>
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  disabled="disabled"
+                  id="submitBtn"
+                >
+                  Submit order
+                </button>
+              </form>
+
+              <div
+                class="modal fade"
+                id="exampleModal2"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Frequent questions
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <h3>What can we put in the bin and bag?</h3>
+                      <p>Anything organic.</p>
+                      <h3>Is there any contract that needs to be signed?</h3>
+                      <p>
+                        No contracts to sign, just the initial $60 payment
+                        required before the first collection, you are required
+                        to use up the $60 payment before you can cancel the
+                        service.
+                      </p>
+                      <h3>Can we change our collection cycle/frequency?</h3>
+                      <p>
+                        You can change your collection cycle / frequency at any
+                        time by contacting the office.
+                      </p>
+                      <h3>Can you take extra rubbish?</h3>
+                      <p>
+                        yes we can take extra rubbish, we can provide a garden
+                        bag for you as we are not able to take loose material.
+                      </p>
+                      <h3>Is the green waste recycled?</h3>
+                      <p>
+                        100% of the green waste collected is recycled into
+                        different by- products.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Terms and conditions
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Here is everything you need to know about purchasing and
+                        using our residential Green Waste collection services
+                        ordered through our website or in person.*
+                      </p>
+                      <h3>1.    Making orders</h3>
+                      <p>
+                        When you place an order with us, you agree to use our
+                        services on a regular, ongoing basis until you cancel in
+                        accordance with clause 6.  You will need an email
+                        address that you check regularly, as this is the
+                        preferred option for communication.
+                      </p>
+                      <h3>2.    Delivering your Bin or Bag</h3>
+                      <p>
+                        We will deliver your garden Bin or Bag on the next
+                        working day that we are in your suburb.
+                      </p>
+                      <h3>3.    Scheduled collections</h3>
+                      <p>
+                        We will empty your Bin or Bag on the scheduled
+                        collection date &amp; cycle that has been approved by
+                        you either by phone, email or through our website,
+                        unless we have notified you in advance by email or phone
+                        message that the date has changed. Where your scheduled
+                        collection falls on a public holiday your collection day
+                        may change, you will be notified before the scheduled
+                        collection day if there is a change.
+                      </p>
+                      <p>
+                        Our policy allows one free missed collection per year
+                        without charge, this excludes the 8 weekly collection
+                        cycle. If you are wanting to use your free missed
+                        collection you need to contact the office by phone or
+                        email at least 24 hours prior to the next scheduled
+                        collection.
+                      </p>
+                      <p>
+                        You can change your collection frequency at anytime by
+                        contacting the office.
+                      </p>
+                      <h3>4.    Charges</h3>
+                      <p>
+                        Our price is determined by the service address you
+                        provided to us, so any change to your address may result
+                        in a different price being charged. Our prices include
+                        GST. We can also remove extra side rubbish for an
+                        additional fee if notified.
+                      </p>
+                      <h3>5.    Payment</h3>
+                      <p>
+                        After you receive your Bin or Bag a $60 payment is
+                        required before the first collection, this advance
+                        payment goes onto your account and your collection
+                        charges are deducted from it, once you have used your
+                        $60, simply pay a further $60. Payments can be made by
+                        credit card, cheque, internet banking or automatic
+                        payment.
+                      </p>
+                      <h3>6.    Cancelling your service</h3>
+                      <p>
+                        You can end your service at any time via email or phone
+                        message after the initial $60 has been used. We will
+                        keep emptying your Bin or Bag until your prepaid period
+                        expires. No refund will be given if the service is
+                        cancelled before the $60 advance payment has been used.
+                      </p>
+                      <p>
+                        On cancellation you agree to allow us access to the
+                        property for the purpose of collecting and removing our
+                        Bin or Bag.
+                      </p>
+                      <h3>7.    No access policy</h3>
+                      <p>
+                        If we are not able to collect/empty your Bin or Bag due
+                        to restricted access for example Bin or Bag is behind
+                        locked gates, dogs are running free or a vehicle is
+                        blocking access, please email or phone the office and we
+                        will collect the Bin or Bag on the next day we are in
+                        your area at no extra charge. Your following collection
+                        date will remain the same.
+                      </p>
+                      <h3>
+                        8.    Using and looking after your Garden Waste Bin or
+                        Bag
+                      </h3>
+                      <p>Please DO:</p>
+                      <ol>
+                        <li>
+                          Put your Bin out by 7am on the day of your collection.
+                        </li>
+                        <li>
+                          Place your Bin on the grass verge or berm closest to
+                          where our collection vehicle passes, so the wheels are
+                          closest to your house and the lid is closest to the
+                          road. Make sure the bin is clear of trees and other
+                          obstructions like parked cars or street light poles.
+                        </li>
+                        <li>
+                          Contain all the waste inside your Bin or Bag without
+                          letting it spill over, and ensure the lid is closed on
+                          the Bin or not over the top of the frame of the garden
+                          Bag.
+                        </li>
+                        <li>
+                          Ensure your Garden Waste Bin or Bag contains approved
+                          organic waste as outlined in clause 9 below. If your
+                          Bin is not out for collection on your scheduled
+                          collection day, our drivers will enter your property
+                          to collect it if they can gain access. If you DO NOT
+                          want us to enter your property please notify us by
+                          email or phone, the collection charge will remain.
+                        </li>
+                      </ol>
+                      <p>Please do NOT:</p>
+                      <ol>
+                        <li>
+                          Light fires or place hot embers or hot ash in the Bin
+                          or Bag.
+                        </li>
+                        <li>
+                          Put any liquids or explosive, toxic, dangerous,
+                          hazardous or noxious materials in the Bin or Bag. This
+                          includes materials like asbestos, acids, solvents,
+                          paints, unwrapped broken glass, minerals, grease or
+                          cooking oil, or concrete.
+                        </li>
+                        <li>Fill the bin to overflowing.</li>
+                      </ol>
+                      <h3>9.    Garden Waste</h3>
+                      <p>
+                        Please ensure your Garden Waste bin only contains
+                        approved organic waste.  We cannot accept, sand, grass
+                        sods, dirt or soil, rocks, household rubbish, newspaper,
+                        old compost, stumps or branches bigger than 100mm in
+                        diameter in the Garden Waste Bin or Bag. Bins or Bags
+                        containing any forbidden material will not be taken as
+                        this cannot be composted successfully. An additional
+                        charge will apply if forbidden material is found in the
+                        Bin or Bag.
+                      </p>
+                      <p>
+                        You can order extra collections in addition to your
+                        scheduled collections by contacting us in advance. These
+                        extra collections will be charged for at the rates
+                        applicable at the time. You will be informed of the
+                        scheduled date for extra collections in your area when
+                        you contact us.
+                      </p>
+                      <h3>10.    Bin &amp; Bag Placement</h3>
+                      <p>
+                        Please ensure the Garden Waste Bin or Bag is NOT in a
+                        difficult position such as steep driveways, narrow
+                        access ways and steps that may impede the driver&rsquo;s
+                        ability to empty the Bin or Bag, resulting in a
+                        non-service. Unlock gates and tie up or secure dogs away
+                        from the Bin or Bag location.
+                      </p>
+                      <p>
+                        We reserve the right to refuse our collection service to
+                        any property where the site is deemed by us to be
+                        unsafe.
+                      </p>
+                      <h3>11.    Liability</h3>
+                      <p>
+                        You will be liable to us for any damage to our Bin or
+                        Bag whilst in your possession, fair wear and tear
+                        excluded, and for any liability we incur as a result of
+                        you not complying with these terms.
+                      </p>
+                      <h3>12.    Making changes</h3>
+                      <p>
+                        <strong>Changes to Terms</strong>
+                      </p>
+                      <p>
+                        From time to time we may need to change these terms,
+                        including adding new ones. We want to make sure
+                        we&rsquo;re acting reasonably and in good faith. If any
+                        changes we make could have a detrimental impact on you,
+                        we will give you at least 28 days&rsquo; notice of the
+                        change by emailing or phoning you. Continuing to use our
+                        services after being notified in this way indicates you
+                        accept the changes. If you do not agree to the changes,
+                        you have the right to terminate this agreement.
+                      </p>
+                      <p>
+                        <strong>Changes to Charges</strong>
+                      </p>
+                      <p>
+                        We may change our prices from time to time. When we
+                        increase the prices for your services we will give you
+                        28 days&rsquo; notice by emailing or phoning you.
+                      </p>
+                      <p>
+                        <strong>Changes to Services</strong>
+                      </p>
+                      <p>
+                        We may change our services from time to time. If the
+                        change is within our control, we will provide you 28
+                        days&rsquo; notice of such alterations by emailing or
+                        phoning you.
+                      </p>
+                      <h3>13.    Privacy</h3>
+                      <p>
+                        You authorise us to collect, keep and use personal
+                        information you provide to us to process payment for our
+                        services, or for any other purpose that you authorise.
+                        We comply with the Privacy Act 1993, and you have the
+                        right to access and correct any personal information we
+                        hold about you (there may be a reasonable charge for
+                        this).
+                      </p>
+                      <p>
+                        * In these Terms, "us" &ldquo;our&rdquo; or "we" means
+                        Red Lid Garden Bins &amp; Bags Ltd (the owner of this
+                        website), and &ldquo;you&rdquo; means our customer, who
+                        purchases services from us on this website.
+                      </p>
+                      <h3>14. Recovering Collection Costs</h3>
+                      <p>
+                        In the event where your account goes into arrears due to
+                        non-payment and is referred to a collection agency
+                        and/or law firm, you will be liable for a 25% plus gst
+                        recovery fee which will be incurred as if the debt is
+                        collected in full, including legal demand costs.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </Row>
           </Container>
         </Col>
