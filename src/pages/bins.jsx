@@ -10,6 +10,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
+import TnCModal from './TnCModal'
 import BinsNav from './binsNav'
 
 export default function Home() {
