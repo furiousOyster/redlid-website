@@ -30,9 +30,9 @@ export default () => (
 
     <Navbar.Collapse>
       <Nav className="me-auto CollapsableNav">
-        <Nav.Link href="#OrderBins">Order Bins</Nav.Link>
-        <Nav.Link href="#OrderSkips">Order Skips</Nav.Link>
-        <Nav.Link href="#skips">Red Lid Skips</Nav.Link>
+        <Nav.Link href="/Bins">Order Bins</Nav.Link>
+        <Nav.Link href="/Bags">Order Bags</Nav.Link>
+        <Nav.Link href="/Skips">Red Lid Skips</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>
