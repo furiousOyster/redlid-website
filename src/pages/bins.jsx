@@ -21,7 +21,7 @@ import ModalTerms from '../components/ModalTerms'
 
 import BinsNav from './binsNav'
 
-export default function Home() {
+export default function Bins() {
   const [showTerms, setShowTerms] = useState(false)
   const [showFaqs, setShowFaqs] = useState(false)
 
@@ -198,7 +198,10 @@ export default function Home() {
                         class="form-check-input"
                         id="the-terms"
                       />
-                      I have read and agree to the <TermsButton />
+                      I have read and agree to the{' '}
+                      <Button onClick={() => setShowTerms(true)}>
+                        Terms & Conditions
+                      </Button>
                     </label>
                   </div>
                   <div
@@ -221,9 +224,8 @@ export default function Home() {
           </Col>
         </Row>
       </Container>
-      <ModalTerms show={showFaqs} onHide={() => setShowFaqs(false)} />
+      <ModalTerms show={showTerms} onHide={() => setShowTerms(false)} />
       <ModalFaqs show={showFaqs} onHide={() => setShowFaqs(false)} />
-      
     </>
   )
 }
