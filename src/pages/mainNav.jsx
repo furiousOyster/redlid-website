@@ -7,7 +7,6 @@ import Button from "react-bootstrap/Button";
 
 export default () => (
   <Navbar
-    activeKey="/home"
     onSelect={selectedKey => alert(`selected ${selectedKey}`)}
     bg="#fff"
     variant="light"

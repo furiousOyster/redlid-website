@@ -18,7 +18,7 @@ export default function Home() {
       <Row>
         <MainNav />
         <Col className="LandingPagePanel" sm={12} md={6}>
-          <Link href="/Bins">
+          <Link href="/bins">
              <h1>Red Lid Garden Bins & Bags</h1>
             <p>For green and garden waste</p>
             <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fbin.jpg?v=1631831496533" />

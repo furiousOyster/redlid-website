@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Switch, Route, Router } from "wouter";
-import Home from "../pages/home";
 import About from "../pages/about";
 import LandingPage from "../pages/LandingPage";
 import Bins from '../pages/bins'
