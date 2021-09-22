@@ -98,7 +98,6 @@ export default function Bins() {
             >
               <Form.Control type="text" placeholder="Enter your address" />
             </FloatingLabel>
-
             <FloatingLabel
               controlId="floatingInput"
               label="Enter your full name"
@@ -106,7 +105,6 @@ export default function Bins() {
             >
               <Form.Control type="text" placeholder="Your name" />
             </FloatingLabel>
-
             <FloatingLabel
               controlId="floatingInput"
               label="Phone number"
@@ -114,7 +112,6 @@ export default function Bins() {
             >
               <Form.Control type="phone" placeholder="Phone number" />
             </FloatingLabel>
-
             <FloatingLabel
               controlId="floatingInput"
               label="Email address"
@@ -125,7 +122,6 @@ export default function Bins() {
                 We'll never share your email with anyone else.
               </small>
             </FloatingLabel>
-      
             <FloatingLabel label="Choose pickup cycle">
               <Form.Select aria-label="Floating label select example">
                 <option>Weekly - $18 per collection</option>
@@ -136,9 +132,6 @@ export default function Bins() {
                 </option>
               </Form.Select>
             </FloatingLabel>
-            
-
-
             <FloatingLabel label="Payment method">
               <Form.Select aria-label="Floating label select example">
                 <option>Internet banking</option>
@@ -148,42 +141,31 @@ export default function Bins() {
                 We will contact you by phone for your credit card details.
               </small>
             </FloatingLabel>
-  
+            <FloatingLabel controlId="floatingTextarea2" label="Comments">
+              <Form.Control
+                as="textarea"
+                placeholder="Any comments or special instructions?"
+                style={{ height: '100px' }}
+              />
+            </FloatingLabel>
 
-             <FloatingLabel controlId="floatingTextarea2" label="Comments">
-    <Form.Control
-      as="textarea"
-      placeholder="Any comments or special instructions?"
-      style={{ height: '100px' }}
-    />
-  </FloatingLabel>
+            <>
+               
      
-            
-            <Button variant="outline-warning">Warning</Button>{' '}
-            
-              <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                
-    <Form.Check type="checkbox" label="I have read and agree to the Terms & Conditions" />
-                
-                
-                
-  </Form.Group>
-
-            <div class="form-check">
-              <label class="form-check-label">
-                <input
-                  name="Terms"
+                <Form.Check
                   type="checkbox"
-                  class="form-check-input"
-                  id="the-terms"
+                  label="I have read and agree to the"
+                  
                 />
-                I have read and agree to the{' '}
-                <a onClick={() => setShowTerms(true)} className="tnclink">
+              
+               <Button
+                  onClick={() => setShowTerms(true)}
+                  className="tnclink"
+                  variant="Link"
+                >
                   Terms & Conditions
-                </a>
-              </label>
-            </div>
-            
+                </Button>
+            </>
             <p class="msg-error error"></p>
             <button
               type="submit"
