@@ -32,10 +32,13 @@ export default function Bins() {
           <BinsNav />
         </Row>
 
+        {/* HEADER */}
         <Row className="Header">
           <h1>Red Lid Garden Bags and Bins</h1>
           <p>Regular or one-off collections for green and garden waste</p>
         </Row>
+
+        {/* LISTING BINS */}
         <Row>
           <a className="Product">
             <Row>
@@ -58,6 +61,7 @@ export default function Bins() {
           </a>
         </Row>
         <Row>
+          {/* LISTING BAGS */}
           <a className="Product">
             <Row>
               <h2>600L Garden Bag</h2>
@@ -78,8 +82,11 @@ export default function Bins() {
             </Row>
           </a>
         </Row>
+
+        {/* ORDER FORM */}
         <Row>
           <h1>Order Garden Bin</h1>
+          <a className="Switch">I want to order a bag instead</a>
           <form
             action="https://redlid-orders.herokuapp.com/submitOrder/"
             method="post"
@@ -208,6 +215,26 @@ export default function Bins() {
             </button>
           </form>
         </Row>
+
+        {/* HOW IT WORKS */}
+
+        <row>
+          <h1>How it works</h1>
+          <col lg={6}>
+            <p>
+              We provide 2 options for Garden Waste Collection, either a 240
+              litre Wheelie Bin or a 600 litre Garden Bag. You choose your
+              Collection Frequency and you can change the frequency at
+              any time. You can also change between the Wheelie Bin and the
+              Garden Bag.
+            </p>
+          </col>
+          <col>
+            <p><strong>THERE ARE NO CONTRACTS TO SIGN</strong></p>
+
+  <p><strong>GUARANTEED  EXACT DAY OF COLLECTION</strong></p>
+          </col>
+        </row>
       </Container>
       <ModalTerms show={showTerms} onHide={() => setShowTerms(false)} />
       <ModalFaqs show={showFaqs} onHide={() => setShowFaqs(false)} />
