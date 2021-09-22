@@ -199,9 +199,10 @@ export default function Bins() {
                         id="the-terms"
                       />
                       I have read and agree to the{' '}
-                      <Button onClick={() => setShowTerms(true)}>
+                      <a onClick={() => setShowTerms(true)}
+                        className="tnclink">
                         Terms & Conditions
-                      </Button>
+                      </a>
                     </label>
                   </div>
                   <div
