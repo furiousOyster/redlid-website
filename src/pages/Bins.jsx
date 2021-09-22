@@ -149,23 +149,23 @@ export default function Bins() {
               />
             </FloatingLabel>
 
-            <>
+            <div className="TermsContainer">
                
      
                 <Form.Check
                   type="checkbox"
-                  label="I have read and agree to the"
-                  
+                  label="I have read and agree to the "
+                  className="TermsCheckbox"
                 />
               
                <Button
                   onClick={() => setShowTerms(true)}
-                  className="tnclink"
+                  className="TermsModalBtn"
                   variant="Link"
                 >
                   Terms & Conditions
                 </Button>
-            </>
+            </div>
             <p class="msg-error error"></p>
             <button
               type="submit"

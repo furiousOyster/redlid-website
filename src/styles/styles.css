@@ -88,6 +88,20 @@
 /* Forms */
 
 
-.tnclink {
+.TermsModalBtn {
   cursor: pointer;
+
+}
+
+.TermsCheckbox {
+  display: inline-block;
+}
+
+.TermsContainer {
+  height: 100px;
+}
+
+.TermsModalBtn, .TermsCheckbox {
+  display: inline-block;
+  height: 100px;
 }
