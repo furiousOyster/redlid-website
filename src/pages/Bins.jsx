@@ -19,6 +19,9 @@ import ModalFooter from 'react-bootstrap/ModalFooter'
 import ModalFaqs from '../components/ModalFaqs'
 import ModalTerms from '../components/ModalTerms'
 
+import Form from 'react-bootstrap/Form'
+
+
 import BinsNav from '../components/binsNav'
 
 export default function Bins() {
