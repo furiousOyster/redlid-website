@@ -216,6 +216,30 @@ export default function Bins() {
             </button>
           </form>
         </Row>
+        
+        
+        {/* HOW IT WORKS */}
+
+        <Row>
+          <h2>How it works</h2>
+          <Col xs={12} lg={6}>
+            <p>
+              We provide 2 options for Garden Waste Collection, either a 240
+              litre Wheelie Bin or a 600 litre Garden Bag. You choose your
+              Collection Frequency and you can change the frequency at any
+              time. You can also change between the Wheelie Bin and the Garden
+              Bag.
+            </p>
+          </Col>
+          <Col>
+          
+            <i>
+            </i><p>There are no contracts to sign</p>
+
+  <p>Guaranteed exact date of collection</p>
+          </Col>
+        </Row>
+        
   
       </Container>
       <ModalTerms show={showTerms} onHide={() => setShowTerms(false)} />
