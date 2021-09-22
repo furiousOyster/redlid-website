@@ -17,6 +17,7 @@ import ModalTitle from 'react-bootstrap/ModalTitle'
 import ModalBody from 'react-bootstrap/ModalBody'
 import ModalFooter from 'react-bootstrap/ModalFooter'
 import Form from 'react-bootstrap/Form'
+import FloatingLabel from 'react-bootstrap/FloatingLabel'
 
 import ModalFaqs from '../components/ModalFaqs'
 import ModalTerms from '../components/ModalTerms'
@@ -88,111 +89,77 @@ export default function Bins() {
         {/* ORDER FORM */}
         <Row>
           <h1>Order Garden Bin</h1>
-    
 
           <Form>
-            
-            
+            <FloatingLabel
+              controlId="floatingInput"
+              label="Find your address or postcode"
+              className="mb-3"
+            >
+              <Form.Control type="text" placeholder="Enter your address" />
+            </FloatingLabel>
 
-            <>
-              <FloatingLabel
-                controlId="floatingInput"
-                label="Email address"
-                className="mb-3"
-              >
-                <Form.Control type="email" placeholder="name@example.com" />
-              </FloatingLabel>
-              <FloatingLabel controlId="floatingPassword" label="Password">
-                <Form.Control type="password" placeholder="Password" />
-              </FloatingLabel>
-            </>
-            
-            
-            
-            
-            
-            
-            
-            <input name="ordertype" id="prodId" type="hidden" value="bag" />
-            <div class="form-group">
-              <label for="address">Address*</label>
-              <input
-                name="Address"
-                type="text"
-                class="form-control"
-                id="Street"
-                placeholder="Start entering your address or Postcode"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="firstname">First name*</label>
-              <input
-                name="First Name"
-                type="text"
-                class="form-control"
-                id="firstname"
-                placeholder="First name"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="surname">Surname*</label>
-              <input
-                name="Last Name"
-                type="text"
-                class="form-control"
-                id="surname"
-                placeholder="Surname"
-                required
-              />
-            </div>
+            <FloatingLabel
+              controlId="floatingInput"
+              label="Enter your full name"
+              className="mb-3"
+            >
+              <Form.Control type="text" placeholder="Your name" />
+            </FloatingLabel>
 
-            <div class="form-group">
-              <label for="phone">Phone</label>
-              <input
-                name="Phone"
-                type="tel"
-                class="form-control"
-                id="phone"
-                placeholder="Phone"
-              />
-            </div>
-            <div class="form-group">
-              <label for="email">Email address*</label>
-              <input
-                name="Email"
-                type="email"
-                class="form-control"
-                id="email"
-                aria-describedby="emailHelp"
-                placeholder="Enter email"
-                required
-              />
+            <FloatingLabel
+              controlId="floatingInput"
+              label="Phone number"
+              className="mb-3"
+            >
+              <Form.Control type="phone" placeholder="Phone number" />
+            </FloatingLabel>
+
+            <FloatingLabel
+              controlId="floatingInput"
+              label="Email address"
+              className="mb-3"
+            >
+              <Form.Control type="email" placeholder="name@example.com" />
               <small id="emailHelp" class="form-text text-muted">
                 We'll never share your email with anyone else.
               </small>
-            </div>
-            <div class="form-group">
-              <label for="pickupcycle">Pick up cycle</label>
-              <select name="Pickup Cycle" class="form-control" id="pickupcycle">
-                <option>Weekly (Hamilton only) - $18 per collection</option>
+            </FloatingLabel>
+
+            <FloatingLabel label="Choose pickup cycle">
+              <Form.Select aria-label="Floating label select example">
+                <option>Weekly - $18 per collection</option>
                 <option>2-weekly - $20 per collection</option>
                 <option>4-weekly - $24 per collection</option>
                 <option>
                   One-off (collection within 4 weeks of dropoff) - $40
                 </option>
-              </select>
-            </div>
+              </Form.Select>
+            </FloatingLabel>
+
+            <FloatingLabel label="Payment method">
+              <Form.Select aria-label="Floating label select example">
+                <option>Internet banking</option>
+                <option value="cc">Credit card (+3% surcharge)</option>
+              </Form.Select>
+              <small class="form-text text-muted" id="cc">
+                We will contact you by phone for your credit card details.
+              </small>
+            </FloatingLabel>
+            
+            
+            
+            
+            
+            
+            {}
+
             <div class="form-group">
               <label for="payment">Payment method</label>
               <select class="form-control" id="payment" name="payment">
                 <option>Internet banking</option>
                 <option value="cc">Credit card (+3% surcharge)</option>
               </select>
-              <small class="form-text text-muted" id="cc">
-                We will contact you by phone for your credit card details.
-              </small>
             </div>
             <div class="form-group">
               <label for="exampleFormControlTextarea1">
