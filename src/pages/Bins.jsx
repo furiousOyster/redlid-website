@@ -19,7 +19,7 @@ import ModalFooter from 'react-bootstrap/ModalFooter'
 import ModalFaqs from '../components/ModalFaqs'
 import ModalTerms from '../components/ModalTerms'
 
-import BinsNav from './binsNav'
+import BinsNav from '../components/binsNav'
 
 export default function Bins() {
   const [showTerms, setShowTerms] = useState(false)
@@ -88,9 +88,6 @@ export default function Bins() {
         <Row>
           <h1>Order Garden Bin</h1>
           <form
-            action="https://redlid-orders.herokuapp.com/submitOrder/"
-            method="post"
-            enctype="json"
           >
             <input name="ordertype" id="prodId" type="hidden" value="bag" />
             <div class="form-group">
@@ -398,9 +395,8 @@ export default function Bins() {
           </p>
         </row>
       </Container>
-      
-      
-{/* FOOTER */}
+
+      {/* FOOTER */}
       <Container fluid>
         <Row>
           <h2>We are easy to contact</h2>
@@ -468,6 +464,7 @@ export default function Bins() {
           </p>
         </Row>
       </Container>
+
       <ModalTerms show={showTerms} onHide={() => setShowTerms(false)} />
       <ModalFaqs show={showFaqs} onHide={() => setShowFaqs(false)} />
     </>

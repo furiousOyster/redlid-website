@@ -10,7 +10,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
-import MainNav from "./mainNav";
+import MainNav from "../components/mainNav";
 
 export default function Home() {
   return (
