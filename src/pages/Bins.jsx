@@ -81,6 +81,10 @@ export default function Bins() {
                 </a>
               </Row>
               <Row>
+                
+                <h1>
+                Order Garden Bin
+                </h1>
                 <form
                   action="https://redlid-orders.herokuapp.com/submitOrder/"
                   method="post"
