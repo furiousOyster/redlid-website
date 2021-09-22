@@ -231,9 +231,13 @@ export default function Bins() {
           </Col>
           <Col>
             <i></i>
-  <p><strong>THERE ARE NO CONTRACTS TO SIGN</strong></p>
+            <p>
+              <strong>THERE ARE NO CONTRACTS TO SIGN</strong>
+            </p>
 
-  <p><strong>GUARANTEED  EXACT DAY OF COLLECTION</strong></p>
+            <p>
+              <strong>GUARANTEED EXACT DAY OF COLLECTION</strong>
+            </p>
           </Col>
         </Row>
         <row>
@@ -354,11 +358,10 @@ export default function Bins() {
             out with one tandem trailer which was very hard work in the early
             days.&nbsp; But through hard work and a commitment to providing the
             best customer service, we are now proud of our fleet of 7 purpose
-            built compactor trucks.{' '}
+            built compactor trucks.
           </p>
 
           <p>
-            {' '}
             Our Vision to be The Number 1 Green Waste Collector in the Waikato
             drives our passion to deliver the best possible customer
             service.&nbsp; We have a team that believes in our Vision and we are
@@ -373,7 +376,6 @@ export default function Bins() {
           </p>
 
           <p>
-            {' '}
             We are proud to be doing our part for the environment as all the
             Greenwaste we collect is recycled into compost products which
             reduces the estimated 40% of Greenwaste that goes to landfills each
@@ -392,7 +394,7 @@ export default function Bins() {
           <p>
             Red Lid Garden Bins &amp; Bags are proud to be 100% Hamilton owned
             &amp; operated and committed to providing the best Green Waste
-            Collection service in the Waikato.{' '}
+            Collection service in the Waikato.
           </p>
         </row>
       </Container>
