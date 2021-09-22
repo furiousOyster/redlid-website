@@ -16,12 +16,10 @@ import ModalHeader from 'react-bootstrap/ModalHeader'
 import ModalTitle from 'react-bootstrap/ModalTitle'
 import ModalBody from 'react-bootstrap/ModalBody'
 import ModalFooter from 'react-bootstrap/ModalFooter'
-import ModalFaqs from '../components/ModalFaqs'
-import ModalTerms from '../components/ModalTerms'
-
 import Form from 'react-bootstrap/Form'
 
-
+import ModalFaqs from '../components/ModalFaqs'
+import ModalTerms from '../components/ModalTerms'
 import BinsNav from '../components/binsNav'
 
 export default function Bins() {
@@ -90,8 +88,31 @@ export default function Bins() {
         {/* ORDER FORM */}
         <Row>
           <h1>Order Garden Bin</h1>
-          <form
-          >
+    
+
+          <Form>
+            
+            
+
+            <>
+              <FloatingLabel
+                controlId="floatingInput"
+                label="Email address"
+                className="mb-3"
+              >
+                <Form.Control type="email" placeholder="name@example.com" />
+              </FloatingLabel>
+              <FloatingLabel controlId="floatingPassword" label="Password">
+                <Form.Control type="password" placeholder="Password" />
+              </FloatingLabel>
+            </>
+            
+            
+            
+            
+            
+            
+            
             <input name="ordertype" id="prodId" type="hidden" value="bag" />
             <div class="form-group">
               <label for="address">Address*</label>
@@ -213,7 +234,7 @@ export default function Bins() {
             >
               Submit order
             </button>
-          </form>
+          </Form>
         </Row>
 
         {/* HOW IT WORKS */}
