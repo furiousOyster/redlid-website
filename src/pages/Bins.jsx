@@ -125,7 +125,7 @@ export default function Bins() {
                 We'll never share your email with anyone else.
               </small>
             </FloatingLabel>
-
+      
             <FloatingLabel label="Choose pickup cycle">
               <Form.Select aria-label="Floating label select example">
                 <option>Weekly - $18 per collection</option>
@@ -136,6 +136,8 @@ export default function Bins() {
                 </option>
               </Form.Select>
             </FloatingLabel>
+            
+
 
             <FloatingLabel label="Payment method">
               <Form.Select aria-label="Floating label select example">
@@ -146,33 +148,27 @@ export default function Bins() {
                 We will contact you by phone for your credit card details.
               </small>
             </FloatingLabel>
-            
-            
-            
-            
-            
-            
-            {}
+  
 
-            <div class="form-group">
-              <label for="payment">Payment method</label>
-              <select class="form-control" id="payment" name="payment">
-                <option>Internet banking</option>
-                <option value="cc">Credit card (+3% surcharge)</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">
-                Any comments or special instructions?
-              </label>
-              <textarea
-                name="Instructions"
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-                placeholder=""
-              ></textarea>
-            </div>
+             <FloatingLabel controlId="floatingTextarea2" label="Comments">
+    <Form.Control
+      as="textarea"
+      placeholder="Any comments or special instructions?"
+      style={{ height: '100px' }}
+    />
+  </FloatingLabel>
+     
+            
+            <Button variant="outline-warning">Warning</Button>{' '}
+            
+              <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                
+    <Form.Check type="checkbox" label="I have read and agree to the Terms & Conditions" />
+                
+                
+                
+  </Form.Group>
+
             <div class="form-check">
               <label class="form-check-label">
                 <input
@@ -187,12 +183,8 @@ export default function Bins() {
                 </a>
               </label>
             </div>
-            <div
-              id="recaptcha"
-              class="g-recaptcha"
-              data-sitekey="6LdXC_IUAAAAAHzZhOlhxpVLRBEDEVddO00nIUpx"
-            ></div>
-            <span class="msg-error error"></span>
+            
+            <p class="msg-error error"></p>
             <button
               type="submit"
               class="btn btn-primary"
