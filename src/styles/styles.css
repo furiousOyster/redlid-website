@@ -33,10 +33,13 @@
   }
 
   .CollapsableNav {
-    width: 630px;
+    width: 330px;
     position: absolute;
     right: 150px;
   }
+  
+    .CollapsableNav.skips {
+    width: 600px;
 }
 
 

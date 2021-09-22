@@ -28,10 +28,11 @@ export default () => (
     <Navbar.Toggle />
 
     <Navbar.Collapse>
-      <Nav className="me-auto CollapsableNav">
+      <Nav className="me-auto CollapsableNav skips">
         <Nav.Link href="/Bins">General waste skips</Nav.Link>
-        <Nav.Link href="/Bags">Order Bags</Nav.Link>
-        <Nav.Link href="/Bins">Bins & Bags</Nav.Link>
+        <Nav.Link href="/Bags">Garden waste skips</Nav.Link>
+        <Nav.Link href="/Bins">Hardfill skips</Nav.Link>
+        <Nav.Link href="/Bins">Garden bins & bags</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>

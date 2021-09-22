@@ -40,11 +40,11 @@ export default function Skips() {
           <p>Regular or one-off collections for green and garden waste</p>
         </Row>
 
-        {/* LISTING BINS */}
+        {/* LISTING GENERAL WASTE */}
         <Row>
           <a className="Product">
             <Row>
-              <h2>240L Garden Bin</h2>
+              <h2>General Waste Skip</h2>
             </Row>
             <Row>
               <Col sm={12} md={4}>
@@ -63,11 +63,34 @@ export default function Skips() {
           </a>
         </Row>
 
-        {/* LISTING BAGS */}
+        {/* LISTING GREEN WASTE */}
         <Row>
           <a className="Product">
             <Row>
-              <h2>600L Garden Bag</h2>
+              <h2>Green Waste Skip</h2>
+            </Row>
+            <Row>
+              <Col sm={12} md={4}>
+                <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fbag.jpg?v=1631831496533" />
+              </Col>
+              <Col sm={12} md={8}>
+                <i>From $8 per collection</i>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  fermentum, nulla luctus pharetra vulputate, felis tellus
+                  mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                </p>
+                <Button variant="primary">Order garden waste bags</Button>{' '}
+              </Col>
+            </Row>
+          </a>
+        </Row>
+        
+         {/* LISTING HARDFILL*/}
+        <Row>
+          <a className="Product">
+            <Row>
+              <h2>Hardfill Skip</h2>
             </Row>
             <Row>
               <Col sm={12} md={4}>
