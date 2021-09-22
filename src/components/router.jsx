@@ -3,6 +3,7 @@ import { Switch, Route, Router } from "wouter";
 import About from "../pages/about";
 import LandingPage from "../pages/LandingPage";
 import Bins from '../pages/Bins'
+import Skips from '../pages/Skips'
 /**
  * The router is imported in app.jsx
  *
@@ -15,6 +16,7 @@ export default () => (
   <Switch>
     <Route path="/about" component={About} />
     <Route path="/bins" component={Bins}/>
+    <Route path="/skips" component={Skips}/>
     <Route component={LandingPage} />
   </Switch>
 );

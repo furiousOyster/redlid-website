@@ -29,9 +29,9 @@ export default () => (
 
     <Navbar.Collapse>
       <Nav className="me-auto CollapsableNav">
-        <Nav.Link href="/Bins">Order Bins</Nav.Link>
+        <Nav.Link href="/Bins">General waste skips</Nav.Link>
         <Nav.Link href="/Bags">Order Bags</Nav.Link>
-        <Nav.Link href="/Skips">Red Lid Garden Bins & Bags</Nav.Link>
+        <Nav.Link href="/Bins">Bins & Bags</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>

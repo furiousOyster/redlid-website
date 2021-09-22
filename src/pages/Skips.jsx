@@ -23,7 +23,7 @@ import ModalFaqs from '../components/ModalFaqs'
 import ModalTerms from '../components/ModalTerms'
 import SkipsNav from '../components/skipsNav'
 
-export default function Bins() {
+export default function Skips() {
   const [showTerms, setShowTerms] = useState(false)
   const [showFaqs, setShowFaqs] = useState(false)
 

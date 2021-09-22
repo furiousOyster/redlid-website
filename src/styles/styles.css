@@ -33,11 +33,13 @@
   }
 
   .CollapsableNav {
-    width: 330px;
+    width: 630px;
     position: absolute;
     right: 150px;
   }
 }
+
+
 
 /* Landing Page */
 
