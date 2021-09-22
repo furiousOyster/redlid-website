@@ -220,7 +220,7 @@ export default function Bins() {
 
         <row>
           <h1>How it works</h1>
-          <col lg={6}>
+          <col >
             <p>
               We provide 2 options for Garden Waste Collection, either a 240
               litre Wheelie Bin or a 600 litre Garden Bag. You choose your
