@@ -111,7 +111,7 @@ export default function Skips() {
 
         {/* ORDER FORM */}
         <Row>
-          <h1>Order Garden Bin</h1>
+          <h1>Order General Waste Skip</h1>
 
           <Form>
             <FloatingLabel
