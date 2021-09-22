@@ -90,18 +90,16 @@
 
 .TermsModalBtn {
   cursor: pointer;
-
+padding-top: 0px;
 }
 
 .TermsCheckbox {
   display: inline-block;
+  padding-top: 15px;
+  margin-right: -6px;
 }
 
-.TermsContainer {
-  height: 100px;
-}
 
 .TermsModalBtn, .TermsCheckbox {
   display: inline-block;
-  height: 100px;
 }

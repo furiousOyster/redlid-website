@@ -161,7 +161,7 @@ export default function Bins() {
                <Button
                   onClick={() => setShowTerms(true)}
                   className="TermsModalBtn"
-                  variant="Link"
+                  variant="link"
                 >
                   Terms & Conditions
                 </Button>
