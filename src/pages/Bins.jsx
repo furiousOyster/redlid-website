@@ -398,6 +398,18 @@ export default function Bins() {
           </p>
         </row>
       </Container>
+      
+      <Container fluid>
+      
+      <Row>
+        <h2>We are easy to contact</h2>
+        <Col>
+          
+        </Col>
+        <Col>
+        </Col>
+        </Row>
+      </Container>
       <ModalTerms show={showTerms} onHide={() => setShowTerms(false)} />
       <ModalFaqs show={showFaqs} onHide={() => setShowFaqs(false)} />
     </>
