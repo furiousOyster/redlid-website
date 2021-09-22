@@ -27,7 +27,7 @@ export default function Home() {
           </Link>
         </Col>
         <Col className="LandingPagePanel" sm={12} md={6}>
-          <Link href="#Skips">
+          <Link href="/Skips">
             <h1>Red Lid Skips</h1>
              <p>For green and garden waste</p>
             <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fskip.jpg?v=1631831496533" />
