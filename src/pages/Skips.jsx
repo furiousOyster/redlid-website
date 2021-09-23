@@ -111,16 +111,18 @@ export default function Skips() {
 
         {/* ORDER FORM */}
 
-        <Row className="SplitHeading">
-          <Col xs={12} sm={7}>
+        <Row>
+          <Col >
             <h1>Order General Waste Skip</h1>
-          </Col>
-          <Col xs={12} sm={5} className="OrderformHead">
+     
             <Button variant="outline-primary" className="ProductSwap">
               Choose a different type of skip
             </Button>{' '}
           </Col>
         </Row>
+        
+      <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fbag.jpg?v=1631831496533" />
+
 
         <Row>
           <Col>

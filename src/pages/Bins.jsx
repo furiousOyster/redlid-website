@@ -87,11 +87,9 @@ export default function Bins() {
         </Row>
 
         {/* ORDER FORM */}
-        <Row className="SplitHeading">
-          <Col xs={12} sm={7}>
+        <Row>
+          <Col>
             <h1>Order Garden Bin</h1>
-          </Col>
-          <Col xs={12} sm={5} className="OrderformHead">
             <Button variant="outline-primary" className="ProductSwap">
               Order a bin/bag instead
             </Button>{' '}
