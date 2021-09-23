@@ -22,7 +22,7 @@ export default () => (
       />
     </Navbar.Brand>
 
-    <Button variant="outline-secondary" id="ManageServicesBtn">
+    <Button variant="outline-secondary" id="ManageServicesBtn" >
       Manage Services
     </Button>
     <Navbar.Toggle />
