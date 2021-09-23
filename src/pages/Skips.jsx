@@ -111,9 +111,9 @@ export default function Skips() {
 
         {/* ORDER FORM */}
         <Row>
-          <h1>Order General Waste Skip</h1>
-
           <Col>
+          <h1>Order General Waste Skip</h1>
+          
             <Button variant="outline-primary" className="ProductSwap">Choose a different type of skip</Button>{' '}
             
             <p>

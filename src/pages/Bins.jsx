@@ -88,9 +88,16 @@ export default function Bins() {
 
         {/* ORDER FORM */}
         <Row>
-          <h1>Order Garden Bin</h1>
-  <Button variant="outline-primary" className="ProductSwap">Order a bin/bag instead</Button>{' '}
-            
+          <Col xs={12} sm={7}>
+            <h1>Order Garden Bin</h1>
+          </Col>
+        <Col xs={12} sm={5} className="OrderformHead">
+            <Button variant="outline-primary" className="ProductSwap">
+              Order a bin/bag instead
+            </Button>{' '}
+          </Col>
+        </Row>
+        <Row>
           <Form>
             <FloatingLabel
               controlId="floatingInput"
@@ -151,21 +158,19 @@ export default function Bins() {
             </FloatingLabel>
 
             <div className="TermsContainer">
-               
-     
-                <Form.Check
-                  type="checkbox"
-                  label="I have read and agree to the "
-                  className="TermsCheckbox"
-                />
-              
-               <Button
-                  onClick={() => setShowTerms(true)}
-                  className="TermsModalBtn"
-                  variant="link"
-                >
-                  Terms & Conditions
-                </Button>
+              <Form.Check
+                type="checkbox"
+                label="I have read and agree to the "
+                className="TermsCheckbox"
+              />
+
+              <Button
+                onClick={() => setShowTerms(true)}
+                className="TermsModalBtn"
+                variant="link"
+              >
+                Terms & Conditions
+              </Button>
             </div>
             <p class="msg-error error"></p>
             <button
