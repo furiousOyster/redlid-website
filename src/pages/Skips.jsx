@@ -57,7 +57,7 @@ export default function Skips() {
                   fermentum, nulla luctus pharetra vulputate, felis tellus
                   mollis orci, sed rhoncus pronin sapien nunc accuan eget.
                 </p>
-                <Button variant="primary">Order garden waste bins</Button>{' '}
+                <Button variant="primary">Order a general waste skip</Button>{' '}
               </Col>
             </Row>
           </a>
@@ -80,7 +80,7 @@ export default function Skips() {
                   fermentum, nulla luctus pharetra vulputate, felis tellus
                   mollis orci, sed rhoncus pronin sapien nunc accuan eget.
                 </p>
-                <Button variant="primary">Order garden waste bags</Button>{' '}
+                <Button variant="primary">Order a green waste skip</Button>{' '}
               </Col>
             </Row>
           </a>
@@ -103,7 +103,7 @@ export default function Skips() {
                   fermentum, nulla luctus pharetra vulputate, felis tellus
                   mollis orci, sed rhoncus pronin sapien nunc accuan eget.
                 </p>
-                <Button variant="primary">Order garden waste bags</Button>{' '}
+                <Button variant="primary">Order a hardfill skip</Button>{' '}
               </Col>
             </Row>
           </a>
@@ -121,31 +121,26 @@ export default function Skips() {
             >
               <Form.Control type="text" placeholder="Enter your address" />
             </FloatingLabel>
-      
-            
-                 <FloatingLabel
+
+            <FloatingLabel
               controlId="floatingInput"
               label="What date would you like the skip delivered?"
               className="mb-3"
             >
-             <Form.Control type="date" placeholder="Enter date" />
-                   
-                   <small id="deliverydatehelp" className="form-text text-muted">
-                If you choose to have a skip delivered on a public holiday, we will need to deliver it the day before.
+              <Form.Control type="date" placeholder="Enter date" />
 
+              <small id="deliverydatehelp" className="form-text text-muted">
+                If you choose to have a skip delivered on a public holiday, we
+                will need to deliver it the day before.
               </small>
-                   
             </FloatingLabel>
-            
-  
-            
-            
+
             <FloatingLabel
               controlId="floatingInput"
               label="Enter your full name"
               className="mb-3"
             >
-             <Form.Control type="text" placeholder="Your name" />
+              <Form.Control type="text" placeholder="Your name" />
             </FloatingLabel>
             <FloatingLabel
               controlId="floatingInput"
@@ -154,9 +149,7 @@ export default function Skips() {
             >
               <Form.Control type="phone" placeholder="Phone number" />
             </FloatingLabel>
-            
-            
-        
+
             <FloatingLabel
               controlId="floatingInput"
               label="Email address"
@@ -167,33 +160,7 @@ export default function Skips() {
                 We'll never share your email with anyone else.
               </small>
             </FloatingLabel>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
             <FloatingLabel label="Type of waste">
               <Form.Select aria-label="Type of waste">
                 <option value="general">General rubbish</option>
@@ -203,34 +170,31 @@ export default function Skips() {
                 </option>
               </Form.Select>
             </FloatingLabel>
-            
-            
-             <FloatingLabel label="Skip size"> {/* For Green and Garden Waste only */}
+
+            <FloatingLabel label="Skip size">
+              {' '}
+              {/* For Green and Garden Waste only */}
               <Form.Select aria-label="Skip size">
-                 <option>9 cubic metres - $280</option>
+                <option>9 cubic metres - $280</option>
                 <option>6 cubic metres - $230</option>
                 <option>3 cubic metres - $190</option>
               </Form.Select>
-               <small className="form-text text-muted"
-                >Weight limits: 9m³=1500kg | 6m³=1000kg | 3m³=500kg</small
-              >
-        
+              <small className="form-text text-muted">
+                Weight limits: 9m³=1500kg | 6m³=1000kg | 3m³=500kg
+              </small>
             </FloatingLabel>
-            
-            
-              <FloatingLabel controlId="Comments" label="Where would you like the skip placed?">
+
+            <FloatingLabel
+              controlId="Comments"
+              label="Where would you like the skip placed?"
+            >
               <Form.Control
                 as="textarea"
                 placeholder="For example: As far up the driveway as possible, on the right."
                 style={{ height: '100px' }}
               />
             </FloatingLabel>
-            
-            
-            
-            
-            
-            
+
             <FloatingLabel label="Payment method">
               <Form.Select aria-label="Floating label select example">
                 <option>Internet banking</option>
@@ -240,7 +204,6 @@ export default function Skips() {
                 We will contact you by phone for your credit card details.
               </small>
             </FloatingLabel>
-          
 
             <div className="TermsContainer">
               <Form.Check
