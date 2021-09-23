@@ -85,8 +85,8 @@ export default function Skips() {
             </Row>
           </a>
         </Row>
-        
-         {/* LISTING HARDFILL*/}
+
+        {/* LISTING HARDFILL*/}
         <Row>
           <a className="Product">
             <Row>
@@ -121,12 +121,31 @@ export default function Skips() {
             >
               <Form.Control type="text" placeholder="Enter your address" />
             </FloatingLabel>
+      
+            
+                 <FloatingLabel
+              controlId="floatingInput"
+              label="What date would you like the skip delivered?"
+              className="mb-3"
+            >
+             <Form.Control type="date" placeholder="Enter date" />
+                   
+                   <small id="deliverydatehelp" class="form-text text-muted">
+                If you choose to have a skip delivered on a public holiday, we will need to deliver it the day before.
+
+              </small>
+                   
+            </FloatingLabel>
+            
+  
+            
+            
             <FloatingLabel
               controlId="floatingInput"
               label="Enter your full name"
               className="mb-3"
             >
-              <Form.Control type="text" placeholder="Your name" />
+             <Form.Control type="text" placeholder="Your name" />
             </FloatingLabel>
             <FloatingLabel
               controlId="floatingInput"
@@ -135,6 +154,9 @@ export default function Skips() {
             >
               <Form.Control type="phone" placeholder="Phone number" />
             </FloatingLabel>
+            
+            
+        
             <FloatingLabel
               controlId="floatingInput"
               label="Email address"
@@ -145,16 +167,62 @@ export default function Skips() {
                 We'll never share your email with anyone else.
               </small>
             </FloatingLabel>
-            <FloatingLabel label="Choose pickup cycle">
-              <Form.Select aria-label="Floating label select example">
-                <option>Weekly - $18 per collection</option>
-                <option>2-weekly - $20 per collection</option>
-                <option>4-weekly - $24 per collection</option>
-                <option>
-                  One-off (collection within 4 weeks of dropoff) - $40
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <FloatingLabel label="Type of waste">
+              <Form.Select aria-label="Type of waste">
+                <option value="general">General rubbish</option>
+                <option value="green">Green waste</option>
+                <option value="hard">
+                  Hard fill (concrete, soil, sand, tiles, bricks, stones, rocks)
                 </option>
               </Form.Select>
             </FloatingLabel>
+            
+            
+             <FloatingLabel label="Skip size"> {/*  */}
+              <Form.Select aria-label="Skip size">
+                <option value="general">General rubbish</option>
+                <option value="green">Green waste</option>
+                <option value="hard">
+                  Hard fill (concrete, soil, sand, tiles, bricks, stones, rocks)
+                </option>
+              </Form.Select>
+            </FloatingLabel>
+            
+            
+            
+            
+            
+            
+            
+            
+            
             <FloatingLabel label="Payment method">
               <Form.Select aria-label="Floating label select example">
                 <option>Internet banking</option>
@@ -173,21 +241,19 @@ export default function Skips() {
             </FloatingLabel>
 
             <div className="TermsContainer">
-               
-     
-                <Form.Check
-                  type="checkbox"
-                  label="I have read and agree to the "
-                  className="TermsCheckbox"
-                />
-              
-               <Button
-                  onClick={() => setShowTerms(true)}
-                  className="TermsModalBtn"
-                  variant="link"
-                >
-                  Terms & Conditions
-                </Button>
+              <Form.Check
+                type="checkbox"
+                label="I have read and agree to the "
+                className="TermsCheckbox"
+              />
+
+              <Button
+                onClick={() => setShowTerms(true)}
+                className="TermsModalBtn"
+                variant="link"
+              >
+                Terms & Conditions
+              </Button>
             </div>
             <p class="msg-error error"></p>
             <button
