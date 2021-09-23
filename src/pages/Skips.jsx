@@ -130,7 +130,7 @@ export default function Skips() {
             >
              <Form.Control type="date" placeholder="Enter date" />
                    
-                   <small id="deliverydatehelp" class="form-text text-muted">
+                   <small id="deliverydatehelp" className="form-text text-muted">
                 If you choose to have a skip delivered on a public holiday, we will need to deliver it the day before.
 
               </small>
@@ -163,7 +163,7 @@ export default function Skips() {
               className="mb-3"
             >
               <Form.Control type="email" placeholder="name@example.com" />
-              <small id="emailHelp" class="form-text text-muted">
+              <small id="emailHelp" className="form-text text-muted">
                 We'll never share your email with anyone else.
               </small>
             </FloatingLabel>
@@ -205,18 +205,26 @@ export default function Skips() {
             </FloatingLabel>
             
             
-             <FloatingLabel label="Skip size"> {/*  */}
+             <FloatingLabel label="Skip size"> {/* For Green and Garden Waste only */}
               <Form.Select aria-label="Skip size">
-                <option value="general">General rubbish</option>
-                <option value="green">Green waste</option>
-                <option value="hard">
-                  Hard fill (concrete, soil, sand, tiles, bricks, stones, rocks)
-                </option>
+                 <option>9 cubic metres - $280</option>
+                <option>6 cubic metres - $230</option>
+                <option>3 cubic metres - $190</option>
               </Form.Select>
+               <small className="form-text text-muted"
+                >Weight limits: 9m³=1500kg | 6m³=1000kg | 3m³=500kg</small
+              >
+        
             </FloatingLabel>
             
             
-            
+              <FloatingLabel controlId="Comments" label="Where would you like the skip placed?">
+              <Form.Control
+                as="textarea"
+                placeholder="For example: As far up the driveway as possible, on the right."
+                style={{ height: '100px' }}
+              />
+            </FloatingLabel>
             
             
             
@@ -232,13 +240,7 @@ export default function Skips() {
                 We will contact you by phone for your credit card details.
               </small>
             </FloatingLabel>
-            <FloatingLabel controlId="floatingTextarea2" label="Comments">
-              <Form.Control
-                as="textarea"
-                placeholder="Any comments or special instructions?"
-                style={{ height: '100px' }}
-              />
-            </FloatingLabel>
+          
 
             <div className="TermsContainer">
               <Form.Check
