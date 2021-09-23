@@ -110,12 +110,20 @@ export default function Skips() {
         </Row>
 
         {/* ORDER FORM */}
+
+        <Row className="SplitHeading">
+          <Col xs={12} sm={7}>
+            <h1>Order General Waste Skip</h1>
+          </Col>
+          <Col xs={12} sm={5} className="OrderformHead">
+            <Button variant="outline-primary" className="ProductSwap">
+              Choose a different type of skip
+            </Button>{' '}
+          </Col>
+        </Row>
+
         <Row>
           <Col>
-          <h1>Order General Waste Skip</h1>
-          
-            <Button variant="outline-primary" className="ProductSwap">Choose a different type of skip</Button>{' '}
-            
             <p>
               Any Skip orders are subject to availability. Confirmation of your
               order and the delivery date will be confirmed via email.

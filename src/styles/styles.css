@@ -37,13 +37,11 @@
     position: absolute;
     right: 150px;
   }
-  
-    .CollapsableNav.skips {
+
+  .CollapsableNav.skips {
     width: 600px;
   }
 }
-
-
 
 /* Landing Page */
 
@@ -90,13 +88,11 @@
 .LandingPagePanel img {
 }
 
-
 /* Forms */
-
 
 .TermsModalBtn {
   cursor: pointer;
-padding-top: 0px;
+  padding-top: 0px;
 }
 
 .TermsCheckbox {
@@ -104,14 +100,34 @@ padding-top: 0px;
   padding-top: 15px;
   margin-right: -6px;
 }
-  
 
-.TermsModalBtn, .TermsCheckbox {
+.TermsModalBtn,
+.TermsCheckbox {
   display: inline-block;
 }
 
-
 .OrderformHead {
-text-align: right;
-  
+    text-align: center;
+  }
+
+
+
+@media (min-width: 576px) {
+
+  .OrderformHead {
+    text-align: right;
+  }
+}
+
+
+.SplitHeading h1 {
+    text-align: center;
+    
+  }
+
+@media (min-width: 576px) {
+
+ .SplitHeading h1 {
+    text-align: left;
+  }
 }
