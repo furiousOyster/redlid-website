@@ -113,6 +113,19 @@ export default function Skips() {
         <Row>
           <h1>Order General Waste Skip</h1>
 
+          <Col>
+            <Button variant="outline-primary" className="ProductSwap">Choose a different type of skip</Button>{' '}
+            
+            <p>
+              Any Skip orders are subject to availability. Confirmation of your
+              order and the delivery date will be confirmed via email.
+            </p>
+            <p>
+              Orders outside of our regular office hours Mon-Thurs 8-5pm and
+              Friday 8-3pm will be confirmed on the next business day.
+            </p>
+          </Col>
+
           <Form>
             <FloatingLabel
               controlId="floatingInput"

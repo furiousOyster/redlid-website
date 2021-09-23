@@ -89,7 +89,8 @@ export default function Bins() {
         {/* ORDER FORM */}
         <Row>
           <h1>Order Garden Bin</h1>
-
+  <Button variant="outline-primary" className="ProductSwap">Order a bin/bag instead</Button>{' '}
+            
           <Form>
             <FloatingLabel
               controlId="floatingInput"
