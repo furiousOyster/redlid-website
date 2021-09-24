@@ -363,6 +363,7 @@ export default function Bins() {
         {/* BLOG POST */}
         <Row>
           <h2>Blog post example</h2>
+          <i>24 September 2021</i>
           <Col>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
