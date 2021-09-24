@@ -410,6 +410,19 @@ export default function Bins() {
                     </Link>
                   </td>
                 </tr>
+                
+                
+                 <tr>
+                  <td></td>
+
+                  <td>
+                    <Link href="/manage">
+                      Manage my services
+                    </Link>
+                  </td>
+                </tr>
+                
+                
               </tbody>
             </table>
           </Col>
@@ -426,8 +439,8 @@ export default function Bins() {
 
           <p>
             If outside these hours leave a message on{' '}
-            <a href="tel:078340191">(07) 834 0191</a> or{' '}
-            <a href="tel:0800733543">0800 REDLID</a> answer phone - we check our
+            <Link href="tel:078340191">(07) 834 0191</Link> or{' '}
+            <Link href="tel:0800733543">0800 REDLID</Link> answer phone - we check our
             messages regularly. We look forward to providing you with prompt,
             friendly and professional service.
           </p>

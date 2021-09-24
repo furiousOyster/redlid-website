@@ -112,15 +112,14 @@ export default function Skips() {
         {/* ORDER FORM */}
 
         <Row>
-          <Col >
+          <Col>
             <h1>Order General Waste Skip</h1>
-     
             <Button variant="outline-primary" className="ProductSwap">
               Choose a different type of skip
             </Button>{' '}
           </Col>
         </Row>
-        
+
         <Row>
           <Col>
             <p>
@@ -203,12 +202,8 @@ export default function Skips() {
                 Weight limits: 9m³=1500kg | 6m³=1000kg | 3m³=500kg
               </small>
             </FloatingLabel>
-            
-            
-            
-      <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fskipunloadslowversion9frame.gif?v=1632363782499" />
 
-
+            <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fskipunloadslowversion9frame.gif?v=1632363782499" />
 
             <FloatingLabel
               controlId="Comments"
@@ -486,6 +481,19 @@ export default function Skips() {
                     </Link>
                   </td>
                 </tr>
+                
+                
+                 <tr>
+                  <td></td>
+
+                  <td>
+                    <Link href="/manage">
+                      Manage my services
+                    </Link>
+                  </td>
+                </tr>
+                
+                
               </tbody>
             </table>
           </Col>
@@ -502,8 +510,8 @@ export default function Skips() {
 
           <p>
             If outside these hours leave a message on{' '}
-            <a href="tel:078340191">(07) 834 0191</a> or{' '}
-            <a href="tel:0800733543">0800 REDLID</a> answer phone - we check our
+            <Link href="tel:078340191">(07) 834 0191</Link> or{' '}
+            <Link href="tel:0800733543">0800 REDLID</Link> answer phone - we check our
             messages regularly. We look forward to providing you with prompt,
             friendly and professional service.
           </p>
