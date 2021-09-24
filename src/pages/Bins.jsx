@@ -42,7 +42,7 @@ export default function Bins() {
 
         {/* LISTING BINS */}
         <Row>
-          <a className="Product">
+          <a className="Product"> {/* TODO: Check syntax a tag */}
             <Row>
               <h2>240L Garden Bin</h2>
             </Row>
