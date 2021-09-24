@@ -10,12 +10,24 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import Image from 'react-bootstrap/Image'
 import Button from 'react-bootstrap/Button'
+import Modal from 'react-bootstrap/Modal'
+import ModalDialog from 'react-bootstrap/ModalDialog'
+import ModalHeader from 'react-bootstrap/ModalHeader'
+import ModalTitle from 'react-bootstrap/ModalTitle'
+import ModalBody from 'react-bootstrap/ModalBody'
+import ModalFooter from 'react-bootstrap/ModalFooter'
 import Form from 'react-bootstrap/Form'
 import FloatingLabel from 'react-bootstrap/FloatingLabel'
+
+import ModalFaqs from '../components/ModalFaqs'
+import ModalTerms from '../components/ModalTerms'
 
 import SkipsNav from '../components/skipsNav'
 
 export default function Manage() {
+  const [showTerms, setShowTerms] = useState(false)
+  const [showFaqs, setShowFaqs] = useState(false)
+
   return (
     <>
       <Container fluid="lg">
@@ -26,7 +38,7 @@ export default function Manage() {
         {/* HEADER */}
         <Row className="Header">
           <h1>Manage my services</h1>
-          <p>Regular or one-off collections for green and garden waste</p>
+          <p>$60 is required before delivery</p>
         </Row>
 
         {/* MANAGE FORM */}
@@ -58,64 +70,17 @@ export default function Manage() {
                 <option>Internet banking</option>
                 <option value="cc">Credit card (+3% surcharge)</option>
               </Form.Select>
-              <small class="form-text text-muted" id="cc">
-                We will contact you by phone for your credit card details.
-              </small>
             </FloatingLabel>
             
             
-
-            <FloatingLabel
-              controlId="floatingInput"
-              label="Enter your full name"
-              className="mb-3"
-            >
-              <Form.Control type="text" placeholder="Your name" />
-            </FloatingLabel>
-            <FloatingLabel
-              controlId="floatingInput"
-              label="Phone number"
-              className="mb-3"
-            >
-              <Form.Control type="phone" placeholder="Phone number" />
-            </FloatingLabel>
-
-            <FloatingLabel
-              controlId="floatingInput"
-              label="Email address"
-              className="mb-3"
-            >
-              <Form.Control type="email" placeholder="name@example.com" />
-              <small id="emailHelp" className="form-text text-muted">
-                We'll never share your email with anyone else.
-              </small>
-            </FloatingLabel>
-
-            <FloatingLabel label="Skip size">
-              {' '}
-              {/* For Green and Garden Waste only */}
-              <Form.Select aria-label="Skip size">
-                <option>9 cubic metres - $280</option>
-                <option>6 cubic metres - $230</option>
-                <option>3 cubic metres - $190</option>
-              </Form.Select>
-              <small className="form-text text-muted">
-                Weight limits: 9m³=1500kg | 6m³=1000kg | 3m³=500kg
-              </small>
-            </FloatingLabel>
-
-            <FloatingLabel
-              controlId="Comments"
-              label="Where would you like the skip placed?"
-            >
-              <Form.Control
-                as="textarea"
-                placeholder="For example: As far up the driveway as possible, on the right."
-                style={{ height: '100px' }}
-              />
-            </FloatingLabel>
-
-           
+           <Button
+                onClick={() => setShowTerms(true)}
+                className="TermsModalBtn"
+                variant="link"
+              >
+                Terms & conditions about missing collections
+              </Button>
+            
 
             <p class="msg-error error"></p>
             <button
@@ -198,6 +163,9 @@ export default function Manage() {
           </p>
         </Row>
       </Container>
+ 
+      <ModalTerms show={showTerms} onHide={() => setShowTerms(false)} />
+      <ModalFaqs show={showFaqs} onHide={() => setShowFaqs(false)} />
     </>
   )
 }
