@@ -98,6 +98,8 @@ Link {
 .LandingPagePanel h1 {
 color: #000;
 text-transform: uppercase;
+  min-size: 10vw;
+  font-size:calc(1.2rem + 1.5vw);
 }
 
 .LandingPagePanel img {

@@ -20,18 +20,16 @@ export default function Home() {
         <Col className="LandingPagePanel" sm={12} md={6}>
           <Link href="/bins">
              <h1>Red Lid Garden Bins & Bags</h1>
-            <p>For green and garden waste</p>
+            <p>For green and garden waste. <br />We deliver, we collect.</p>
             <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Bin_Bag_Composite.jpg?v=1632526457670" fluid/>
-           <p className="HomepageDescriptionText">Bins and bags for green waste and garden waste, the best prices in the greater Waikato region. We deliver, we collect.</p>
            <Button variant="primary">Browse Bins & Bags</Button>{' '}
           </Link>
         </Col>
         <Col className="LandingPagePanel" sm={12} md={6}>
           <Link href="/skips">
             <h1>Red Lid Skips</h1>
-             <p>For green and garden waste</p>
+             <p>For general waste, garden waste, or hardfill. <br />Best prices in the greater Waikato.</p>
             <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Skip_Composite.jpg?v=1632526457830" fluid/>
-           <p className="HomepageDescriptionText">Bins and bags for green waste and garden waste, the best prices in the greater Waikato region. We deliver, we collect.</p>
            <Button variant="primary">Browse Skips</Button>{' '}
           </Link>
         </Col>
