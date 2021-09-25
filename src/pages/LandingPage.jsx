@@ -21,7 +21,7 @@ export default function Home() {
           <Link href="/bins">
              <h1>Red Lid Garden Bins & Bags</h1>
             <p>For green and garden waste</p>
-            <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fbin.jpg?v=1631831496533" />
+            <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Bin_Bag_Composite.jpg?v=1632526457670" fluid/>
            <p className="HomepageDescriptionText">Bins and bags for green waste and garden waste, the best prices in the greater Waikato region. We deliver, we collect.</p>
            <Button variant="primary">Browse Bins & Bags</Button>{' '}
           </Link>
@@ -30,7 +30,7 @@ export default function Home() {
           <Link href="/skips">
             <h1>Red Lid Skips</h1>
              <p>For green and garden waste</p>
-            <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fskip.jpg?v=1631831496533" />
+            <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Skip_Composite.jpg?v=1632526457830" fluid/>
            <p className="HomepageDescriptionText">Bins and bags for green waste and garden waste, the best prices in the greater Waikato region. We deliver, we collect.</p>
            <Button variant="primary">Browse Skips</Button>{' '}
           </Link>
