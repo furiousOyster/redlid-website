@@ -36,8 +36,15 @@ export default function Skips() {
 
         {/* HEADER */}
         <Row className="Header">
-          <h1>Red Lid Garden Bags and Bins</h1>
-          <p>Regular or one-off collections for green and garden waste</p>
+          <h1>Red Lid Skips</h1>
+          <p>
+            Any Skip orders are subject to availability. Confirmation of your
+            order and the delivery date will be confirmed via email.
+          </p>
+          <p>
+            Orders outside of our regular office hours Mon-Thurs 8-5pm and
+            Friday 8-3pm will be confirmed on the next business day.
+          </p>
         </Row>
 
         {/* LISTING GENERAL WASTE */}
@@ -48,7 +55,10 @@ export default function Skips() {
             </Row>
             <Row>
               <Col sm={12} md={4}>
-                <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fbin.jpg?v=1631831496533" />
+                <Image
+                  src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_GeneralWaste_Skip.jpg?v=1632527973536"
+                  fluid
+                />
               </Col>
               <Col sm={12} md={8}>
                 <i>From $8 per collection</i>
@@ -71,7 +81,10 @@ export default function Skips() {
             </Row>
             <Row>
               <Col sm={12} md={4}>
-                <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fbag.jpg?v=1631831496533" />
+                <Image
+                  src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Greenwaste_Skip.jpg?v=1632527973536"
+                  fluid
+                />
               </Col>
               <Col sm={12} md={8}>
                 <i>From $8 per collection</i>
@@ -94,7 +107,10 @@ export default function Skips() {
             </Row>
             <Row>
               <Col sm={12} md={4}>
-                <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fbag.jpg?v=1631831496533" />
+                <Image
+                  src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Hardfill_skip.jpg?v=1632527973536"
+                  fluid
+                />
               </Col>
               <Col sm={12} md={8}>
                 <i>From $8 per collection</i>
@@ -481,19 +497,14 @@ export default function Skips() {
                     </Link>
                   </td>
                 </tr>
-                
-                
-                 <tr>
+
+                <tr>
                   <td></td>
 
                   <td>
-                    <Link href="/manage">
-                      Manage my services
-                    </Link>
+                    <Link href="/manage">Manage my services</Link>
                   </td>
                 </tr>
-                
-                
               </tbody>
             </table>
           </Col>
@@ -511,9 +522,9 @@ export default function Skips() {
           <p>
             If outside these hours leave a message on{' '}
             <Link href="tel:078340191">(07) 834 0191</Link> or{' '}
-            <Link href="tel:0800733543">0800 REDLID</Link> answer phone - we check our
-            messages regularly. We look forward to providing you with prompt,
-            friendly and professional service.
+            <Link href="tel:0800733543">0800 REDLID</Link> answer phone - we
+            check our messages regularly. We look forward to providing you with
+            prompt, friendly and professional service.
           </p>
         </Row>
       </Container>

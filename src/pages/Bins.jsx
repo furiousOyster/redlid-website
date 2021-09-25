@@ -49,7 +49,7 @@ export default function Bins() {
             </Row>
             <Row>
               <Col sm={12} md={4}>
-                <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Bin.jpg?v=1632524809405" />
+                <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Bin.jpg?v=1632524809405" fluid />
               </Col>
               <Col sm={12} md={8}>
                 <i>From $8 per collection</i>
@@ -71,7 +71,7 @@ export default function Bins() {
             </Row>
             <Row>
               <Col sm={12} md={4}>
-                <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Bag.jpg?v=1632524809122" />
+                <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Bag.jpg?v=1632524809122" fluid />
               </Col>
               <Col sm={12} md={8}>
                 <i>From $8 per collection</i>
