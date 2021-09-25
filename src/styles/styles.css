@@ -58,7 +58,7 @@ Link {
 /* Landing Page */
 
 #LandingPage {
-  height: calc(100vh - 54px);
+  min-height: calc(100vh - 54px);
 }
 
 #LandingPage #ManageServicesBtn {
@@ -81,10 +81,9 @@ Link {
 
 .LandingPagePanel {
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: calc(50vh - 27px);
   background: #fff;
+  padding: 50px 0 0 0;
 }
 
 .LandingPagePanel a {
@@ -98,15 +97,22 @@ Link {
 .LandingPagePanel h1 {
 color: #000;
 text-transform: uppercase;
-  min-size: 10vw;
-  font-size:calc(1.2rem + 1.5vw);
+font-size:calc(1rem + 1.5vw);
 }
 
 .LandingPagePanel img {
+  
 }
 
 .LandingPagePanel p {
+  color: #000;
+  
 }
+
+/* Buttons */
+
+.btn-primary:
+
 
 
 /* Forms */
