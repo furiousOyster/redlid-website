@@ -101,7 +101,7 @@ font-size:calc(1rem + 1.5vw);
 }
 
 .LandingPagePanel img {
-  
+  padding: 0 10% 30px 10%;
 }
 
 .LandingPagePanel p {
@@ -111,9 +111,11 @@ font-size:calc(1rem + 1.5vw);
 
 /* Buttons */
 
-.btn-primary:
-
-
+.btn-primary {
+background-color:#e31b23;
+  border-color: #e31b23;
+  text-transform: uppercase;
+}
 
 /* Forms */
 
