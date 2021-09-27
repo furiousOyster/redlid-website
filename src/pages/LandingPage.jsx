@@ -47,7 +47,6 @@ export default function Home() {
         </Col>
       </Row>
     </Container>
-    <Container>
-    </Container>
+  
   )
 }
