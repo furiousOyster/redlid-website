@@ -46,7 +46,9 @@ export default function Home() {
           </Link>
         </Col>
       </Row>
+
     </Container>
-  
+    <p>
+    </p>
   )
 }

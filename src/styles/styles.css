@@ -58,7 +58,6 @@ Link {
 /* Landing Page */
 
 #LandingPage {
-  min-height: calc(100vh - 54px);
 }
 
 #LandingPage #ManageServicesBtn {
