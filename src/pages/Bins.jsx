@@ -368,6 +368,7 @@ export default function Bins() {
           <h2>Blog post example</h2>
           <i>24 September 2021</i>
           <Col>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tL6SSflpnkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
               fermentum, nulla luctus pharetra vulputate, felis tellus mollis
