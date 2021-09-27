@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import '../styles/styles.css'
 import React, { useState } from 'react'
 import { animated } from 'react-spring'
-import { Link } from 'Wouter'
+import { Link } from 'wouter'
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
@@ -21,7 +21,7 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel'
 
 import ModalFaqs from '../components/ModalFaqs'
 import ModalSkipTerms from '../components/ModalSkipTerms'
-import SkipsNav from '../components/SkipsNav'
+import SkipsNav from '../components/skipsNav'
 
 export default function Skips() {
   const [showTerms, setShowTerms] = useState(false)
