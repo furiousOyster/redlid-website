@@ -4,6 +4,12 @@ import LandingPage from '../pages/LandingPage'
 import Bins from '../pages/Bins'
 import Skips from '../pages/Skips'
 import Manage from '../pages/Manage'
+import BinsBags from '../pages/BinsBags'
+import Bags from '../pages/Bags'
+import SkipGeneral from '../pages/SkipGeneral'
+import SkipGreen from '../pages/SkipGreen'
+import SkipHardfill from '../pages/SkipHardfill'
+
 /**
  * The router is imported in app.jsx
  *
@@ -17,6 +23,12 @@ export default () => (
     <Route path="/bins" component={Bins} />
     <Route path="/skips" component={Skips} />
     <Route path="/manage" component={Manage} />
+    <Route path="/binsbags" component={BinsBags} />
+    <Route path="/bags" component={Bags} />
+    <Route path="/skiphardfill" component={SkipHardfill} />
+      <Route path="/skipgeneral" component={SkipGeneral} />
+      <Route path="/skipgreen" component={SkipGreen} />
+    
     <Route component={LandingPage} />
   </Switch>
 )
