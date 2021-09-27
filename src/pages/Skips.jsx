@@ -453,7 +453,7 @@ export default function Skips() {
       </Container>
 
       {/* FOOTER */}
-      <Container fluid>
+      <Container fluid className="Footer">
         <Row>
           <h2>We are easy to contact</h2>
           <Col md={6}>

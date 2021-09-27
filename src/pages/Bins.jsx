@@ -24,6 +24,8 @@ import ModalTerms from '../components/ModalTerms'
 import BinsNav from '../components/binsNav'
 import Footer from '../components/footer'
 
+
+
 export default function Bins() {
   const [showTerms, setShowTerms] = useState(false)
   const [showFaqs, setShowFaqs] = useState(false)
