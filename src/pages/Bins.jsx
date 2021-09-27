@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import '../styles/styles.css'
 import React, { useState } from 'react'
 import { animated } from 'react-spring'
-import { Link } from 'wouter'
+import { Link } from 'Wouter'
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
@@ -21,8 +21,8 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel'
 
 import ModalFaqs from '../components/ModalFaqs'
 import ModalTerms from '../components/ModalTerms'
-import BinsNav from '../components/binsNav'
-import Footer from '../components/footer'
+import BinsNav from '../components/BinsNav'
+import Footer from '../components/Footer'
 
 
 

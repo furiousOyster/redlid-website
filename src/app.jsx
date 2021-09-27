@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Router, Link } from "wouter";
+import { Router, Link } from "Wouter";
 
 /**
 * This code defines the react app
@@ -19,7 +19,7 @@ import PageRouter from "./components/Router.jsx";
 import useHashLocation from "./hooks/Wouter-hash";
 
 // The component that adds our Meta tags to the page
-import Seo from './components/seo.jsx';
+import Seo from './components/SEO.jsx';
 
 // Home function that is reflected across the site
 export default function Home() {

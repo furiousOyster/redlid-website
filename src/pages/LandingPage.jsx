@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/styles.css";
 import * as React from "react";
 import { animated } from "react-spring";
-import { Link } from "wouter";
+import { Link } from "Wouter";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -10,7 +10,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
-import MainNav from "../components/mainNav";
+import MainNav from "../components/MainNav";
 
 export default function Home() {
   return (
