@@ -20,7 +20,7 @@ import Form from 'react-bootstrap/Form'
 import FloatingLabel from 'react-bootstrap/FloatingLabel'
 
 import ModalFaqs from '../components/ModalFaqs'
-import ModalTerms from '../components/ModalTerms'
+import ModalSkipTerms from '../components/ModalSkipTerms'
 import SkipsNav from '../components/skipsNav'
 
 export default function Skips() {
@@ -529,7 +529,7 @@ export default function Skips() {
         </Row>
       </Container>
 
-      <ModalTerms show={showTerms} onHide={() => setShowTerms(false)} />
+      <ModalSkipTerms show={showTerms} onHide={() => setShowTerms(false)} />
       <ModalFaqs show={showFaqs} onHide={() => setShowFaqs(false)} />
     </>
   )

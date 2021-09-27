@@ -10,7 +10,7 @@ export default ({ show, onHide }) => {
   return (
     <Modal show={show} onHide={onHide} size="lg">
       <Modal.Header closeButton>
-        <Modal.Title>Terms and conditions</Modal.Title>
+        <Modal.Title>Bins & Bags Terms and conditions</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <p>

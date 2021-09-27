@@ -14,7 +14,7 @@ export default () => (
     expand="lg"
     collapseOnSelect
   >
-    <Link href="https://redlid.co.nz">
+    <Link href="/">
       {' '}
       {/* Tom this is for SEO */}
       <Navbar.Brand>
@@ -27,9 +27,10 @@ export default () => (
         <span>Reliable Waikato Waste Disposal Services since 1964</span>
       </Navbar.Brand>
     </Link>
-    <
-    <Button variant="outline-secondary" id="ManageServicesBtn">
-      Manage Services
-    </Button>
+    <Link href="/manage">
+      <Button variant="outline-secondary" id="ManageServicesBtn">
+        Manage Services
+      </Button>
+    </Link>
   </Navbar>
 )
