@@ -21,8 +21,8 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel'
 
 import ModalFaqs from '../components/ModalFaqs'
 import ModalTerms from '../components/ModalTerms'
-import BinsNav from '../components/binsNav'
-import Footer from '../components/footer'
+import BinsNav from '../components/BinsNav'
+import Footer from '../components/Footer'
 
 
 
