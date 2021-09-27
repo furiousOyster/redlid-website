@@ -26,9 +26,9 @@ export default () => (
     <Route path="/binsbags" component={BinsBags} />
     <Route path="/bags" component={Bags} />
     <Route path="/skiphardfill" component={SkipHardfill} />
-      <Route path="/skipgeneral" component={SkipGeneral} />
-      <Route path="/skipgreen" component={SkipGreen} />
-    
+    <Route path="/skipgeneral" component={SkipGeneral} />
+    <Route path="/skipgreen" component={SkipGreen} />
+
     <Route component={LandingPage} />
   </Switch>
 )

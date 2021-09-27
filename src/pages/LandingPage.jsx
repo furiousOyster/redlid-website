@@ -20,7 +20,7 @@ export default function Home() {
         <Row>
           <MainNav />
           <Col className="LandingPagePanel" sm={12} md={6}>
-            <Link href="/bins">
+            <Link href="/BinsBags">
               <h1>Red Lid Garden Bins & Bags</h1>
               <p>
                 For green and garden waste. <br />
