@@ -14,7 +14,7 @@ export default () => (
     expand="lg"
     collapseOnSelect
   >
-    <Link href="/">
+    <Link href="#">
       <Navbar.Brand>
         <Image
           alt="Reliable Waikato Waste Disposal Services since 1964"
