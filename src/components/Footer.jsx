@@ -10,8 +10,9 @@ import { Link } from 'wouter'
 
 export default () => (
       <Container fluid className="Footer">
-     <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidSkipTruck.jpg?v=1632790947327" fluid />
-        <Row>
+      <Container fluid className="FooterTruck">
+     <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidTruckFooter.jpg?v=1632865751569" />
+        
           <h2>We are easy to contact</h2>
           <Col md={6}>
             <p>
@@ -84,7 +85,7 @@ export default () => (
             prompt, friendly and professional service.
           </p>
         </Row>
-   
+     </Container>
       </Container>
 
 )

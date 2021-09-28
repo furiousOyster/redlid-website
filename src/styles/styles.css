@@ -159,3 +159,13 @@ background-color:#e31b23;
     text-align: left;
   }
 }
+
+
+/* Footer */
+
+.Footer {
+  background-image: url("https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FGrassTexture.jpg?v=1632865751247");
+  background-repeat: repeat-x;
+  background-position: bottom 0 right 0;
+  
+}
