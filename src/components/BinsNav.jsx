@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import Image from 'react-bootstrap/Image'
 import Button from 'react-bootstrap/Button'
 import { Link } from 'wouter'
+import NavbarBrand from '../components/NavbarBrand'
 
 export default () => (
   <Navbar
@@ -14,14 +15,7 @@ export default () => (
     expand="lg"
     collapseOnSelect
   >
-    <Navbar.Brand href="/">
-      <Image
-        alt="Reliable Waikato Waste Disposal Services since 1964"
-        src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fredlidlogoscalable.png?v=1631682207638"
-        height="38"
-        className="d-inline-block align-top"
-      />
-    </Navbar.Brand>
+    <NavbarBrand />
 
    <Link href="/Manage">
       <Button variant="outline-secondary" id="ManageServicesBtn">
@@ -35,6 +29,8 @@ export default () => (
         <Nav.Link href="/Bins">Order Bins</Nav.Link>
         <Nav.Link href="/Bags">Order Bags</Nav.Link>
         <Nav.Link href="/Skips">Red Lid Skips</Nav.Link>
+        <Nav.Link href="/BinsBags#HowitWorks">How it works</Nav.Link>
+        <Nav.Link href="#Contact">Contact Red Lid</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>
