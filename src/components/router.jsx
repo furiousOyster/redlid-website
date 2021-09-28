@@ -28,7 +28,6 @@ export default () => (
     <Route path="/skiphardfill" component={SkipHardfill} />
     <Route path="/skipgeneral" component={SkipGeneral} />
     <Route path="/skipgreen" component={SkipGreen} />
-
     <Route component={LandingPage} />
   </Switch>
 )

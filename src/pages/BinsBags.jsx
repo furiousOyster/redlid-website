@@ -22,9 +22,8 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel'
 import ModalFaqs from '../components/ModalFaqs'
 import ModalTerms from '../components/ModalTerms'
 import BinsNav from '../components/BinsNav'
+import HowItWorks from '../components/HowItWorks'
 import Footer from '../components/Footer'
-
-
 
 export default function Bins() {
   const [showTerms, setShowTerms] = useState(false)
@@ -52,7 +51,10 @@ export default function Bins() {
             </Row>
             <Row>
               <Col sm={12} md={4}>
-                <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Bin.jpg?v=1632524809405" fluid />
+                <Image
+                  src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Bin.jpg?v=1632524809405"
+                  fluid
+                />
               </Col>
               <Col sm={12} md={8}>
                 <i>From $8 per collection</i>
@@ -74,7 +76,10 @@ export default function Bins() {
             </Row>
             <Row>
               <Col sm={12} md={4}>
-                <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Bag.jpg?v=1632524809122" fluid />
+                <Image
+                  src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Bag.jpg?v=1632524809122"
+                  fluid
+                />
               </Col>
               <Col sm={12} md={8}>
                 <i>From $8 per collection</i>
@@ -88,13 +93,23 @@ export default function Bins() {
             </Row>
           </a>
         </Row>
-       
+
+        <HowItWorks />
+
         {/* BLOG POST */}
         <Row>
           <h2>Blog post example</h2>
           <i>24 September 2021</i>
           <Col>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/tL6SSflpnkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/tL6SSflpnkY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
               fermentum, nulla luctus pharetra vulputate, felis tellus mollis
@@ -109,13 +124,14 @@ export default function Bins() {
               orci, sed rhoncus pronin sapien nunc accuan eget.
             </p>
           </Col>
-        </Row>{' '}
+        </Row>
+
         {/* END OF BLOG POST */}
-      </Container>{' '}
+      </Container>
       {/* END OF CONTENT CONTAINER */}
-     
-    <Footer />
-      
+
+      <Footer />
+
       <ModalTerms show={showTerms} onHide={() => setShowTerms(false)} />
       <ModalFaqs show={showFaqs} onHide={() => setShowFaqs(false)} />
     </>
