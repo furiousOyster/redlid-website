@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import Image from 'react-bootstrap/Image'
 import Button from 'react-bootstrap/Button'
+import { Link } from 'wouter'
 
 export default () => (
   <Navbar

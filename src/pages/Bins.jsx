@@ -42,9 +42,11 @@ export default function Bins() {
           <h1>Order Garden Bin</h1>
           <p>Regular or one-off collections for green and garden waste</p>
           <Col>
-            <Button variant="outline-primary" className="ProductSwap">
-              Order a bag instead
-            </Button>{' '}
+                        <Link href="/bags">
+              <Button variant="outline-primary" className="ProductSwap">
+                Order a bag instead
+              </Button>
+            </Link>
           </Col>
         </Row>
       
