@@ -15,8 +15,6 @@ export default () => (
     collapseOnSelect
   >
     <Link href="/">
-      {' '}
-      {/* Tom this is for SEO */}
       <Navbar.Brand>
         <Image
           alt="Reliable Waikato Waste Disposal Services since 1964"

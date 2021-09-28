@@ -43,7 +43,9 @@ export default function BinsBags() {
         </Row>
         {/* LISTING BINS */}
         <Row>
-          <Link className="Product" href="/bins">
+          <a className="Product" href="/bins">
+            {' '}
+            {/* TODO: Check syntax a tag */}
             <Row>
               <h2>240L Garden Bin</h2>
             </Row>
@@ -64,11 +66,11 @@ export default function BinsBags() {
                 <Button variant="primary">Order garden waste bins</Button>{' '}
               </Col>
             </Row>
-         </Link>
+          </a>
         </Row>
         {/* LISTING BAGS */}
         <Row>
-          <Link className="Product" href="/bags">
+          <a className="Product" href="/bags">
             <Row>
               <h2>600L Garden Bag</h2>
             </Row>
@@ -89,7 +91,7 @@ export default function BinsBags() {
                 <Button variant="primary">Order garden waste bags</Button>{' '}
               </Col>
             </Row>
-          </Link>
+          </a>
         </Row>
 
         <HowItWorks />

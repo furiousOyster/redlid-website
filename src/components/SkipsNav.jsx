@@ -21,10 +21,11 @@ export default () => (
         className="d-inline-block align-top"
       />
     </Navbar.Brand>
-
-    <Button variant="outline-secondary" id="ManageServicesBtn" >
-      Manage Services
-    </Button>
+    <Link href="/Manage">
+      <Button variant="outline-secondary" id="ManageServicesBtn">
+        Manage Services
+      </Button>
+    </Link>
     <Navbar.Toggle />
 
     <Navbar.Collapse>

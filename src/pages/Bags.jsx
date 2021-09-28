@@ -42,9 +42,11 @@ export default function Bags() {
           <h1>Order Garden Bags</h1>
           <p>Regular or one-off collections for green and garden waste</p>
           <Col>
-            <Button variant="outline-primary" className="ProductSwap">
-              Order a bin instead
-            </Button>{' '}
+          <Link href="/bins">
+              <Button variant="outline-primary" className="ProductSwap">
+                Order a bin instead
+              </Button>
+            </Link>
           </Col>
         </Row>
       
