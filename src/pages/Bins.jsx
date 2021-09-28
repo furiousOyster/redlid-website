@@ -39,64 +39,17 @@ export default function Bins() {
         </Row>
         {/* HEADER */}
         <Row className="Header">
-          <h1>Red Lid Garden Bags and Bins</h1>
+          <h1>Order Garden Bin</h1>
           <p>Regular or one-off collections for green and garden waste</p>
-        </Row>
-        {/* LISTING BINS */}
-        <Row>
-          <a className="Product">
-            {' '}
-            {/* TODO: Check syntax a tag */}
-            <Row>
-              <h2>240L Garden Bin</h2>
-            </Row>
-            <Row>
-              <Col sm={12} md={4}>
-                <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Bin.jpg?v=1632524809405" fluid />
-              </Col>
-              <Col sm={12} md={8}>
-                <i>From $8 per collection</i>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                  fermentum, nulla luctus pharetra vulputate, felis tellus
-                  mollis orci, sed rhoncus pronin sapien nunc accuan eget.
-                </p>
-                <Button variant="primary">Order garden waste bins</Button>{' '}
-              </Col>
-            </Row>
-          </a>
-        </Row>
-        {/* LISTING BAGS */}
-        <Row>
-          <a className="Product">
-            <Row>
-              <h2>600L Garden Bag</h2>
-            </Row>
-            <Row>
-              <Col sm={12} md={4}>
-                <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Bag.jpg?v=1632524809122" fluid />
-              </Col>
-              <Col sm={12} md={8}>
-                <i>From $8 per collection</i>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                  fermentum, nulla luctus pharetra vulputate, felis tellus
-                  mollis orci, sed rhoncus pronin sapien nunc accuan eget.
-                </p>
-                <Button variant="primary">Order garden waste bags</Button>{' '}
-              </Col>
-            </Row>
-          </a>
-        </Row>
-        {/* ORDER FORM */}
-        <Row>
           <Col>
-            <h1>Order Garden Bin</h1>
             <Button variant="outline-primary" className="ProductSwap">
-              Order a bin/bag instead
+              Order a bag instead
             </Button>{' '}
           </Col>
         </Row>
+      
+        {/* ORDER FORM */}
+
         <Row>
           <Form>
             <FloatingLabel

@@ -50,7 +50,7 @@ export default function Skips() {
 
         {/* LISTING GENERAL WASTE */}
         <Row>
-          <a className="Product">
+          <Link href="/SkipGeneral" className="Product">
             <Row>
               <h2>General Waste Skip</h2>
             </Row>
@@ -71,12 +71,12 @@ export default function Skips() {
                 <Button variant="primary">Order a general waste skip</Button>{' '}
               </Col>
             </Row>
-          </a>
+          </Link>
         </Row>
 
         {/* LISTING GREEN WASTE */}
         <Row>
-          <a className="Product">
+           <Link href="/SkipGreen" className="Product">
             <Row>
               <h2>Green Waste Skip</h2>
             </Row>
@@ -97,12 +97,12 @@ export default function Skips() {
                 <Button variant="primary">Order a green waste skip</Button>{' '}
               </Col>
             </Row>
-          </a>
+          </Link>
         </Row>
 
         {/* LISTING HARDFILL*/}
         <Row>
-          <a className="Product">
+           <Link href="/SkipHardfill" className="Product">
             <Row>
               <h2>Hardfill Skip</h2>
             </Row>
@@ -123,7 +123,7 @@ export default function Skips() {
                 <Button variant="primary">Order a hardfill skip</Button>{' '}
               </Col>
             </Row>
-          </a>
+          </Link>
         </Row>
 
         {/* ORDER FORM */}
