@@ -25,7 +25,7 @@ import BinsNav from '../components/BinsNav'
 import HowItWorks from '../components/HowItWorks'
 import Footer from '../components/Footer'
 
-export default function Bins() {
+export default function BinsBags() {
   const [showTerms, setShowTerms] = useState(false)
   const [showFaqs, setShowFaqs] = useState(false)
 
@@ -43,7 +43,7 @@ export default function Bins() {
         </Row>
         {/* LISTING BINS */}
         <Row>
-          <a className="Product">
+          <a className="Product" href="/bins">
             {' '}
             {/* TODO: Check syntax a tag */}
             <Row>
@@ -70,7 +70,7 @@ export default function Bins() {
         </Row>
         {/* LISTING BAGS */}
         <Row>
-          <a className="Product">
+          <a className="Product" href="/bags">
             <Row>
               <h2>600L Garden Bag</h2>
             </Row>

@@ -20,11 +20,13 @@ import SkipHardfill from '../pages/SkipHardfill'
 
 export default () => (
   <Switch>
-    <Route path="/bins" component={Bins} />
-    <Route path="/skips" component={Skips} />
     <Route path="/manage" component={Manage} />
-    <Route path="/binsbags" component={BinsBags} />
+    
+    <Route path="/binsbags" component={BinsBags} />    
+    <Route path="/bins" component={Bins} />
     <Route path="/bags" component={Bags} />
+    
+    <Route path="/skips" component={Skips} />
     <Route path="/skiphardfill" component={SkipHardfill} />
     <Route path="/skipgeneral" component={SkipGeneral} />
     <Route path="/skipgreen" component={SkipGreen} />

@@ -83,6 +83,7 @@ export default () => (
             prompt, friendly and professional service.
           </p>
         </Row>
+    <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidSkipTruck.jpg?v=1632790947327" fluid />
       </Container>
 
 )

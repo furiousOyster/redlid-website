@@ -26,7 +26,7 @@ import Footer from '../components/Footer'
 
 
 
-export default function Bins() {
+export default function Bags() {
   const [showTerms, setShowTerms] = useState(false)
   const [showFaqs, setShowFaqs] = useState(false)
 
