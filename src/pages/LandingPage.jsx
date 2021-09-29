@@ -27,7 +27,7 @@ export default function Home() {
                 We deliver, we collect.
               </p>
               <Image
-                src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Bin_Bag_Composite.jpg?v=1632526457670"
+                src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Bin_Bag_Composite.jpg?v=1632881178884"
                 fluid
               />
               <Button variant="primary">Browse Bins & Bags</Button>{' '}
