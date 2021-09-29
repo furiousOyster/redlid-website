@@ -6,7 +6,7 @@
   text-decoration: none;
 }
 
-Link {
+link {
   color: #e31b23;
 }
 
@@ -94,9 +94,9 @@ Link {
 }
 
 .LandingPagePanel h1 {
-color: #000;
-text-transform: uppercase;
-font-size:calc(1rem + 1.5vw);
+  color: #000;
+  text-transform: uppercase;
+  font-size: calc(1rem + 1.5vw);
 }
 
 .LandingPagePanel img {
@@ -105,14 +105,19 @@ font-size:calc(1rem + 1.5vw);
 
 .LandingPagePanel p {
   color: #000;
-  
 }
 
 /* Buttons */
 
 .btn-primary {
-background-color:#e31b23;
-  border-color: #e31b23;
+  background-color: #e31b23;
+  border: #e31b23 2px;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  background-color: #e31b23;
+  border: #e31b23;
   text-transform: uppercase;
 }
 
@@ -135,47 +140,48 @@ background-color:#e31b23;
 }
 
 .OrderformHead {
-    text-align: center;
-  }
-
-
+  text-align: center;
+}
 
 @media (min-width: 576px) {
-
   .OrderformHead {
     text-align: right;
   }
 }
 
-
 .SplitHeading h1 {
-    text-align: center;
-    
-  }
+  text-align: center;
+}
 
 @media (min-width: 576px) {
-
- .SplitHeading h1 {
+  .SplitHeading h1 {
     text-align: left;
   }
 }
 
-
 /* Footer */
 
+.content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .Footer {
-  background-image: url("https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidTruckFooter.jpg?v=1632865751569"),  url("https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FGrassTexture.jpg?v=1632875746863");
+  background-image: url('https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidTruckFooter.jpg?v=1632865751569'),
+    url('https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FGrassTexture.jpg?v=1632875746863');
   background-repeat: no-repeat, repeat-x;
   background-position: bottom 0 right 0;
-  background-size: auto 60vw, auto 60vw;
+background-size: auto 200px, auto 200px;
+  position: bottom 0;
+  margin-top: auto;
+  padding-bottom: 150px;
+  padding-top: 60px;
 }
 
 
 @media (min-width: 576px) {
-
-.Footer {
-  
-}
-
-  
+  .Footer {
+    background-size: auto 200px, auto 200px;
+  }
 }
