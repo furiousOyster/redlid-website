@@ -198,14 +198,14 @@ a:hover .btn {
   padding-top: 60px;
 }
 
-.FooterTruck {
-  max-width: 1200px;
-  align: center;
-  text-align: center;
-}
-
 @media (min-width: 576px) {
   .Footer {
-    background-size: auto 200px, auto 200px;
+    background-size: auto 250px, auto 250px;
+  }
+
+  #FooterTextA {
+  }
+
+  #FooterTextB {
   }
 }
