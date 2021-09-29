@@ -191,6 +191,7 @@ a:hover .btn {
 
 .Footer table {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .Footer {
@@ -211,6 +212,7 @@ a:hover .btn {
 
 .FooterHeading {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 576px) {

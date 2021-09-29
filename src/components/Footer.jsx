@@ -63,7 +63,7 @@ export default () => (
               </tbody>
             </table>
           </Col>
-          <Col md={2}>
+          <Col md={3}>
             <Link href="/Manage">
               <Button variant="outline-secondary" id="ManageServicesBtn">
                 Manage Services
