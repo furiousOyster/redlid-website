@@ -52,7 +52,9 @@ export default function Skips() {
         <Row>
           <Link href="/SkipGeneral" className="Product">
             <Row>
+              <Col md={{ span: 8, offset: 4 }}>
               <h2>General Waste Skip</h2>
+            </Col>
             </Row>
             <Row>
               <Col sm={12} md={4}>
@@ -129,7 +131,7 @@ export default function Skips() {
 
         {/* HOW IT WORKS */}
 
-        <Row>
+        <Row classname="HowItWorks">
           <h2>How it works</h2>
           <Col xs={12} lg={6}>
             <p>
@@ -255,7 +257,7 @@ export default function Skips() {
             </strong>
           </p>
 
-          <h2>About us</h2>
+          <h2 className="AboutUs">About us</h2>
 
           <p>
             We are proud to be rated the Number 1 Green Waste Collectors in the

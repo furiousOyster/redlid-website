@@ -263,3 +263,27 @@ width: 80%;
 .Product p {
   color: #000;
 }
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.AboutUs {
+  margin-top: 60px;
+}
+
+@media (min-width: 576px) {
+ 
+.Product img {
+width: 100%;
+}
+  
+.Product h2 {
+  text-align: left;
+  text-transform: uppercase;
+  color: #000;
+}
+  
+}
