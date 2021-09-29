@@ -7,7 +7,6 @@ import Button from 'react-bootstrap/Button'
 import { Link } from 'wouter'
 import NavbarBrand from '../components/NavbarBrand'
 
-
 export default () => (
   <Navbar
     onSelect={selectedKey => alert(`selected ${selectedKey}`)}
@@ -23,13 +22,11 @@ export default () => (
       </Button>
     </Link>
     <Navbar.Toggle />
-
     <Navbar.Collapse>
-      <Nav className="me-auto CollapsableNav skips">
-        <Nav.Link href="/Bins">General waste skips</Nav.Link>
-        <Nav.Link href="/Bags">Garden waste skips</Nav.Link>
-        <Nav.Link href="/Bins">Hardfill skips</Nav.Link>
-        <Nav.Link href="/Bins">Garden bins & bags</Nav.Link>
+      <Nav className="me-auto CollapsableNav">
+        <Nav.Link href="/Skips">Red Lid Skips</Nav.Link>
+        <Nav.Link href="/Skips#HowitWorks">How it works</Nav.Link>
+        <Nav.Link href="#Contact">Contact</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>

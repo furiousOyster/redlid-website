@@ -16,21 +16,17 @@ export default () => (
     collapseOnSelect
   >
     <NavbarBrand />
-
-   <Link href="/Manage">
+    <Link href="/Manage">
       <Button variant="outline-secondary" id="ManageServicesBtn">
         Manage Services
       </Button>
     </Link>
     <Navbar.Toggle />
-
     <Navbar.Collapse>
       <Nav className="me-auto CollapsableNav">
-        <Nav.Link href="/Bins">Order Bins</Nav.Link>
-        <Nav.Link href="/Bags">Order Bags</Nav.Link>
         <Nav.Link href="/Skips">Red Lid Skips</Nav.Link>
         <Nav.Link href="/BinsBags#HowitWorks">How it works</Nav.Link>
-        <Nav.Link href="#Contact">Contact Red Lid</Nav.Link>
+        <Nav.Link href="#Contact">Contact</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>

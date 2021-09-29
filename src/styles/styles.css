@@ -212,16 +212,17 @@ a:hover .btn {
 
 .Footer h2 {
   text-align: center;
-  background: #0f0;
+  background: #459e52;
   padding: 20px;
   margin: 0 -30px 30px;
+  color: #fff;
 }
 
 @media (min-width: 576px) {
   .Footer {
     background-size: auto 250px, auto 250px;
   }
-
-  .FooterContents {
-  }
+.Footer h2 {
+  margin: 0 -30px 60px;
+}
 }

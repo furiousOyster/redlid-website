@@ -9,7 +9,7 @@ import Row from 'react-bootstrap/Row'
 import { Link } from 'wouter'
 
 export default () => (
-  <Container fluid className="Footer">
+  <Container fluid className="Footer" id="Footer">
     <h2>We are easy to contact</h2>
     <Row>
       <Container className="FooterContents BoldLinks">
