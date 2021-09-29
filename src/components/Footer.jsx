@@ -10,7 +10,7 @@ import { Link } from 'wouter'
 
 export default () => (
   <Container fluid className="Footer">
-    <Row className="FooterTruckx">
+    <Row className="FooterTruck">
       <Col className="FooterHeading">
         <h2>We are easy to contact</h2>
       </Col>

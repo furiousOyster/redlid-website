@@ -6,8 +6,13 @@
   text-decoration: none;
 }
 
-link {
+a {
   color: #e31b23;
+  font-weight: bolder;
+}
+
+a:hover {
+  color: #000;
 }
 
 /* Nav */
@@ -111,14 +116,24 @@ link {
 
 .btn-primary {
   background-color: #e31b23;
-  border: #e31b23 2px;
+  border-color: #e31b23;
   text-transform: uppercase;
 }
 
 .btn-primary:hover {
-  background-color: #e31b23;
-  border: #e31b23;
+  background-color: #fff;
+  border-color: #e31b23;
+  color: #e31b23;
   text-transform: uppercase;
+  font-weight: bolder;
+}
+
+a:hover .btn {
+  background-color: #fff;
+  border-color: #e31b23;
+  color: #e31b23;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 
 /* Forms */
@@ -162,9 +177,13 @@ link {
 /* Footer */
 
 .content {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.Footer table {
+  width: 100%;
 }
 
 .Footer {
@@ -172,13 +191,18 @@ link {
     url('https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FGrassTexture.jpg?v=1632875746863');
   background-repeat: no-repeat, repeat-x;
   background-position: bottom 0 right 0;
-background-size: auto 200px, auto 200px;
+  background-size: auto 200px, auto 200px;
   position: bottom 0;
   margin-top: auto;
-  padding-bottom: 150px;
+  padding-bottom: 220px;
   padding-top: 60px;
 }
 
+.FooterTruck {
+  max-width: 1200px;
+  align: center;
+  text-align: center;
+}
 
 @media (min-width: 576px) {
   .Footer {
