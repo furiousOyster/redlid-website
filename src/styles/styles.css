@@ -164,29 +164,18 @@ background-color:#e31b23;
 /* Footer */
 
 .Footer {
-  background-image: url("https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidTruckFooter.jpg?v=1632865751569"),  url("https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FGrassTexture.jpg?v=1632865751247");
+  background-image: url("https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidTruckFooter.jpg?v=1632865751569"),  url("https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FGrassTexture.jpg?v=1632875746863");
   background-repeat: no-repeat, repeat-x;
   background-position: bottom 0 right 0;
-  background-size: auto, auto;
+  background-size: auto 60vw, auto 60vw;
 }
 
-.FooterTruck {
-  background-image: url("https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidTruckFooter.jpg?v=1632865751569");
-  background-position: bottom 0 right 0;
-  background-repeat: no-repeat;
-  background-size: 150%;
-  padding: 60px 0 60vw;
-}
 
 @media (min-width: 576px) {
 
 .Footer {
+  
 }
 
-.FooterTruck {
-
-  background-size: auto 33%;
-  padding: 60px 0 60vw;
-}
   
 }
