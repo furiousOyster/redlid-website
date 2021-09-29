@@ -210,9 +210,11 @@ a:hover .btn {
   max-width: 1200px;
 }
 
-.FooterHeading {
+.Footer h2 {
   text-align: center;
-  margin-bottom: 30px;
+  background: #0f0;
+  padding: 20px;
+  margin: 0 -30px 30px;
 }
 
 @media (min-width: 576px) {
