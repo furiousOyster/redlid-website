@@ -8,6 +8,9 @@
 
 a {
   color: #e31b23;
+}
+
+.BoldLinks a {
   font-weight: bolder;
 }
 
@@ -198,14 +201,21 @@ a:hover .btn {
   padding-top: 60px;
 }
 
+  .FooterContents {
+    
+  max-width: 1200px;
+}
+
+.FooterHeading {
+  text-align: center;
+}
+
+
 @media (min-width: 576px) {
   .Footer {
     background-size: auto 250px, auto 250px;
   }
 
-  #FooterTextA {
-  }
-
-  #FooterTextB {
-  }
+  .FooterContents {}
+  
 }

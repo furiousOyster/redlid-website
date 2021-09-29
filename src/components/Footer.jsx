@@ -11,12 +11,12 @@ import { Link } from 'wouter'
 export default () => (
   <Container fluid className="Footer">
     <Row>
-      <Container>
+      <Container className="FooterContents">
         <Row>
           <Col xs={12} className="FooterHeading">
             <h2>We are easy to contact</h2>
           </Col>
-          <Col md={6}>
+          <Col md={3}>
             <p>
               Red Lid Garden Bins &amp; Bags Ltd
               <br />
@@ -28,6 +28,9 @@ export default () => (
             </p>
           </Col>
           <Col md={6}>
+            <p className="officehours">
+              Office hours are 8am - 5pm Monday to Thursday, 8am-3pm Fridays
+            </p>
             <table>
               <tbody>
                 <tr>
@@ -57,36 +60,15 @@ export default () => (
                     </Link>
                   </td>
                 </tr>
-
-                <tr>
-                  <td></td>
-
-                  <td>
-                    <Link href="/manage">Manage my services</Link>
-                  </td>
-                </tr>
               </tbody>
             </table>
           </Col>
-          <Col id="FooterTextA">
-            <p>
-              Please feel free to contact us about anything you may require or
-              need further explanation on.
-            </p>
-
-            <p className="officehours">
-              Office hours are 8am - 5pm Monday to Thursday, 8am-3pm Fridays
-            </p>
-          </Col>
-
-          <Col id="FooterTextB">
-            <p>
-              If outside these hours leave a message on{' '}
-              <Link href="tel:078340191">(07) 834 0191</Link> or{' '}
-              <Link href="tel:0800733543">0800 REDLID</Link> answer phone - we
-              check our messages regularly. We look forward to providing you
-              with prompt, friendly and professional service.
-            </p>
+          <Col md={2}>
+            <Link href="/Manage">
+              <Button variant="outline-secondary" id="ManageServicesBtn">
+                Manage Services
+              </Button>
+            </Link>
           </Col>
         </Row>
       </Container>
