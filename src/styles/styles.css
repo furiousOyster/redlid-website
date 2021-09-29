@@ -118,7 +118,7 @@ a:hover {
 /* Buttons */
 
 .btn {
-  font-weight: normal!important;
+  font-weight: normal !important;
 }
 
 .btn-primary {
@@ -222,7 +222,44 @@ a:hover .btn {
   .Footer {
     background-size: auto 250px, auto 250px;
   }
-.Footer h2 {
-  margin: 0 -30px 60px;
+  .Footer h2 {
+    margin: 0 -30px 60px;
+  }
 }
+
+/* PSPs */
+
+.Header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 60px 0 30px;
+}
+
+.Header p:last-of-type {
+  margin-bottom: 50px;
+}
+
+.Product {
+  text-decoration: none;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.Product h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.Product i {
+ text-align: center;
+  display: block;
+}
+
+.Product img {
+width: 80%;
+}
+
+.Product p {
+  color: #000;
 }
