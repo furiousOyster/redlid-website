@@ -11,7 +11,7 @@ import { Link } from 'wouter'
 export default () => (
   <Container fluid className="Footer">
     <Row>
-      <Container className="FooterContents">
+      <Container className="FooterContents BoldLinks">
         <Row>
           <Col xs={12} className="FooterHeading">
             <h2>We are easy to contact</h2>

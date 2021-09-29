@@ -16,7 +16,7 @@ import Footer from '../components/Footer'
 export default function Home() {
   return (
     <>
-      <Container fluid id="LandingPage">
+      <Container fluid="lg" id="LandingPage">
         <Row>
           <MainNav />
           <Col className="LandingPagePanel" sm={12} md={6}>

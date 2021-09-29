@@ -117,6 +117,10 @@ a:hover {
 
 /* Buttons */
 
+.btn {
+  font-weight: normal!important;
+}
+
 .btn-primary {
   background-color: #e31b23;
   border-color: #e31b23;
@@ -201,8 +205,7 @@ a:hover .btn {
   padding-top: 60px;
 }
 
-  .FooterContents {
-    
+.FooterContents {
   max-width: 1200px;
 }
 
@@ -210,12 +213,11 @@ a:hover .btn {
   text-align: center;
 }
 
-
 @media (min-width: 576px) {
   .Footer {
     background-size: auto 250px, auto 250px;
   }
 
-  .FooterContents {}
-  
+  .FooterContents {
+  }
 }
