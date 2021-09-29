@@ -10,12 +10,10 @@ import { Link } from 'wouter'
 
 export default () => (
   <Container fluid className="Footer">
+    <h2>We are easy to contact</h2>
     <Row>
       <Container className="FooterContents BoldLinks">
         <Row>
-          <Col xs={12} className="FooterHeading">
-            <h2>We are easy to contact</h2>
-          </Col>
           <Col md={3}>
             <p>
               Red Lid Garden Bins &amp; Bags Ltd
