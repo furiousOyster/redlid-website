@@ -239,6 +239,12 @@ a:hover .btn {
   margin-bottom: 50px;
 }
 
+@media (min-width: 768px) {
+  .Header h1 {
+  text-align: left;
+}
+}
+
 .Product {
   text-decoration: none;
   margin-bottom: 90px;
@@ -270,6 +276,7 @@ h2 {
   text-transform: uppercase;
   color: #000;
 }
+
 
 @media (min-width: 768px) {
   .Product {
@@ -305,6 +312,17 @@ h2 {
   .Product h2 {
     text-align: left;
   }
+}
+
+@media (min-width: 1200px) {
+  .Product {
+    margin-bottom: 100px;
+  }
+
+  .Product img {
+    margin-top: -180px;
+  }
+
 }
 
 /* How it works */

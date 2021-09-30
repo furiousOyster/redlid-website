@@ -36,11 +36,57 @@ export default function BinsBags() {
         <Row>
           <BinsNav />
         </Row>
-        {/* HEADER */}
+        
+        
+        
+        
+        
+         {/* HEADER */}
         <Row className="Header">
-          <h1>Red Lid Garden Bags and Bins</h1>
-          <p>Regular or one-off collections for green and garden waste</p>
+          <Col md={{ span: 8, offset: 4 }}>
+          <h1>Red Lid Garden Bags and Bins</h1></Col>
+          <Col md={{ span: 7, offset: 4 }}>
+            <p>
+              Regular or one-off collections for green and garden waste
+            </p>
+          </Col>
         </Row>
+
+        {/* LISTING GENERAL WASTE */}
+        <Row>
+          <Link href="/SkipGeneral" className="Product">
+            <Row>
+              <Col md={{ span: 8, offset: 4 }}>
+                <h2>General Waste Skip</h2>
+              </Col>
+            </Row>
+            <Row>
+              <Col sm={12} md={4}>
+                <Image
+                  src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_GeneralWaste_Skip.jpg?v=1632527973536"
+                  fluid
+                />
+              </Col>
+              <Col sm={12} md={8}>
+                <i>From $8 per collection</i>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  fermentum, nulla luctus pharetra vulputate, felis tellus
+                  mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                </p>
+                <Button variant="primary">Order a general waste skip</Button>{' '}
+              </Col>
+            </Row>
+          </Link>
+        </Row>
+        
+        
+        
+        
+        
+    
+        
+
         {/* LISTING BINS */}
         <Row>
           <Link className="Product" href="/bins">
