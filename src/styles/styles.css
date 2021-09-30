@@ -271,10 +271,6 @@ h2 {
   color: #000;
 }
 
-.AboutUs {
-  margin-top: 60px;
-}
-
 @media (min-width: 768px) {
   .Product {
     margin-bottom: 90px;
@@ -305,8 +301,29 @@ h2 {
   .Product img {
     margin-top: -100px;
   }
-  
+
   .Product h2 {
     text-align: left;
+  }
+}
+
+/* How it works */
+
+.HowItWorks h2 {
+  margin-bottom: 20px;
+}
+
+.AboutUs {
+  margin-top: 60px;
+}
+
+.HowItWorks .stronger p {
+  text-align: center;
+  color: #e31b23;
+}
+
+@media (min-width: 768px) {
+  .HowItWorks h2 {
+    margin-bottom: 40px;
   }
 }
