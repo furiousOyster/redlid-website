@@ -165,7 +165,7 @@ a:hover .btn {
   text-align: center;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .OrderformHead {
     text-align: right;
   }
@@ -175,7 +175,7 @@ a:hover .btn {
   text-align: center;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .SplitHeading h1 {
     text-align: left;
   }
@@ -218,7 +218,7 @@ a:hover .btn {
   color: #fff;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .Footer {
     background-size: auto 250px, auto 250px;
   }
@@ -252,12 +252,13 @@ a:hover .btn {
 }
 
 .Product i {
- text-align: center;
+  text-align: center;
   display: block;
 }
 
 .Product img {
-width: 80%;
+  width: 80%;
+  max-width: 350px;
 }
 
 .Product p {
@@ -274,16 +275,38 @@ h2 {
   margin-top: 60px;
 }
 
-@media (min-width: 576px) {
- 
-.Product img {
-width: 100%;
+@media (min-width: 768px) {
+  .Product {
+    margin-bottom: 90px;
+    text-align: left;
+  }
+
+  .Product img {
+    width: 100%;
+    max-width: 100%;
+    margin-top: -60px;
+  }
+
+  .Product h2 {
+    text-align: left;
+  }
+
+  .Product i {
+    text-align: left;
+  }
 }
+
+@media (min-width: 992px) {
+  .Product {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .Product img {
+    margin-top: -100px;
+  }
   
-.Product h2 {
-  text-align: left;
-  text-transform: uppercase;
-  color: #000;
-}
-  
+  .Product h2 {
+    text-align: left;
+  }
 }

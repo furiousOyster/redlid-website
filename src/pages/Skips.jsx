@@ -80,7 +80,9 @@ export default function Skips() {
         <Row>
            <Link href="/SkipGreen" className="Product">
             <Row>
+              <Col md={{ span: 8, offset: 4 }}>
               <h2>Green Waste Skip</h2>
+              </Col>
             </Row>
             <Row>
               <Col sm={12} md={4}>
@@ -106,7 +108,9 @@ export default function Skips() {
         <Row>
            <Link href="/SkipHardfill" className="Product">
             <Row>
+              <Col md={{ span: 8, offset: 4 }}>
               <h2>Hardfill Skip</h2>
+              </Col>
             </Row>
             <Row>
               <Col sm={12} md={4}>
@@ -142,7 +146,7 @@ export default function Skips() {
               Bag.
             </p>
           </Col>
-          <Col>
+          <Col xs={12} lg={6}>
             <i></i>
             <p>
               <strong>THERE ARE NO CONTRACTS TO SIGN</strong>

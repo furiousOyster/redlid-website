@@ -44,10 +44,11 @@ export default function BinsBags() {
         {/* LISTING BINS */}
         <Row>
           <Link className="Product" href="/bins">
-            {' '}
-            {/* TODO: Check syntax a tag */}
+
             <Row>
+              <Col md={{ span: 8, offset: 4 }}>
               <h2>240L Garden Bin</h2>
+              </Col>
             </Row>
             <Row>
               <Col sm={12} md={4}>
@@ -72,7 +73,9 @@ export default function BinsBags() {
         <Row>
           <Link className="Product" href="/bags">
             <Row>
+              <Col md={{ span: 8, offset: 4 }}>
               <h2>600L Garden Bag</h2>
+              </Col>
             </Row>
             <Row>
               <Col sm={12} md={4}>
