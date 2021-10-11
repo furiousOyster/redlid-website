@@ -22,18 +22,17 @@ h1,
 h2,
 h3,
 .btn {
-  font-weight: bold;
+  font-weight: 900;
 }
 
 /* Nav */
 
-.nav-link {
-  color: #f00;
+#Redlid .nav-link {
+  color: #e51b24;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
-.nav-item {
-  color: #0f0;
-}
 
 #ManageServicesBtn {
   margin-left: auto;
@@ -60,7 +59,7 @@ h3,
   }
 
   .CollapsableNav {
-    width: 330px;
+    width: 500px;
     position: absolute;
     right: 150px;
   }
@@ -103,6 +102,15 @@ h3,
   padding: 50px 0 0 0;
 }
 
+@media (min-width: 768px) {
+.LandingPagePanel {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  padding: 9vh 0;
+}
+  
+}
 
 
 .LandingPagePanel a {
