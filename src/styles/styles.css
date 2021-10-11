@@ -330,6 +330,12 @@ h2 {
   .Product i {
     text-align: left;
   }
+  
+  .Product p {
+  margin: 10px 0 30px;
+}
+  
+  
 }
 
 @media (min-width: 992px) {
