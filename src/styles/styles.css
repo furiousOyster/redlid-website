@@ -18,6 +18,13 @@ a:hover {
   color: #000;
 }
 
+h1,
+h2,
+h3,
+.btn {
+  font-weight: bold;
+}
+
 /* Nav */
 
 .nav-link {
@@ -66,6 +73,15 @@ a:hover {
 /* Landing Page */
 
 #LandingPage {
+  display: flex;
+  justify-content: center;
+      min-height: 60vh;
+}
+
+@media (max-width: 1200px) {
+  #LandingPage {
+
+  }
 }
 
 #LandingPage #ManageServicesBtn {
@@ -78,7 +94,7 @@ a:hover {
   display: none;
 }
 
-@media screen and (min-width: 960px) {
+@media (min-width: 960px) {
   .navbar-brand span {
     display: inline-block;
     padding-top: 8px;
@@ -118,7 +134,8 @@ a:hover {
 /* Buttons */
 
 .btn {
-  font-weight: normal !important;
+  font-weight: black, bolder, bold;
+  text-transform: uppercase;
 }
 
 .btn-primary {
@@ -140,7 +157,6 @@ a:hover .btn {
   border-color: #e31b23;
   color: #e31b23;
   text-transform: uppercase;
-  font-weight: bolder;
 }
 
 /* Forms */
@@ -199,7 +215,7 @@ a:hover .btn {
 
 .Footer {
   background-image: url('https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidTruckGrassFooter.jpg?v=1633916000400'),
-    url('https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidGrass.jpg?v=1633916000401');
+    url('https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidGrass.jpg?v=1633916313243');
   background-repeat: no-repeat, repeat-x;
   background-position: bottom 0 right 0;
   background-size: auto 200px, auto 200px;
@@ -244,8 +260,8 @@ a:hover .btn {
 
 @media (min-width: 768px) {
   .Header h1 {
-  text-align: left;
-}
+    text-align: left;
+  }
 }
 
 .Product {
@@ -279,7 +295,6 @@ h2 {
   text-transform: uppercase;
   color: #000;
 }
-
 
 @media (min-width: 768px) {
   .Product {
@@ -325,7 +340,6 @@ h2 {
   .Product img {
     margin-top: -180px;
   }
-
 }
 
 /* How it works */
