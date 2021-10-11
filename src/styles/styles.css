@@ -11,7 +11,7 @@ a {
 }
 
 .BoldLinks a {
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 a:hover {
@@ -75,14 +75,8 @@ h3,
 #LandingPage {
   display: flex;
   justify-content: center;
-      min-height: 60vh;
 }
 
-@media (max-width: 1200px) {
-  #LandingPage {
-
-  }
-}
 
 #LandingPage #ManageServicesBtn {
   margin-right: 0;
@@ -109,6 +103,8 @@ h3,
   padding: 50px 0 0 0;
 }
 
+
+
 .LandingPagePanel a {
   text-align: center;
   background: #fff;
@@ -134,7 +130,7 @@ h3,
 /* Buttons */
 
 .btn {
-  font-weight: black, bolder, bold;
+    font-weight: 900;
   text-transform: uppercase;
 }
 
