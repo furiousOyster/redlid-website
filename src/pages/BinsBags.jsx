@@ -74,9 +74,8 @@ export default function BinsBags() {
               <Col sm={12} md={8}>
                 <i>From $8 per collection</i>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                  fermentum, nulla luctus pharetra vulputate, felis tellus
-                  mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                  Clean and convenient – wheel it to where you are working in the
+          garden.
                 </p>
                 <Button variant="primary">Order garden waste bins</Button>{' '}
               </Col>
@@ -101,9 +100,8 @@ export default function BinsBags() {
               <Col sm={12} md={8}>
                 <i>From $8 per collection</i>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                  fermentum, nulla luctus pharetra vulputate, felis tellus
-                  mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                  Free standing frame Large capacity - situated anywhere on your
+          property.
                 </p>
                 <Button variant="primary">Order garden waste bags</Button>{' '}
               </Col>

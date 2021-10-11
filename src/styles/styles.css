@@ -37,6 +37,7 @@ h3,
 #ManageServicesBtn {
   margin-left: auto;
   margin-right: 15px;
+  border: 2px solid;
 }
 
 .navbar-expand-lg {
@@ -59,7 +60,7 @@ h3,
   }
 
   .CollapsableNav {
-    width: 500px;
+    width: 480px;
     position: absolute;
     right: 150px;
   }
@@ -67,6 +68,12 @@ h3,
   .CollapsableNav.skips {
     width: 600px;
   }
+  
+  #Redlid .nav-link {
+  padding-left: 1rem;
+    padding-right: 1rem;
+}
+  
 }
 
 /* Landing Page */
@@ -140,12 +147,15 @@ h3,
 .btn {
     font-weight: 900;
   text-transform: uppercase;
+  border: 3px solid;
 }
 
 .btn-primary {
   background-color: #e31b23;
   border-color: #e31b23;
   text-transform: uppercase;
+    color: #fff;
+  border: 3px solid #e31b23;
 }
 
 .btn-primary:hover {
@@ -153,7 +163,7 @@ h3,
   border-color: #e31b23;
   color: #e31b23;
   text-transform: uppercase;
-  font-weight: bolder;
+  border: 3px solid;
 }
 
 a:hover .btn {
@@ -161,6 +171,7 @@ a:hover .btn {
   border-color: #e31b23;
   color: #e31b23;
   text-transform: uppercase;
+  border: 3px solid;
 }
 
 /* Forms */
