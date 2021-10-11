@@ -183,6 +183,9 @@ a:hover .btn {
 
 /* Footer */
 
+#Footer {
+}
+
 .content {
   min-height: 100vh;
   display: flex;
@@ -195,8 +198,8 @@ a:hover .btn {
 }
 
 .Footer {
-  background-image: url('https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidTruckFooter.jpg?v=1632865751569'),
-    url('https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FGrassTexture.jpg?v=1632875746863');
+  background-image: url('https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidTruckGrassFooter.jpg?v=1633916000400'),
+    url('https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidGrass.jpg?v=1633916000401');
   background-repeat: no-repeat, repeat-x;
   background-position: bottom 0 right 0;
   background-size: auto 200px, auto 200px;
@@ -214,7 +217,7 @@ a:hover .btn {
   text-align: center;
   background: #459e52;
   padding: 20px;
-  margin: 0 -30px 30px;
+  margin: 0 0 30px;
   color: #fff;
 }
 
@@ -223,7 +226,7 @@ a:hover .btn {
     background-size: auto 250px, auto 250px;
   }
   .Footer h2 {
-    margin: 0 -30px 60px;
+    margin: 0 0 60px;
   }
 }
 
