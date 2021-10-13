@@ -112,16 +112,6 @@ export default function Skips() {
               </small>
             </FloatingLabel>
 
-            <FloatingLabel label="Type of waste">
-              <Form.Select aria-label="Type of waste">
-                <option value="general">General rubbish</option>
-                <option value="green">Green waste</option>
-                <option value="hard">
-                  Hard fill (concrete, soil, sand, tiles, bricks, stones, rocks)
-                </option>
-              </Form.Select>
-            </FloatingLabel>
-
             <FloatingLabel label="Skip size">
               {' '}
               {/* For Green and Garden Waste only */}

@@ -104,7 +104,7 @@ export default function Skips() {
             <FloatingLabel
               controlId="floatingInput"
               label="Email address"
-              className="mb-3"
+              className="mb-3" {/* style without classnames */}
             >
               <Form.Control type="email" placeholder="name@example.com" />
               <small id="emailHelp" className="form-text text-muted">
@@ -112,15 +112,6 @@ export default function Skips() {
               </small>
             </FloatingLabel>
 
-            <FloatingLabel label="Type of waste">
-              <Form.Select aria-label="Type of waste">
-                <option value="general">General rubbish</option>
-                <option value="green">Green waste</option>
-                <option value="hard">
-                  Hard fill (concrete, soil, sand, tiles, bricks, stones, rocks)
-                </option>
-              </Form.Select>
-            </FloatingLabel>
 
             <FloatingLabel label="Skip size">
               {' '}
