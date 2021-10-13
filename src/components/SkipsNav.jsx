@@ -24,9 +24,9 @@ export default () => (
     <Navbar.Toggle />
     <Navbar.Collapse>
       <Nav className="me-auto CollapsableNav">
-        <Nav.Link href="/Skips">Red Lid Skips</Nav.Link>
-        <Nav.Link href="/Skips#HowitWorks">How it works</Nav.Link>
-        <Nav.Link href="#Contact">Contact</Nav.Link>
+        <Link href="/BinsBags">Red Lid Bins & Bags</Link>
+        <Link href="/Skips#HowitWorks">How it works</Link>
+        <Link href="#Contact">Contact</Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>

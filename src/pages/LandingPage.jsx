@@ -34,7 +34,7 @@ export default function Home() {
             </Link>
           </Col>
           <Col className="LandingPagePanel" sm={12} md={6}>
-            <Link href="/skips">
+            <Link href="/Skips">
               <h1>Red Lid Skips</h1>
               <p>
                 For general waste, garden waste, or hardfill. <br />
