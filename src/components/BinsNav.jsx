@@ -9,7 +9,7 @@ import NavbarBrand from '../components/NavbarBrand'
 
 export default () => (
   <Navbar
-    onSelect={selectedKey => alert(`selected ${selectedKey}`)}
+    // onSelect={selectedKey => alert(`selected ${selectedKey}`)}
     bg="#fff"
     variant="light"
     expand="lg"

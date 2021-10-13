@@ -104,7 +104,7 @@ export default function Skips() {
             <FloatingLabel
               controlId="floatingInput"
               label="Email address"
-              className="mb-3" {/* style without classnames */}
+              className="mb-3" /* style without classnames */
             >
               <Form.Control type="email" placeholder="name@example.com" />
               <small id="emailHelp" className="form-text text-muted">
