@@ -161,12 +161,13 @@ export default function Skips() {
               </Button>
             </div>
             <p class="msg-error error"></p>
-            <Col>
+            <Col className="centered">
             <Button 
               variant="primary"
               type="submit"
               disabled="disabled"
               id="submitBtn"
+              size="lg"
             >
               Submit order
             </Button>

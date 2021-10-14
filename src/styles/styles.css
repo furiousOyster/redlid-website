@@ -444,11 +444,26 @@ h2 {
   margin-bottom: 15px;
 }
 
-.submitBtn {
-}
 
 .btn-primary.disabled, .btn-primary:disabled {
     color: #fff;
     background-color: #ccc;
     border-color: #ccc;
+}
+
+.centered {
+    margin: 50px;  
+  text-align: center;
+}
+
+/* Tiny things */
+
+@media (max-width: 380px) {
+ 
+nav #ManageServicesBtn {
+    display: none;
+  }
+  
+  
+  
 }
