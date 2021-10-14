@@ -161,14 +161,17 @@ export default function Skips() {
               </Button>
             </div>
             <p class="msg-error error"></p>
-            <button
+            <Col>
+            <Button 
+              variant="primary"
               type="submit"
-              class="btn btn-primary"
               disabled="disabled"
               id="submitBtn"
             >
               Submit order
-            </button>
+            </Button>
+</Col>            
+            
           </Form>
         </Row>
       </Container>

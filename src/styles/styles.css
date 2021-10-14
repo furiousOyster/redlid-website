@@ -188,6 +188,17 @@ a:hover .btn {
   border: 3px solid;
 }
 
+.btn-link {
+  display: inline-block;
+    margin: 0;
+  padding: 0px 0px 5px 9px;
+  text-decoration: none;
+  border: none;
+    color: #e31b23;
+  font-weight: normal;
+  text-transform: none;
+}
+
 /* Forms */
 
 .TermsModalBtn {
@@ -421,7 +432,7 @@ h2 {
 }
 
 .SkipUnloadTruck img {
-  max-width: 100%;
+  width: 100%;
   margin: 15px 0 0;
   border-radius: 4px 4px 0 0 ;
  border:  1px solid #ced4da;
@@ -431,4 +442,13 @@ h2 {
 .SkipUnloadTruck textarea {
   border-radius: 0 0 4px 4px;
   margin-bottom: 15px;
+}
+
+.submitBtn {
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #ccc;
+    border-color: #ccc;
 }

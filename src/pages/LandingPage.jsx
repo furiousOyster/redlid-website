@@ -30,7 +30,7 @@ export default function Home() {
                 src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Bin_Bag_Composite.jpg?v=1633916050818"
                 fluid
               />
-              <Button variant="primary">Browse Bins & Bags</Button>{' '}
+              <Button variant="primary">Browse Bins & Bags</Button>
             </Link>
           </Col>
           <Col className="LandingPagePanel" sm={12} md={6}>
@@ -44,7 +44,7 @@ export default function Home() {
                 src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Skip_Composite.jpg?v=1633916051057"
                 fluid
               />
-              <Button variant="primary">Browse Skips</Button>{' '}
+              <Button variant="primary">Browse Skips</Button>
             </Link>
           </Col>
         </Row>
