@@ -461,7 +461,7 @@ h2 {
 @media (max-width: 380px) {
  
 nav #ManageServicesBtn {
-    display: none;
+    width: 100px;
   }
   
   
