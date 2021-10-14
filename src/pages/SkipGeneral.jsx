@@ -30,7 +30,7 @@ export default function Skips() {
 
   return (
     <>
-      <Container fluid="lg">
+      <Container fluid="lg" id="pdp">
         <Row>
           <SkipsNav />
         </Row>
@@ -38,8 +38,10 @@ export default function Skips() {
         {/* HEADER */}
         <Row className="Header">
           <h1>Order a General Waste Skip</h1>
-          <p>For X Y Z A B and C</p>
+          <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_GeneralWaste_Skip.jpg?v=1632527973536" />
+
           <Col>
+            
             <Link href='/Skips' >
             <Button variant="outline-primary" className="ProductSwap">
               Order a different type of skip
