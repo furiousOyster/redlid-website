@@ -39,23 +39,17 @@ export default function Skips() {
         <Row className="Header">
           <h1>Order a General Waste Skip</h1>
           <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_GeneralWaste_Skip.jpg?v=1632527973536" />
-
-          <Col>
-            
-            <Link href='/Skips' >
+          <Link href="/Skips">
             <Button variant="outline-primary" className="ProductSwap">
               Order a different type of skip
             </Button>{' '}
-              </Link>
-          </Col>
+          </Link>
         </Row>
-
 
         {/* ORDER FORM */}
 
-
         <Row>
-          <Col>
+          <i className="pdpHelptext">
             <p>
               Any Skip orders are subject to availability. Confirmation of your
               order and the delivery date will be confirmed via email.
@@ -64,7 +58,7 @@ export default function Skips() {
               Orders outside of our regular office hours Mon-Thurs 8-5pm and
               Friday 8-3pm will be confirmed on the next business day.
             </p>
-          </Col>
+          </i>
 
           <Form>
             <FloatingLabel
@@ -176,10 +170,9 @@ export default function Skips() {
             </button>
           </Form>
         </Row>
-
       </Container>
 
-         <Footer />
+      <Footer />
 
       <ModalSkipTerms show={showTerms} onHide={() => setShowTerms(false)} />
       <ModalFaqs show={showFaqs} onHide={() => setShowFaqs(false)} />

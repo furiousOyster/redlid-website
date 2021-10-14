@@ -30,7 +30,7 @@ export default function Skips() {
 
   return (
     <>
-      <Container fluid="lg">
+      <Container fluid="lg" id="pdp">
         <Row>
           <SkipsNav />
         </Row>

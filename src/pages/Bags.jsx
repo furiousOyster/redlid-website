@@ -33,7 +33,7 @@ export default function Bags() {
   return (
     <>
       {/* CONTENT CONTAINER */}
-      <Container fluid="lg">
+      <Container fluid="lg" id="pdp">
         <Row>
           <BinsNav />
         </Row>
