@@ -33,7 +33,6 @@ h3,
   text-transform: uppercase;
 }
 
-
 #ManageServicesBtn {
   margin-left: auto;
   margin-right: 15px;
@@ -51,6 +50,18 @@ h3,
   top: 4px;
 }
 
+.CollapsableNav {
+  text-align: right;  
+    margin-top: 15px;
+}
+
+.CollapsableNav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 20px;
+}
+
 /* Nav Response*/
 
 @media screen and (min-width: 992px) {
@@ -60,20 +71,22 @@ h3,
   }
 
   .CollapsableNav {
-    width: 480px;
     position: absolute;
-    right: 150px;
+    right: 220px;
   }
+  
+  .CollapsableNav a {
+  margin: 0 20px;
+}
 
   .CollapsableNav.skips {
     width: 600px;
   }
-  
+
   #Redlid .nav-link {
-  padding-left: 1rem;
+    padding-left: 1rem;
     padding-right: 1rem;
-}
-  
+  }
 }
 
 /* Landing Page */
@@ -82,7 +95,6 @@ h3,
   display: flex;
   justify-content: center;
 }
-
 
 #LandingPage #ManageServicesBtn {
   margin-right: 0;
@@ -110,15 +122,13 @@ h3,
 }
 
 @media (min-width: 768px) {
-.LandingPagePanel {
-  display: flex;
-  justify-content: center;
-  background: #fff;
-  padding: 9vh 0;
+  .LandingPagePanel {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding: 9vh 0;
+  }
 }
-  
-}
-
 
 .LandingPagePanel a {
   text-align: center;
@@ -145,7 +155,7 @@ h3,
 /* Buttons */
 
 .btn {
-    font-weight: 900;
+  font-weight: 900;
   text-transform: uppercase;
   border: 3px solid;
 }
@@ -154,7 +164,7 @@ h3,
   background-color: #e31b23;
   border-color: #e31b23;
   text-transform: uppercase;
-    color: #fff;
+  color: #fff;
   border: 3px solid #e31b23;
 }
 
@@ -167,7 +177,7 @@ h3,
 }
 
 .btn-outline-primary {
-    background-color: #fff;
+  background-color: #fff;
   border-color: #e31b23;
   color: #e31b23;
   text-transform: uppercase;
@@ -175,9 +185,9 @@ h3,
 }
 
 .btn-outline-primary:hover {
-  background-color: #e31b23!important;
-  border-color: #e31b23!important;
-   color: #fff!important;
+  background-color: #e31b23 !important;
+  border-color: #e31b23 !important;
+  color: #fff !important;
 }
 
 a:hover .btn {
@@ -190,11 +200,11 @@ a:hover .btn {
 
 .btn-link {
   display: inline-block;
-    margin: 0;
+  margin: 0;
   padding: 0px 0px 5px 9px;
   text-decoration: none;
   border: none;
-    color: #e31b23;
+  color: #e31b23;
   font-weight: normal;
   text-transform: none;
 }
@@ -355,12 +365,10 @@ h2 {
   .Product i {
     text-align: left;
   }
-  
+
   .Product p {
-  margin: 10px 0 30px;
-}
-  
-  
+    margin: 10px 0 30px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -409,7 +417,6 @@ h2 {
   }
 }
 
-
 /* PDP ORDER pages */
 
 #pdp .Header * {
@@ -434,8 +441,8 @@ h2 {
 .SkipUnloadTruck img {
   width: 100%;
   margin: 15px 0 0;
-  border-radius: 4px 4px 0 0 ;
- border:  1px solid #ced4da;
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #ced4da;
   border-bottom: none;
 }
 
@@ -444,28 +451,27 @@ h2 {
   margin-bottom: 15px;
 }
 
-
-.btn-primary.disabled, .btn-primary:disabled {
-    color: #fff;
-    background-color: #ccc;
-    border-color: #ccc;
+.btn-primary.disabled,
+.btn-primary:disabled {
+  color: #fff;
+  background-color: #ccc;
+  border-color: #ccc;
 }
 
 .centered {
-    margin: 50px;  
+  margin: 20px 0 40px;
   text-align: center;
 }
 
 /* Tiny things */
 
 @media (max-width: 380px) {
- 
-nav #ManageServicesBtn {
+  nav #ManageServicesBtn {
     width: 100px;
-  line-height: 14px;
-  
+    line-height: 14px;
   }
-  
-  
-  
+
+  .navbar-brand img {
+    margin-top: 4px;
+  }
 }
