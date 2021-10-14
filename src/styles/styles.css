@@ -59,7 +59,12 @@ h3,
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 900;
-  margin: 20px;
+  margin: 15px 10px 0 0;
+}
+
+.navbar-toggler {
+  
+  
 }
 
 /* Nav Response*/
