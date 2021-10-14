@@ -120,7 +120,7 @@ export default function Skips() {
                 Weight limits: 9m³=1500kg | 6m³=1000kg | 3m³=500kg
               </small>
             </FloatingLabel>
-
+  <div className="SkipUnloadTruck" >
             <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fskipunloadslowversion9frame.gif?v=1632363782499" />
 
             <FloatingLabel
@@ -133,6 +133,7 @@ export default function Skips() {
                 style={{ height: '100px' }}
               />
             </FloatingLabel>
+    </div>
 
             <FloatingLabel label="Payment method">
               <Form.Select aria-label="Floating label select example">
