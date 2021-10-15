@@ -94,6 +94,21 @@ h3,
   }
 }
 
+/* Tiny things */
+
+@media (max-width: 380px) {
+  nav #ManageServicesBtn {
+    width: 100px;
+    line-height: 14px;
+  }
+
+  .navbar-brand img {
+    margin-top: 4px;
+  }
+}
+
+
+
 /* Landing Page */
 
 #LandingPage {
@@ -301,6 +316,18 @@ a:hover .btn {
   }
 }
 
+
+/* Tiny things */
+
+@media (max-width: 380px) {
+  .FooterContents {
+    
+    padding: 0 30px 0;
+  }
+}
+
+
+
 /* PSPs */
 
 .Header h1 {
@@ -468,15 +495,4 @@ h2 {
   text-align: center;
 }
 
-/* Tiny things */
 
-@media (max-width: 380px) {
-  nav #ManageServicesBtn {
-    width: 100px;
-    line-height: 14px;
-  }
-
-  .navbar-brand img {
-    margin-top: 4px;
-  }
-}
