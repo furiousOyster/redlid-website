@@ -269,7 +269,9 @@ a:hover .btn {
 
 /* Footer */
 
-#Footer {
+#Footer a {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .content {
@@ -281,6 +283,8 @@ a:hover .btn {
 .Footer table {
   width: 100%;
   margin-bottom: 20px;
+  text-transform: uppercase;
+font-weight: 900;
 }
 
 .Footer {
@@ -321,7 +325,6 @@ a:hover .btn {
 
 @media (max-width: 380px) {
   .FooterContents {
-    
     padding: 0 30px 0;
   }
 }
