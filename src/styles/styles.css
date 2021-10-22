@@ -568,7 +568,7 @@ label {
 .form-floating > .form-select ~ label {
   opacity: 1;
   color: #000;
-  transform: scale(0.85) translateY(-0.5 rem) translateX(0.15 rem);
+  transform: scale(.6) translateY(-0.5rem) translateX(0.15rem);
 }
 
 .pdpHelptext {
