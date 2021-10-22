@@ -12,6 +12,7 @@ export default () => (
     bg="#fff"
     variant="light"
     expand="lg"
+    id="SkipsNav"
     collapseOnSelect
   >
     <Navbar.Brand href="/">

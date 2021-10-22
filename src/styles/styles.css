@@ -98,12 +98,15 @@ h3,
 
 @media (max-width: 380px) {
   nav #ManageServicesBtn {
-    width: 100px;
+    width: 92px;
+    height: 39px;
     line-height: 14px;
+    font-size: 90%;
+    padding: 3px 0;
   }
 
   .navbar-brand img {
-    margin-top: 4px;
+    margin-top: 0px;
   }
 }
 
