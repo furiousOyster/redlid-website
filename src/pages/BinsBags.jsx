@@ -42,9 +42,9 @@ export default function BinsBags() {
         
          {/* HEADER */}
         <Row className="Header">
-          <Col md={{ span: 8, offset: 4 }}>
+          <Col>
             
-          <h1>Choose a bag or bin</h1>
+          <h1>Choose a bag or&nbsp;bin</h1>
           
           </Col>
           

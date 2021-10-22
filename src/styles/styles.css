@@ -50,17 +50,17 @@ h3,
 }
 
 .navbar-light .navbar-toggler {
-border: 2px solid #000;
+  border: 2px solid #000;
   color: #000;
   border-radius: 0 9px 0 9px;
   padding: 2px 6px;
+  background: #fff;
 }
 
 .navbar-light .navbar-toggler-icon {
-    background-image: url(https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Ficonmonstr-menu-1.svg?v=1634874306667);
+  background-image: url(https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Ficonmonstr-menu-1.svg?v=1634874306667);
   background-size: 50%;
 }
-
 
 .navbar-expand-lg {
   justify-content: space-between;
@@ -74,8 +74,8 @@ border: 2px solid #000;
 }
 
 .CollapsableNav {
-  text-align: right;  
-    margin-top: 15px;
+  text-align: right;
+  margin-top: 15px;
 }
 
 .CollapsableNav a {
@@ -86,25 +86,25 @@ border: 2px solid #000;
 }
 
 .navbar h1 {
- display: none;
+  display: none;
   text-transform: uppercase;
   margin-top: 7px;
   margin-left: 7px;
   font-size: 1.2rem;
 }
 
-@media (min-width: 650px) {
+#BinsNav, #SkipsNav {
   
-  .navbar h1 {
- display: inline-block;
+  background: #459e52;
 }
-  
-  
-}
-
-
 
 /* Nav Response*/
+
+@media (min-width: 650px) {
+  .navbar h1 {
+    display: inline-block;
+  }
+}
 
 @media screen and (min-width: 992px) {
   .navbar-expand-lg {
@@ -116,10 +116,10 @@ border: 2px solid #000;
     position: absolute;
     right: 220px;
   }
-  
+
   .CollapsableNav a {
-  margin: 0 10px;
-}
+    margin: 0 10px;
+  }
 
   .CollapsableNav.skips {
     width: 600px;
@@ -129,10 +129,9 @@ border: 2px solid #000;
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  
+
   .navbar-nav {
     margin-top: 0px;
-    
   }
 }
 
@@ -151,8 +150,6 @@ border: 2px solid #000;
     margin-top: 0px;
   }
 }
-
-
 
 /* Landing Page */
 
@@ -329,7 +326,7 @@ a:hover .btn {
   width: 100%;
   margin-bottom: 20px;
   text-transform: uppercase;
-font-weight: 900;
+  font-weight: 900;
 }
 
 .Footer {
@@ -365,7 +362,6 @@ font-weight: 900;
   }
 }
 
-
 /* Tiny things */
 
 @media (max-width: 380px) {
@@ -374,35 +370,26 @@ font-weight: 900;
   }
 }
 
-
-
 /* PSPs */
 
 .Header h1 {
   text-align: center;
   text-transform: uppercase;
-  padding: 60px 0 30px;
+  padding: 50px 0 30px;
+  width: 100%;
 }
 
 .Header p:last-of-type {
   margin-bottom: 50px;
 }
 
-.Header .col-md-8:first-of-type {
-  margin: 60px 0;
+.Header div:first-of-type {
+  margin: 0 0 30px;
   text-align: center;
   background: #459e52;
   padding: 20px;
   color: #fff;
   width: 100%;
-}
-
-
-
-@media (min-width: 768px) {
-  .Header h1 {
-    text-align: left;
-  }
 }
 
 .Product {
@@ -493,7 +480,7 @@ h2 {
   margin: 60px 0 60px;
 }
 
-.AboutUs {
+#AboutUs {
   margin-top: 60px;
 }
 
@@ -553,5 +540,3 @@ h2 {
   margin: 20px 0 40px;
   text-align: center;
 }
-
-
