@@ -420,7 +420,6 @@ a:hover .btn {
   max-width: 350px;
 }
 
-
 /* Grow */
 .hvr-grow {
   display: inline-block;
@@ -433,7 +432,9 @@ a:hover .btn {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
   -webkit-transform: scale(1.025);
   transform: scale(1.025);
 }
@@ -459,12 +460,10 @@ h2 {
 }
 
 @media (min-width: 768px) {
-  
   .Description {
-  text-align: left;
-}
-  
-  
+    text-align: left;
+  }
+
   .Product {
     margin-bottom: 90px;
     text-align: left;
@@ -547,15 +546,34 @@ h2 {
   margin: auto;
 }
 
-
 #pdp form {
   max-width: 760px;
   margin: auto;
 }
 
+.form-control {
+  margin-bottom: 40px;
+  border: #000 2px solid;
+  border-radius: 0 9px;
+}
+
+label {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #e31b23;
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  opacity: 1;
+  color: #000;
+  transform: scale(0.85) translateY(-0.5 rem) translateX(0.15 rem);
+}
+
 .pdpHelptext {
   margin: 30px auto 15px;
-    max-width: 760px;
+  max-width: 760px;
 }
 
 .SkipUnloadTruck img {
