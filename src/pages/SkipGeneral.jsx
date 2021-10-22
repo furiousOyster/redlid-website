@@ -74,21 +74,20 @@ export default function Skips() {
             >
               <Form.Control type="text" placeholder="Enter your address" />
             </FloatingLabel>
-
-            <FloatingLabel
-              id="deliveryDate"
-              controlId="floatingInput"
-              label="What date would you like the skip delivered?"
-              className="mb-3"
-              aria-describedby="deliveryDateHelp"
-            >
+            
+            <Form.Group className="mb-3" id="deliveryDate">
+    <Form.Label>What date would you like the skip delivered?</Form.Label>              
               <Form.Control type="date" placeholder="Enter date" />
-
-              <Form.Text id="deliverydatehelp" muted>
+                 <Form.Text id="deliverydatehelp" muted>
                 If you choose to have a skip delivered on a public holiday, we
                 will need to deliver it the day before.
               </Form.Text>
-            </FloatingLabel>
+              
+  </Form.Group>
+            
+            
+
+
 
             <FloatingLabel
               id="fullName"
@@ -121,6 +120,9 @@ export default function Skips() {
                 We'll never share your email with anyone else.
               </Form.Text>
             </FloatingLabel>
+            
+            
+            
 
             <div className="mb-3">
               <Form.Check
