@@ -370,6 +370,8 @@ a:hover .btn {
   }
 }
 
+
+
 /* PSPs */
 
 .Header h1 {
@@ -389,6 +391,7 @@ a:hover .btn {
 
 .Description {
   text-align: center;
+  padding: 40px 0;
 }
 
 .Product {
@@ -412,6 +415,18 @@ a:hover .btn {
   width: 80%;
   max-width: 350px;
 }
+
+/* Tiny things */
+
+@media (max-width: 767px) {
+img.BinCropper {
+  margin-top: -20px;
+  z-index: -99;
+}
+}
+
+
+
 
 .Product p {
   color: #000;
