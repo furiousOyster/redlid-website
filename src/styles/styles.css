@@ -36,8 +36,31 @@ h3,
 #ManageServicesBtn {
   margin-left: auto;
   margin-right: 15px;
-  border: 2px solid;
+  border: 2px solid #000;
+  color: #000;
+  border-radius: 0 9px 0 9px;
+  background: #fff;
 }
+
+#ManageServicesBtn:hover,
+.navbar-light .navbar-toggler:hover {
+  border-color: #e31b23;
+  color: #e31b23;
+  background: #fff;
+}
+
+.navbar-light .navbar-toggler {
+border: 2px solid #000;
+  color: #000;
+  border-radius: 0 9px 0 9px;
+  padding: 2px 6px;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Ficonmonstr-menu-1.svg?v=1634874306667);
+  background-size: 50%;
+}
+
 
 .navbar-expand-lg {
   justify-content: space-between;
@@ -62,16 +85,7 @@ h3,
   margin: 15px 10px 0 0;
 }
 
-.navbar-light .navbar-toggler {
-border: 2px solid #000;
-  color: #000;
-  border-radius: 0 9px 0 9px;
-  padding: 2px 6px;
-}
 
-.navbar-light .navbar-toggler-icon {
-    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
-}
 
 /* Nav Response*/
 
