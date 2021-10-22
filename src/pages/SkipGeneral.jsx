@@ -26,45 +26,31 @@ import Footer from '../components/Footer'
 export default function Skips() {
   const [showTerms, setShowTerms] = useState(false)
   const [showFaqs, setShowFaqs] = useState(false)
-  
+
   return (
     <>
-      
-       {/* CONTENT CONTAINER */}
+      {/* CONTENT CONTAINER */}
       <Container fluid id="NavContainer">
         <Row>
           <SkipsNav />
         </Row>
-     
-         {/* HEADER */}
 
-        <Row className="Header"> 
+        {/* HEADER */}
+
+        <Row className="Header">
           <h1>Order a General Waste Skip</h1>
-                  </Row>
-          
-          
-    
-      </Container>      
+        </Row>
+      </Container>
 
-
-
-      
-        <Container id="pdp">
-          <Row className="pdptop">
+      <Container id="pdp">
+        <Row className="pdptop">
           <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_GeneralWaste_Skip.jpg?v=1632527973536" />
           <Link href="/Skips">
             <Button variant="outline-primary" className="ProductSwap">
               Order a different type of skip
             </Button>{' '}
           </Link>
-</Row>
-          
-    
-        
-        
-        
-        
-        
+        </Row>
 
         {/* ORDER FORM */}
 
@@ -109,6 +95,7 @@ export default function Skips() {
             >
               <Form.Control type="text" placeholder="Your name" />
             </FloatingLabel>
+
             <FloatingLabel
               controlId="floatingInput"
               label="Phone number"
@@ -118,52 +105,63 @@ export default function Skips() {
             </FloatingLabel>
 
             <FloatingLabel
+              id="Email"
               controlId="floatingInput"
               label="Email address"
               className="mb-3"
+              aria-describedby="emailHelp"
             >
               <Form.Control type="email" placeholder="name@example.com" />
+              
+              
+              
+              <Form.Text id="emailHelp" muted>
+ We'll never share your email with anyone else.
+  </Form.Text>
+              
+              
               <small id="emailHelp" className="form-text text-muted">
-                We'll never share your email with anyone else.
+               
               </small>
             </FloatingLabel>
             
             
             
-            
-              {['checkbox', 'radio'].map((type) => (
-    <div key={`inline-${type}`} className="mb-3">
-      <Form.Check
-        inline
-        label="1"
-        name="group1"
-        type={type}
-        id={`inline-${type}-1`}
-      />
-      <Form.Check
-        inline
-        label="2"
-        name="group1"
-        type={type}
-        id={`inline-${type}-2`}
-      />
-      <Form.Check
-        inline
-        disabled
-        label="3 (disabled)"
-        type={type}
-        id={`inline-${type}-3`}
-      />
-    </div>
-  ))}
+            <>
+  <Form.Label htmlFor="inputPassword5">Password</Form.Label>
+  <Form.Control
+    type="password"
+    id="inputPassword5"
+    aria-describedby="passwordHelpBlock"
+  />
+
+</>
             
             
-            
-            
-            
-            
-            
-            
+
+            <div lassName="mb-3">
+              <Form.Check
+                inline
+                label="General Waste"
+                name="Skip Type"
+                type="inline-radio"
+                id="General Waste"
+              />
+              <Form.Check
+                inline
+                label="Green Waste"
+                name="Skip Type"
+                type="inline-radio"
+                id="Green Waste"
+              />
+              <Form.Check
+                inline
+                label="Hard Fill"
+                name="Skip Type"
+                type="inline-radio"
+                id="Hard Fill"
+              />
+            </div>
 
             <FloatingLabel label="Skip size">
               {' '}
