@@ -20,7 +20,7 @@ export default function Home() {
           <MainNav />
           
             <Col className="LandingPagePanel" sm={12} md={6}>
-            <Link href="/Skips">
+            <Link href="/Skips"  className="hvr-grow">
               <h1>Red Lid Skips</h1>
               <p>
                 For general waste, garden waste, or hardfill. <br />
@@ -29,13 +29,14 @@ export default function Home() {
               <Image
                 src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Skip_Composite.jpg?v=1633916051057"
                 fluid
+                
               />
               <Button variant="primary">Browse Skips</Button>
             </Link>
           </Col>
           
           <Col className="LandingPagePanel" sm={12} md={6}>
-            <Link href="/BinsBags">
+            <Link href="/BinsBags" className="hvr-grow">
               <h1>Garden Bins & Bags</h1>
               <p>
                 For green and garden waste. <br />

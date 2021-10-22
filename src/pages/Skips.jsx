@@ -67,7 +67,7 @@ export default function Skips() {
 
         {/* LISTING GENERAL WASTE */}
         <Row>
-          <Link href="/SkipGeneral" className="Product">
+          <Link href="/SkipGeneral" className="Product hvr-grow ">
             <Row>
               <Col md={{ span: 8, offset: 4 }}>
                 <h2>General Waste Skip</h2>
@@ -95,7 +95,7 @@ export default function Skips() {
 
         {/* LISTING GREEN WASTE */}
         <Row>
-          <Link href="/SkipGreen" className="Product">
+          <Link href="/SkipGreen" className="Product hvr-grow ">
             <Row>
               <Col md={{ span: 8, offset: 4 }}>
                 <h2>Green Waste Skip</h2>
@@ -123,7 +123,7 @@ export default function Skips() {
 
         {/* LISTING HARDFILL*/}
         <Row>
-          <Link href="/SkipHardfill" className="Product">
+          <Link href="/SkipHardfill" className="Product hvr-grow ">
             <Row>
               <Col md={{ span: 8, offset: 4 }}>
                 <h2>Hardfill Skip</h2>

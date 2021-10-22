@@ -60,7 +60,7 @@ export default function BinsBags() {
 
         {/* LISTING BINS */}
         <Row>
-          <Link className="Product" href="/bins">
+          <Link className="Product hvr-grow" href="/bins">
 
             <Row>
               <Col md={{ span: 8, offset: 4 }}>
@@ -88,7 +88,7 @@ export default function BinsBags() {
         </Row>
         {/* LISTING BAGS */}
         <Row>
-          <Link className="Product" href="/bags">
+          <Link className="Product hvr-grow " href="/bags">
             <Row>
               <Col md={{ span: 8, offset: 4 }}>
               <h2>600L Garden Bag</h2>
