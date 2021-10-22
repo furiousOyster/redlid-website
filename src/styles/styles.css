@@ -379,17 +379,16 @@ a:hover .btn {
   width: 100%;
 }
 
-.Header p:last-of-type {
-  margin-bottom: 50px;
-}
 
-.Header div:first-of-type {
-  margin: 0 0 30px;
+.Header {
   text-align: center;
   background: #459e52;
   padding: 20px;
   color: #fff;
-  width: 100%;
+}
+
+.Description {
+  text-align: center;
 }
 
 .Product {

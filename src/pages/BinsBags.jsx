@@ -31,34 +31,32 @@ export default function BinsBags() {
   return (
     <>
       {/* CONTENT CONTAINER */}
-      <Container fluid>
+      <Container fluid id="NavContainer">
         <Row>
           <BinsNav />
         </Row>
-        
-        
-        
-        
-        
+     
          {/* HEADER */}
-        <div className="Header">
-        <Row>
-          <h1>Choose a bag or&nbsp;bin</h1>
-    
-        </Row>
-        <Row>
-          
-          <Col>
-            <p>
-              Regular or one-off collections for green and garden waste
-            </p>
-          </Col>
-        </Row>
-        </div>
 
-      </Container>
+        <Row className="Header"> 
+          <h1>Choose a bag or&nbsp;bin</h1>
+        </Row>
+          
+    
+      </Container>      
+
+
+
       
         <Container>
+          
+            <Row>    
+
+            <p className="Description">
+              Regular or one-off collections for green and garden waste
+            </p>
+          
+          </Row>    
 
         {/* LISTING BINS */}
         <Row>
