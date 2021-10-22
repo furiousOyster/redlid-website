@@ -29,26 +29,41 @@ export default function Skips() {
 
   return (
     <>
-      <Container fluid="lg">
+      
+       {/* CONTENT CONTAINER */}
+      <Container fluid id="NavContainer">
         <Row>
           <SkipsNav />
         </Row>
+     
+         {/* HEADER */}
 
-        {/* HEADER */}
-        <Row className="Header">
-          <Col md={{ span: 8, offset: 4 }}>
-          <h1>Choose a skip</h1></Col>
-          <Col md={{ span: 7, offset: 4 }}>
-            <p>
+        <Row className="Header"> 
+          <h1>Choose a Skip</h1>
+        </Row>
+          
+    
+      </Container>      
+
+
+
+      
+        <Container>
+          
+            <Row>    
+
+            <p className="Description">
               Any Skip orders are subject to availability. Confirmation of your
               order and the delivery date will be confirmed via email.
-            </p>
-            <p>
+              <br/>
               Orders outside of our regular office hours Mon-Thurs 8-5pm and
               Friday 8-3pm will be confirmed on the next business day.
             </p>
-          </Col>
-        </Row>
+          
+          </Row>    
+
+        {/* LISTING BINS */}
+
 
         {/* LISTING GENERAL WASTE */}
         <Row>

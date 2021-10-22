@@ -18,7 +18,7 @@ export default () => (
     <Navbar.Brand href="/">
       <Image
         alt="Red Lid general, green waste and hardfill skips in Waikato, New Zealand."
-        src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fredlidlogoscalable.png?v=1631682207638"
+        src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidSkipsLogo149h.png?v=1634934349943"
         height="38"
         className="d-inline-block align-top"
       />

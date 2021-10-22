@@ -412,6 +412,7 @@ a:hover .btn {
 }
 
 .Product img {
+  margin-top: 20px;
   width: 80%;
   max-width: 350px;
 }
@@ -420,8 +421,9 @@ a:hover .btn {
 
 @media (max-width: 767px) {
 img.BinCropper {
-  margin-top: -20px;
-  z-index: -99;
+  margin-top: -40px;
+      z-index: -1;
+    position:relative;
 }
 }
 
