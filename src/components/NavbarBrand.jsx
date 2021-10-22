@@ -6,7 +6,7 @@ export default () => (
 
     <Navbar.Brand href="/">
       <Image
-        alt="Reliable Waikato Waste Disposal Services since 1964"
+        alt="Red Lid Garden Bins and Bags in Waikato, New Zealand."
         src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fredlidlogoscalable.png?v=1631682207638"
         height="38"
         className="d-inline-block align-top"

@@ -37,7 +37,7 @@ export default function Skips() {
         {/* HEADER */}
         <Row className="Header">
           <Col md={{ span: 8, offset: 4 }}>
-          <h1>Red Lid Skips</h1></Col>
+          <h1>Choose a skip</h1></Col>
           <Col md={{ span: 7, offset: 4 }}>
             <p>
               Any Skip orders are subject to availability. Confirmation of your
