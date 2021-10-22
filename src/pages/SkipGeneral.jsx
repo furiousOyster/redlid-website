@@ -117,24 +117,16 @@ export default function Skips() {
                 We'll never share your email with anyone else.
               </Form.Text>
             </FloatingLabel>
-            
-            
-            
-      
-            
-               <Form.Label className="blacklabel">
-                What type of waste?
-              </Form.Label>
-            
-              <Form.Group className="mb-3" id="Skip Size?">
-   
-   
-                      <Form.Check
+
+            <Form.Label className="blacklabel">What type of waste?</Form.Label>
+
+            <Form.Group className="mb-3" id="Skip Size?">
+              <Form.Check
                 inline
                 label="General Waste"
                 name="Skip Type"
                 type="inline-radio"
-                id="GeneralWaste"
+                id="9mSKipSize"
               />
               <Form.Check
                 inline
@@ -150,14 +142,13 @@ export default function Skips() {
                 type="inline-radio"
                 id="HardFill"
               />
-                
-                
-                
-                
-                
             </Form.Group>
             
-
+            
+            
+            
+            
+            
 
             <FloatingLabel label="Skip size">
               {' '}
