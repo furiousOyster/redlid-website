@@ -118,40 +118,50 @@ export default function Skips() {
               </Form.Text>
             </FloatingLabel>
 
-            <Form.Label className="blacklabel">What type of waste?</Form.Label>
+            <h2 className="blacklabel">Choose a skip size</h2>
 
             <Form.Group className="mb-3" id="Skip Size?">
-              <Form.Check
-                inline
-                label="General Waste"
-                name="Skip Type"
-                type="inline-radio"
-                id="9mSKipSize"
-              />
-              <Form.Check
-                inline
-                label="Green Waste"
-                name="Skip Type"
-                type="inline-radio"
-                id="GreenWaste"
-              />
-              <Form.Check
-                inline
-                label="Hard Fill"
-                name="Skip Type"
-                type="inline-radio"
-                id="HardFill"
-              />
+              <Row>
+                <Col>
+                  <Image
+                    fluid
+                    src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FSKipSize9m.jpg?v=1634945630545"
+                  />
+                  <Form.Check
+                    label="9 cubic metres"
+                    name="Skip Type"
+                    type="inline-radio"
+                    id="SkipSize9m"
+                  />
+                </Col>
+                <Col>
+                  <Image
+                    fluid
+                    src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FSKipSize6m.jpg?v=1634945630563"
+                  />
+                  <Form.Check
+                    label="6 cubic metres"
+                    name="Skip Type"
+                    type="inline-radio"
+                    id="SkipSize6m"
+                  />
+                </Col>
+                <Col>
+                  <Image
+                    fluid
+                    src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FSKipSize3m.jpg?v=1634945630510"
+                  />
+                  <Form.Check
+                    label="3 cubic metres"
+                    name="Skip Type"
+                    type="inline-radio"
+                    id="SkipSize3m"
+                  />
+                </Col>
+              </Row>
             </Form.Group>
-            
-            
-            
-            
-            
-            
 
             <FloatingLabel label="Skip size">
-              {' '}
               {/* For Green and Garden Waste only */}
               <Form.Select aria-label="Skip size">
                 <option>9 cubic metres - $280</option>
