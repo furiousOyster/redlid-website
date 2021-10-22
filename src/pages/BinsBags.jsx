@@ -31,7 +31,7 @@ export default function BinsBags() {
   return (
     <>
       {/* CONTENT CONTAINER */}
-      <Container fluid="lg">
+      <Container fluid>
         <Row>
           <BinsNav />
         </Row>
@@ -41,22 +41,24 @@ export default function BinsBags() {
         
         
          {/* HEADER */}
-        <Row className="Header">
-          <Col>
-            
+        <div className="Header">
+        <Row>
           <h1>Choose a bag or&nbsp;bin</h1>
+    
+        </Row>
+        <Row>
           
-          </Col>
-          
-          <Col md={{ span: 7, offset: 4 }}>
+          <Col>
             <p>
               Regular or one-off collections for green and garden waste
             </p>
           </Col>
         </Row>
+        </div>
 
-    
-        
+      </Container>
+      
+        <Container>
 
         {/* LISTING BINS */}
         <Row>
