@@ -557,11 +557,30 @@ h2 {
   border-radius: 0 5px;
 }
 
+#deliveryDate label {
+  margin-top: 40px;
+}
+
+#deliveryDate .form-control {
+  margin-top: 0px;
+}
+
+input {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 900;
+}
+
 label {
   text-transform: uppercase;
   font-weight: 700;
   color: #e31b23;
 }
+
+
+
+
+
 
 .form-floating > .form-control:focus ~ label,
 .form-floating > .form-control:not(:placeholder-shown) ~ label,
