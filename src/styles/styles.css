@@ -459,6 +459,12 @@ h2 {
 }
 
 @media (min-width: 768px) {
+  
+  .Description {
+  text-align: left;
+}
+  
+  
   .Product {
     margin-bottom: 90px;
     text-align: left;
@@ -531,15 +537,16 @@ h2 {
 
 /* PDP ORDER pages */
 
-#pdp .Header * {
+.pdptop * {
   text-align: center;
 }
 
-#pdp .Header img {
+.pdptop img {
   max-width: 512px;
   display: block;
   margin: auto;
 }
+
 
 #pdp form {
   max-width: 760px;
@@ -547,7 +554,8 @@ h2 {
 }
 
 .pdpHelptext {
-  margin: 30px 0 15px;
+  margin: 30px auto 15px;
+    max-width: 760px;
 }
 
 .SkipUnloadTruck img {

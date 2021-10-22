@@ -51,7 +51,7 @@ export default function Skips() {
         <Container>
           
             <Row>    
-
+          <Col md={{ span: 8, offset: 4 }}>   
             <p className="Description">
               Any Skip orders are subject to availability. Confirmation of your
               order and the delivery date will be confirmed via email.
@@ -59,10 +59,9 @@ export default function Skips() {
               Orders outside of our regular office hours Mon-Thurs 8-5pm and
               Friday 8-3pm will be confirmed on the next business day.
             </p>
+             </Col>
           
           </Row>    
-
-        {/* LISTING BINS */}
 
 
         {/* LISTING GENERAL WASTE */}

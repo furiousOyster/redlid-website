@@ -26,24 +26,45 @@ import Footer from '../components/Footer'
 export default function Skips() {
   const [showTerms, setShowTerms] = useState(false)
   const [showFaqs, setShowFaqs] = useState(false)
-
+  
   return (
     <>
-      <Container fluid="lg" id="pdp">
+      
+       {/* CONTENT CONTAINER */}
+      <Container fluid id="NavContainer">
         <Row>
           <SkipsNav />
         </Row>
+     
+         {/* HEADER */}
 
-        {/* HEADER */}
-        <Row className="Header">
+        <Row className="Header"> 
           <h1>Order a General Waste Skip</h1>
+                  </Row>
+          
+          
+    
+      </Container>      
+
+
+
+      
+        <Container id="pdp">
+          <Row className="pdptop">
           <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_GeneralWaste_Skip.jpg?v=1632527973536" />
           <Link href="/Skips">
             <Button variant="outline-primary" className="ProductSwap">
               Order a different type of skip
             </Button>{' '}
           </Link>
-        </Row>
+</Row>
+          
+    
+        
+        
+        
+        
+        
 
         {/* ORDER FORM */}
 
