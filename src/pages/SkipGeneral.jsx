@@ -122,7 +122,7 @@ export default function Skips() {
               </Form.Text>
             </FloatingLabel>
 
-            <div lassName="mb-3">
+            <div className="mb-3">
               <Form.Check
                 inline
                 label="General Waste"
@@ -145,6 +145,16 @@ export default function Skips() {
                 id="Hard Fill"
               />
             </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
 
             <FloatingLabel label="Skip size">
               {' '}
@@ -162,6 +172,7 @@ export default function Skips() {
               <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fskipunloadslowversion9frame.gif?v=1632363782499" />
 
               <FloatingLabel
+                id="whereToPlaceTheSkip"
                 controlId="Comments"
                 label="Where would you like the skip placed?"
               >
@@ -171,6 +182,11 @@ export default function Skips() {
                   style={{ height: '100px' }}
                 />
               </FloatingLabel>
+              
+              
+              
+              
+              
             </div>
 
             <FloatingLabel label="Payment method">
