@@ -42,7 +42,7 @@ export default function Home() {
                 We deliver, we collect, Waikato-wide.
               </p>
               <Image
-                src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Bin_Bag_Composite.jpg?v=1633916050818"
+                src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidBinBag.jpg?v=1634872123453"
                 fluid
               />
               <Button variant="primary">Browse Bins & Bags</Button>
