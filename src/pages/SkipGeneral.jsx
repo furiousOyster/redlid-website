@@ -76,19 +76,22 @@ export default function Skips() {
             </FloatingLabel>
 
             <FloatingLabel
+              id="deliveryDate"
               controlId="floatingInput"
               label="What date would you like the skip delivered?"
               className="mb-3"
+              aria-describedby="deliveryDateHelp"
             >
               <Form.Control type="date" placeholder="Enter date" />
 
-              <small id="deliverydatehelp" className="form-text text-muted">
+              <Form.Text id="deliverydatehelp" muted>
                 If you choose to have a skip delivered on a public holiday, we
                 will need to deliver it the day before.
-              </small>
+              </Form.Text>
             </FloatingLabel>
 
             <FloatingLabel
+              id="fullName"
               controlId="floatingInput"
               label="Enter your full name"
               className="mb-3"
@@ -97,6 +100,7 @@ export default function Skips() {
             </FloatingLabel>
 
             <FloatingLabel
+              id="phone"
               controlId="floatingInput"
               label="Phone number"
               className="mb-3"
@@ -105,39 +109,18 @@ export default function Skips() {
             </FloatingLabel>
 
             <FloatingLabel
-              id="Email"
+              id="email"
               controlId="floatingInput"
               label="Email address"
               className="mb-3"
               aria-describedby="emailHelp"
             >
               <Form.Control type="email" placeholder="name@example.com" />
-              
-              
-              
-              <Form.Text id="emailHelp" muted>
- We'll never share your email with anyone else.
-  </Form.Text>
-              
-              
-              <small id="emailHelp" className="form-text text-muted">
-               
-              </small>
-            </FloatingLabel>
-            
-            
-            
-            <>
-  <Form.Label htmlFor="inputPassword5">Password</Form.Label>
-  <Form.Control
-    type="password"
-    id="inputPassword5"
-    aria-describedby="passwordHelpBlock"
-  />
 
-</>
-            
-            
+              <Form.Text id="emailHelp" muted>
+                We'll never share your email with anyone else.
+              </Form.Text>
+            </FloatingLabel>
 
             <div lassName="mb-3">
               <Form.Check

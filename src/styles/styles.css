@@ -552,9 +552,9 @@ h2 {
 }
 
 .form-control {
-  margin-bottom: 40px;
+  margin-top: 40px;
   border: #000 2px solid;
-  border-radius: 0 9px;
+  border-radius: 0 5px;
 }
 
 label {
@@ -572,7 +572,8 @@ label {
 }
 
 .pdpHelptext {
-  margin: 30px auto 15px;
+  margin: 30px auto 0;
+  padding-bottom: 0;
   max-width: 760px;
 }
 
@@ -599,4 +600,8 @@ label {
 .centered {
   margin: 20px 0 40px;
   text-align: center;
+}
+
+.noTopMargin {
+  margin-top: 0;
 }
