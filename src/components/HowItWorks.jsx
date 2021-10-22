@@ -7,7 +7,8 @@ import { Link } from 'wouter'
 
 export default () => (
    <>
-        <Row id="HowItWorks">    {/* HOW IT WORKS */}
+    <div id="HowItWorks">
+        <Row>    {/* HOW IT WORKS */}
           <h2>How it works</h2>
           <Col xs={12} lg={6}>
             <p>
@@ -186,5 +187,6 @@ export default () => (
             Collection service in the Waikato.
           </p>
         </row>
+      </div>
   </>
 )
