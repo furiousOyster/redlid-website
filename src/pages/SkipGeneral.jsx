@@ -122,36 +122,42 @@ export default function Skips() {
             
       
             
+               <Form.Label className="blacklabel">
+                What type of waste?
+              </Form.Label>
             
-            
-            
-            
-            
-            
-
-            <div className="mb-3">
-              <Form.Check
+              <Form.Group className="mb-3" id="Skip Size?">
+   
+   
+                      <Form.Check
                 inline
                 label="General Waste"
                 name="Skip Type"
                 type="inline-radio"
-                id="General Waste"
+                id="GeneralWaste"
               />
               <Form.Check
                 inline
                 label="Green Waste"
                 name="Skip Type"
                 type="inline-radio"
-                id="Green Waste"
+                id="GreenWaste"
               />
               <Form.Check
                 inline
                 label="Hard Fill"
                 name="Skip Type"
                 type="inline-radio"
-                id="Hard Fill"
+                id="HardFill"
               />
-            </div>
+                
+                
+                
+                
+                
+            </Form.Group>
+            
+
 
             <FloatingLabel label="Skip size">
               {' '}
