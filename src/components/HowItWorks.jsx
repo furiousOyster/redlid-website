@@ -7,7 +7,7 @@ import { Link } from 'wouter'
 
 export default () => (
    <>
-        <Row>    {/* HOW IT WORKS */}
+        <Row id="HowItWorks">    {/* HOW IT WORKS */}
           <h2>How it works</h2>
           <Col xs={12} lg={6}>
             <p>

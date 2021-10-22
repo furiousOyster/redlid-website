@@ -43,7 +43,11 @@ export default function BinsBags() {
          {/* HEADER */}
         <Row className="Header">
           <Col md={{ span: 8, offset: 4 }}>
-          <h1>Choose a bag or bin</h1></Col>
+            
+          <h1>Choose a bag or bin</h1>
+          
+          </Col>
+          
           <Col md={{ span: 7, offset: 4 }}>
             <p>
               Regular or one-off collections for green and garden waste
