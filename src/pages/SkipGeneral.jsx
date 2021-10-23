@@ -168,17 +168,6 @@ export default function Skips() {
               </Row>
             </Form.Group>
 
-            <FloatingLabel label="Skip size">
-              {/* For Green and Garden Waste only */}
-              <Form.Select aria-label="Skip size">
-                <option>9 cubic metres - $280</option>
-                <option>6 cubic metres - $230</option>
-                <option>3 cubic metres - $190</option>
-              </Form.Select>
-              <small className="form-text text-muted">
-                Weight limits: 9m³=1500kg | 6m³=1000kg | 3m³=500kg
-              </small>
-            </FloatingLabel>
             <div className="SkipUnloadTruck">
               <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fskipunloadslowversion9frame.gif?v=1632363782499" />
 
@@ -194,16 +183,43 @@ export default function Skips() {
                 />
               </FloatingLabel>
             </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                        <h2 className="blacklabel">Payment method</h2>
 
-            <FloatingLabel label="Payment method">
-              <Form.Select aria-label="Floating label select example">
-                <option>Internet banking</option>
-                <option value="cc">Credit card (+3% surcharge)</option>
-              </Form.Select>
-              <small class="form-text text-muted" id="cc">
+            
+             <Form.Check
+                    label="Internet banking"
+                    name="PaymentMethod"
+                    type="inline-radio"
+                    id="InternetBanking"
+                  />
+            
+             <Form.Check
+                    label="Credit card"
+                    name="PaymentMethod"
+                    type="inline-radio"
+                    id="CreditCard"
+                  />
+            
+            
+            
+            
+             <Form.Text id="WeightHelp" muted>
                 We will contact you by phone for your credit card details.
-              </small>
-            </FloatingLabel>
+              </Form.Text>
+            
+            
+            
 
             <div className="TermsContainer">
               <Form.Check

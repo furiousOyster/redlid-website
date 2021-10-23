@@ -280,6 +280,9 @@ a:hover .btn {
 .TermsModalBtn {
   cursor: pointer;
   padding-top: 0px;
+  text-transform: uppercase;
+  font-weight: 900;
+    color: #000;
 }
 
 .TermsCheckbox {
@@ -648,13 +651,14 @@ max-width: 41%;
   width: 100%;
   margin: 15px 0 0;
   border-radius: 0px 9px 0 0;
-  border: 1px solid #ced4da;
+  border: 2px solid #000;
   border-bottom: none;
 }
 
 .SkipUnloadTruck textarea {
   border-radius: 0 0 0 9px;
   margin: 0 0 15px;
+  border-top: none;
 }
 
 .btn-primary.disabled,
