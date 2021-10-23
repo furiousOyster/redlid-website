@@ -15,9 +15,13 @@ import Footer from '../components/Footer'
 export default function Home() {
   return (
     <>
-      <Container fluid id="LandingPage">
+      <Container fluid>
         <Row>
           <MainNav />
+        </Row>
+      </Container>
+      <Container fluid="md" id="LandingPage">
+      <Row>
           
             <Col className="LandingPagePanel" sm={12} md={6}>
             <Link href="/Skips"  className="hvr-grow">

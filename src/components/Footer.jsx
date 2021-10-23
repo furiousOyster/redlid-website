@@ -16,13 +16,15 @@ export default () => (
         <Row>
           <Col md={3}>
             <p>
-              Red Lid Garden Bins &amp; Bags Ltd
+              <b>Red Lid Garden Bins &amp; Bags Ltd</b>
               <br />
               P.O. Box 24087
               <br />
               Hillcrest
               <br />
               Hamilton 3253
+              <br />
+              Waikato
             </p>
           </Col>
           <Col md={6}>
