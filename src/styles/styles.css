@@ -360,6 +360,14 @@ a:hover .btn {
   color: #fff;
 }
 
+@media (min-width: 480px) {
+  
+  .Footer {
+  padding-bottom: 160px;
+}
+  
+}
+
 @media (min-width: 768px) {
   .Footer {
     background-size: auto 250px, auto 250px;
@@ -367,6 +375,8 @@ a:hover .btn {
   .Footer h2 {
     margin: 0 0 60px;
   }
+  
+  
 }
 
 /* Tiny things */
