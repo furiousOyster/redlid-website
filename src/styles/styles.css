@@ -583,6 +583,21 @@ label {
     margin: 60px auto 30px;
 }
 
+#SkipSize .col-12 {
+  text-align: center;
+}
+
+#SkipSize .form-check-input {
+
+}
+
+@media (max-width: 576px) {
+#SkipSize img {
+  max-width: 50%;
+}
+}
+
+
 
 
 

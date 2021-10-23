@@ -120,9 +120,9 @@ export default function Skips() {
 
             <h2 className="blacklabel">Choose a skip size</h2>
 
-            <Form.Group className="mb-3" id="Skip Size?">
+            <Form.Group className="mb-3" id="SkipSize">
               <Row>
-                <Col>
+                <Col xs={12} sm={4}>
                   <Image
                     fluid
                     src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FSKipSize9m.jpg?v=1634945630545"
@@ -134,7 +134,7 @@ export default function Skips() {
                     id="SkipSize9m"
                   />
                 </Col>
-                <Col>
+                <Col xs={12} sm={4}>
                   <Image
                     fluid
                     src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FSKipSize6m.jpg?v=1634945630563"
@@ -146,7 +146,7 @@ export default function Skips() {
                     id="SkipSize6m"
                   />
                 </Col>
-                <Col>
+                <Col xs={12} sm={4}>
                   <Image
                     fluid
                     src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FSKipSize3m.jpg?v=1634945630510"
