@@ -35,36 +35,31 @@ export default function BinsBags() {
         <Row>
           <BinsNav />
         </Row>
-     
-         {/* HEADER */}
 
-        <Row className="Header"> 
+        {/* HEADER */}
+
+        {/* HEADER */}
+
+        <Row className="Header">
           <h1>Choose a bag or&nbsp;bin</h1>
         </Row>
-          
-    
-      </Container>      
+      </Container>
 
-
-
-      
-        <Container>
-          
-            <Row>    
-
+      <Container>
+        <Row>
+          <Col md={{ span: 8, offset: 4 }}>
             <p className="Description">
-              Regular or one-off collections for green and garden waste
+              Regular or one-off collections for green and garden waste.
             </p>
-          
-          </Row>    
+          </Col>
+        </Row>
 
         {/* LISTING BINS */}
         <Row>
           <Link className="Product hvr-grow" href="/bins">
-
             <Row>
               <Col md={{ span: 8, offset: 4 }}>
-              <h2>240L Garden Bin</h2>
+                <h2>240L Garden Bin</h2>
               </Col>
             </Row>
             <Row>
@@ -78,8 +73,8 @@ export default function BinsBags() {
               <Col sm={12} md={8}>
                 <i>From $8 per collection</i>
                 <p>
-                  Clean and convenient – wheel it to where you are working in the
-          garden.
+                  Clean and convenient – wheel it to where you are working in
+                  the garden.
                 </p>
                 <Button variant="primary">Order garden waste bins</Button>{' '}
               </Col>
@@ -91,7 +86,7 @@ export default function BinsBags() {
           <Link className="Product hvr-grow " href="/bags">
             <Row>
               <Col md={{ span: 8, offset: 4 }}>
-              <h2>600L Garden Bag</h2>
+                <h2>600L Garden Bag</h2>
               </Col>
             </Row>
             <Row>
@@ -105,7 +100,7 @@ export default function BinsBags() {
                 <i>From $8 per collection</i>
                 <p>
                   Free standing frame Large capacity - situated anywhere on your
-          property.
+                  property.
                 </p>
                 <Button variant="primary">Order garden waste bags</Button>{' '}
               </Col>
