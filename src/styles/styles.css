@@ -587,14 +587,24 @@ label {
   text-align: center;
 }
 
-#SkipSize .form-check-input {
 
-}
 
 @media (max-width: 576px) {
 #SkipSize img {
-  max-width: 50%;
+  margin: 10px 0 -30px 0;
+  max-width: 56%;
 }
+  
+  #SkipSize .form-check {
+max-width: 41%;
+}
+  
+  
+#SkipSize .col-12 {
+  text-align: right;
+}
+  
+  
 }
 
 
