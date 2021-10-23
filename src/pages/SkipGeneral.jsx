@@ -69,7 +69,7 @@ export default function Skips() {
           <Form>
             <FloatingLabel
               controlId="floatingInput"
-              label="Find your address or postcode"
+              label="Find your address"
               className="mb-3"
             >
               <Form.Control type="text" placeholder="Enter your address" />
@@ -132,7 +132,9 @@ export default function Skips() {
                     name="Skip Type"
                     type="inline-radio"
                     id="SkipSize9m"
-                  />
+                  /><Form.Text id="WeightHelp" muted>
+                Max 1500kg
+              </Form.Text>
                 </Col>
                 <Col xs={12} sm={4}>
                   <Image
@@ -144,7 +146,9 @@ export default function Skips() {
                     name="Skip Type"
                     type="inline-radio"
                     id="SkipSize6m"
-                  />
+                  /><Form.Text id="WeightHelp" muted>
+                Max 1000kg
+              </Form.Text>
                 </Col>
                 <Col xs={12} sm={4}>
                   <Image
@@ -157,6 +161,9 @@ export default function Skips() {
                     type="inline-radio"
                     id="SkipSize3m"
                   />
+                  <Form.Text id="WeightHelp" muted>
+                Max 500kg
+              </Form.Text>
                 </Col>
               </Row>
             </Form.Group>
