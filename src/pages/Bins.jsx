@@ -81,26 +81,32 @@ export default function Bins() {
               label="Weekly (Hamilton only) - $8 per collection"
               name="PickupCycle"
               type="inline-radio"
-              id="InternetBanking"
+              id="Weekly"
             />
 
                  <Form.Check
-              label="Internetbadbvasdefsdfasdfas"
+              label="2-Weekly - $11 per collection"
               name="PickupCycle"
               type="inline-radio"
-              id="InternetBanking"
+              id="TwoWeekly"
             />
                  <Form.Check
-              label="Internetbadbvasdefsdfasdfas"
+              label="4-Weekly - $16 per collection"
               name="PickupCycle"
               type="inline-radio"
-              id="InternetBanking"
+              id="FourWeekly"
             />
                  <Form.Check
-              label="Internetbadbvasdefsdfasdfas"
+              label="8-Weekly - $23 per collection"
               name="PickupCycle"
               type="inline-radio"
-              id="InternetBanking"
+              id="EightWeekly"
+            />
+              <Form.Check
+              label="One-off (I have my own bin) - $22"
+              name="PickupCycle"
+              type="inline-radio"
+              id="OneOff"
             />
             
             
@@ -142,16 +148,6 @@ export default function Bins() {
               </Form.Text>
             </FloatingLabel>
 
-            <FloatingLabel label="Choose pickup cycle">
-              <Form.Select aria-label="Floating label select example">
-                <option>Weekly - $18 per collection</option>
-                <option>2-weekly - $20 per collection</option>
-                <option>4-weekly - $24 per collection</option>
-                <option>
-                  One-off (collection within 4 weeks of dropoff) - $40
-                </option>
-              </Form.Select>
-            </FloatingLabel>
 
             <h2 className="blacklabel">Payment method</h2>
 

@@ -38,7 +38,6 @@ export default function BinsBags() {
 
         {/* HEADER */}
 
-        {/* HEADER */}
 
         <Row className="Header">
           <h1>Choose a bag or&nbsp;bin</h1>
