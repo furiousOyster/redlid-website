@@ -686,3 +686,21 @@ max-width: 41%;
 .noTopMargin {
   margin-top: 0;
 }
+
+
+
+/* Blog Posts */
+
+#BlogPost {
+  text-align: center;
+}
+
+#BlogPost p,
+#BlogPost li {
+  text-align: left;
+}
+
+#BlogPost img {
+  max-width: 512px;
+  
+}
