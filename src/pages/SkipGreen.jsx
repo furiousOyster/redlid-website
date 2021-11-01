@@ -29,30 +29,33 @@ export default function Skips() {
 
   return (
     <>
-      <Container fluid="lg" id="pdp">
+      {/* CONTENT CONTAINER */}
+      <Container fluid id="NavContainer">
         <Row>
           <SkipsNav />
         </Row>
 
         {/* HEADER */}
+
         <Row className="Header">
           <h1>Order a Green Waste Skip</h1>
-          <p>For X Y Z A B and C</p>
-          <Col>
-            <Link href='/Skips' >
+        </Row>
+      </Container>
+
+      <Container id="pdp">
+        <Row className="pdptop">
+          <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Greenwaste_Skip.jpg?v=1632527973536" />
+          <Link href="/Skips">
             <Button variant="outline-primary" className="ProductSwap">
               Order a different type of skip
             </Button>{' '}
-              </Link>
-          </Col>
+          </Link>
         </Row>
-
 
         {/* ORDER FORM */}
 
-
         <Row>
-          <Col>
+          <i className="pdpHelptext">
             <p>
               Any Skip orders are subject to availability. Confirmation of your
               order and the delivery date will be confirmed via email.
@@ -61,38 +64,39 @@ export default function Skips() {
               Orders outside of our regular office hours Mon-Thurs 8-5pm and
               Friday 8-3pm will be confirmed on the next business day.
             </p>
-          </Col>
+          </i>
 
           <Form>
             <FloatingLabel
               controlId="floatingInput"
-              label="Find your address or postcode"
+              label="Find your address"
               className="mb-3"
             >
               <Form.Control type="text" placeholder="Enter your address" />
             </FloatingLabel>
 
-            <FloatingLabel
-              controlId="floatingInput"
-              label="What date would you like the skip delivered?"
-              className="mb-3"
-            >
+            <Form.Group className="mb-3" id="deliveryDate">
+              <Form.Label>
+                What date would you like the skip delivered?
+              </Form.Label>
               <Form.Control type="date" placeholder="Enter date" />
-
-              <small id="deliverydatehelp" className="form-text text-muted">
+              <Form.Text id="deliverydatehelp" muted>
                 If you choose to have a skip delivered on a public holiday, we
                 will need to deliver it the day before.
-              </small>
-            </FloatingLabel>
+              </Form.Text>
+            </Form.Group>
 
             <FloatingLabel
+              id="fullName"
               controlId="floatingInput"
               label="Enter your full name"
               className="mb-3"
             >
               <Form.Control type="text" placeholder="Your name" />
             </FloatingLabel>
+
             <FloatingLabel
+              id="phone"
               controlId="floatingInput"
               label="Phone number"
               className="mb-3"
@@ -101,53 +105,121 @@ export default function Skips() {
             </FloatingLabel>
 
             <FloatingLabel
+              id="email"
               controlId="floatingInput"
               label="Email address"
               className="mb-3"
+              aria-describedby="emailHelp"
             >
               <Form.Control type="email" placeholder="name@example.com" />
-              <small id="emailHelp" className="form-text text-muted">
+
+              <Form.Text id="emailHelp" muted>
                 We'll never share your email with anyone else.
-              </small>
+              </Form.Text>
             </FloatingLabel>
 
-      
+            <h2 className="blacklabel">Choose a skip size</h2>
 
-            <FloatingLabel label="Skip size">
-              {' '}
-              {/* For Green and Garden Waste only */}
-              <Form.Select aria-label="Skip size">
-                <option>9 cubic metres - $280</option>
-                <option>6 cubic metres - $230</option>
-                <option>3 cubic metres - $190</option>
-              </Form.Select>
-              <small className="form-text text-muted">
-                Weight limits: 9m³=1500kg | 6m³=1000kg | 3m³=500kg
-              </small>
-            </FloatingLabel>
+            <Form.Group className="mb-3" id="SkipSize">
+              <Row>
+                <Col xs={12} sm={4}>
+                  <Image
+                    fluid
+                    src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FSKipSize9m.jpg?v=1634945630545"
+                  />
+                  <Form.Check
+                    label="9m² ($280)"
+                    name="Skip Type"
+                    type="inline-radio"
+                    id="SkipSize9m"
+                  /><Form.Text id="WeightHelp" muted>
+                Max 1500kg
+              </Form.Text>
+                </Col>
+                <Col xs={12} sm={4}>
+                  <Image
+                    fluid
+                    src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FSKipSize6m.jpg?v=1634945630563"
+                  />
+                  <Form.Check
+                    label="6m² ($230)"
+                    name="Skip Type"
+                    type="inline-radio"
+                    id="SkipSize6m"
+                  /><Form.Text id="WeightHelp" muted>
+                Max 1000kg
+              </Form.Text>
+                </Col>
+                <Col xs={12} sm={4}>
+                  <Image
+                    fluid
+                    src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FSKipSize3m.jpg?v=1634945630510"
+                  />
+                  <Form.Check
+                    label="3m² ($190)"
+                    name="Skip Type"
+                    type="inline-radio"
+                    id="SkipSize3m"
+                  />
+                  <Form.Text id="WeightHelp" muted>
+                Max 500kg
+              </Form.Text>
+                </Col>
+              </Row>
+            </Form.Group>
 
-            <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fskipunloadslowversion9frame.gif?v=1632363782499" />
+            <div className="SkipUnloadTruck">
+              <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fskipunloadslowversion9frame.gif?v=1632363782499" />
 
-            <FloatingLabel
-              controlId="Comments"
-              label="Where would you like the skip placed?"
-            >
-              <Form.Control
-                as="textarea"
-                placeholder="For example: As far up the driveway as possible, on the right."
-                style={{ height: '100px' }}
-              />
-            </FloatingLabel>
+              <FloatingLabel
+                id="whereToPlaceTheSkip"
+                controlId="Comments"
+                label="Where would you like the skip placed?"
+              >
+                <Form.Control
+                  as="textarea"
+                  placeholder="For example: As far up the driveway as possible, on the right."
+                  style={{ height: '100px' }}
+                />
+              </FloatingLabel>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                        <h2 className="blacklabel">Payment method</h2>
 
-            <FloatingLabel label="Payment method">
-              <Form.Select aria-label="Floating label select example">
-                <option>Internet banking</option>
-                <option value="cc">Credit card (+3% surcharge)</option>
-              </Form.Select>
-              <small class="form-text text-muted" id="cc">
+            
+             <Form.Check
+                    label="Internet banking"
+                    name="PaymentMethod"
+                    type="inline-radio"
+                    id="InternetBanking"
+                  />
+            
+             <Form.Check
+                    label="Credit card"
+                    name="PaymentMethod"
+                    type="inline-radio"
+                    id="CreditCard"
+                  />
+            
+            
+            
+            
+             <Form.Text id="WeightHelp" muted>
                 We will contact you by phone for your credit card details.
-              </small>
-            </FloatingLabel>
+              </Form.Text>
+            
+            
+            
 
             <div className="TermsContainer">
               <Form.Check
@@ -165,20 +237,22 @@ export default function Skips() {
               </Button>
             </div>
             <p class="msg-error error"></p>
-            <button
-              type="submit"
-              class="btn btn-primary"
-              disabled="disabled"
-              id="submitBtn"
-            >
-              Submit order
-            </button>
+            <Col className="centered">
+              <Button
+                variant="primary"
+                type="submit"
+                disabled="disabled"
+                id="submitBtn"
+                size="lg"
+              >
+                Submit order
+              </Button>
+            </Col>
           </Form>
         </Row>
-
       </Container>
 
-         <Footer />
+      <Footer />
 
       <ModalSkipTerms show={showTerms} onHide={() => setShowTerms(false)} />
       <ModalFaqs show={showFaqs} onHide={() => setShowFaqs(false)} />

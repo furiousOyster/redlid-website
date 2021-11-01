@@ -32,23 +32,28 @@ export default function Bins() {
   return (
     <>
       {/* CONTENT CONTAINER */}
-      <Container fluid="lg" id="pdp">
+      <Container fluid id="NavContainer">
         <Row>
           <BinsNav />
         </Row>
+
         {/* HEADER */}
+
         <Row className="Header">
-          <h1>Order Garden Bin</h1>
-          <p>Regular or one-off collections for green and garden waste</p>
-          <Col>
-                        <Link href="/bags">
-              <Button variant="outline-primary" className="ProductSwap">
-                Order a bag instead
-              </Button>
-            </Link>
-          </Col>
+          <h1>Order a 240L Wheelie Bin</h1>
         </Row>
-      
+      </Container>
+
+      <Container id="pdp">
+        <Row className="pdptop">
+          <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Greenwaste_Skip.jpg?v=1632527973536" />
+          <Link href="/Bags">
+            <Button variant="outline-primary" className="ProductSwap">
+              Order a 600L bag instead
+            </Button>{' '}
+          </Link>
+        </Row>
+
         {/* ORDER FORM */}
 
         <Row>
