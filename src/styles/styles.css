@@ -704,3 +704,13 @@ max-width: 41%;
   max-width: 512px;
   
 }
+
+#BlogPost .list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #e51b24;
+    border-color: #e51b24;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+}

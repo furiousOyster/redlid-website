@@ -114,14 +114,17 @@ export default function BinsBags() {
           <h2>HOW TO MAXIMISE YOUR SKIP</h2>
           <i>24 September 2021</i>
           <Col>
-            <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Skip_6m_9m.jpg?v=1632524809085" />
+            <Image src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Skip_Composite.jpg?v=1633916051057" />
             <p>
               Summer is here and it's time to take care of that spring
               overgrowth! Our job is to make your garden waste removal as simple
               and cheap as possible. So here are our top eight tips for the most
-              efficient rubbish skip fillery imagineable!
+              efficient rubbish skip fillery imaginable!
             </p>
             <ListGroup as="ol" numbered>
+               <ListGroup.Item as="li" active>
+                <b>Steve's top Skip efficiency tips</b> 
+              </ListGroup.Item>
               <ListGroup.Item as="li">
                 <b>Plan ahead.</b> Make sure you have chosen a time for your Redlid
                 Skip hire time when you are free of other commitments and if you
