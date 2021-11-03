@@ -44,11 +44,7 @@ export default function Bins() {
       <Container id="pdp">
         <Row className="pdptop">
           <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Bag.jpg?v=1632524809122" />
-          <Link href="/Bags">
-            <Button variant="outline-primary" className="ProductSwap">
-              Order a 600L bag instead
-            </Button>{' '}
-          </Link>
+          
         </Row>
 
         {/* ORDER FORM */}
