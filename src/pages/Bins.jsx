@@ -58,6 +58,13 @@ export default function Bins() {
               Please have your bin on the kerbside by 7am on your collection day
               – same weekday every collection.
             </p>
+            <p>
+             There are no contracts to sign – you are only committed to the Bin for $60 worth of collections.
+            </p>
+            <p>
+             We will will be in contact to advise the delivery day for your bin.
+            </p>
+
           </i>
 
           <Form>

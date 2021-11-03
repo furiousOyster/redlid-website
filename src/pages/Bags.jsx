@@ -52,10 +52,10 @@ export default function Bins() {
         <Row>
           <i className="pdpHelptext">
             <p>
-             There are no contracts to sign – you are only committed to the Bin or Bag for $60 worth of collections.
+             There are no contracts to sign – you are only committed to the Bag for $60 worth of collections.
             </p>
             <p>
-             We will contact you to arrange a delivery day for your Bin or Bag and to arrange payment.
+             We will will be in contact to advise the delivery day for your bag.
             </p>
           </i>
 
