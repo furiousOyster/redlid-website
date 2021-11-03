@@ -29,6 +29,8 @@ const Seo = () => {
       property="og:image"
       content={SEO.image}
     />
+    
+    
 
     <meta name="twitter:card" content="summary" />
   </Helmet>
