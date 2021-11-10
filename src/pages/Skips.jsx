@@ -23,46 +23,39 @@ import ModalSkipTerms from '../components/ModalSkipTerms'
 import SkipsNav from '../components/SkipsNav'
 import Footer from '../components/Footer'
 
+import BlogHowToMaximiseYourSkip from '../components/BlogHowToMaximiseYourSkip'
+
 export default function Skips() {
   const [showTerms, setShowTerms] = useState(false)
   const [showFaqs, setShowFaqs] = useState(false)
 
   return (
     <>
-      
-       {/* CONTENT CONTAINER */}
+      {/* CONTENT CONTAINER */}
       <Container fluid id="NavContainer">
         <Row>
           <SkipsNav />
         </Row>
-     
-         {/* HEADER */}
 
-        <Row className="Header"> 
+        {/* HEADER */}
+
+        <Row className="Header">
           <h1>Choose a Skip</h1>
         </Row>
-          
-    
-      </Container>      
+      </Container>
 
-
-
-      
-        <Container>
-          
-            <Row>    
-          <Col md={{ span: 8, offset: 4 }}>   
+      <Container>
+        <Row>
+          <Col md={{ span: 8, offset: 4 }}>
             <p className="Description">
               Any Skip orders are subject to availability. Confirmation of your
               order and the delivery date will be confirmed via email.
-              <br/>
+              <br />
               Orders outside of our regular office hours Mon-Thurs 8-5pm and
               Friday 8-3pm will be confirmed on the next business day.
             </p>
-             </Col>
-          
-          </Row>    
-
+          </Col>
+        </Row>
 
         {/* LISTING GENERAL WASTE */}
         <Row>
@@ -82,7 +75,8 @@ export default function Skips() {
               <Col sm={12} md={8}>
                 <i>From $8 per collection</i>
                 <p>
-                  Ideal for large clean-ups including renovations, moving house, or if you just need a tidy up.
+                  Ideal for large clean-ups including renovations, moving house,
+                  or if you just need a tidy up.
                 </p>
                 <Button variant="primary">Order a general waste skip</Button>{' '}
               </Col>
@@ -108,7 +102,8 @@ export default function Skips() {
               <Col sm={12} md={8}>
                 <i>From $8 per collection</i>
                 <p>
-                  Perfect for that big garden clean up.  All green waste is recycled into compost biproducts.
+                  Perfect for that big garden clean up. All green waste is
+                  recycled into compost biproducts.
                 </p>
                 <Button variant="primary">Order a green waste skip</Button>{' '}
               </Col>
@@ -134,7 +129,9 @@ export default function Skips() {
               <Col sm={12} md={8}>
                 <i>From $8 per collection</i>
                 <p>
-             This 3m³ skip is perfect for rocks, bricks, concrete, soil, sand and tiles. Low sided skip ideal for heavy loads.  No weight limit.
+                  This 3m³ skip is perfect for rocks, bricks, concrete, soil,
+                  sand and tiles. Low sided skip ideal for heavy loads. No
+                  weight limit.
                 </p>
                 <Button variant="primary">Order a hardfill skip</Button>{' '}
               </Col>
@@ -142,14 +139,11 @@ export default function Skips() {
           </Link>
         </Row>
 
-   
+        <BlogHowToMaximiseYourSkip />
+        
       </Container>
 
       <Footer />
-      
-      
-      
-      
 
       <ModalSkipTerms show={showTerms} onHide={() => setShowTerms(false)} />
       <ModalFaqs show={showFaqs} onHide={() => setShowFaqs(false)} />

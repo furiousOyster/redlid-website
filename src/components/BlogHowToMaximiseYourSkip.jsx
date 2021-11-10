@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Image from 'react-bootstrap/Image'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
+import ListGroup from 'react-bootstrap/ListGroup'
 import { Link } from 'wouter'
 
 export default () => (

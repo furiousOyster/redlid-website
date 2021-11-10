@@ -25,8 +25,6 @@ import BinsNav from '../components/BinsNav'
 import HowItWorks from '../components/HowItWorks'
 import Footer from '../components/BinsFooter'
 
-import Blog001 from '../components/BlogHowToMaximiseYourSkip'
-
 
 
 export default function BinsBags() {
@@ -113,7 +111,6 @@ export default function BinsBags() {
 
         <HowItWorks />
         
-        <BlogHowToMaximiseYourSkip />
 
       
       </Container>
