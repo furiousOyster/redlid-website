@@ -21,7 +21,7 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel'
 import ModalFaqs from '../components/ModalFaqs'
 import ModalTerms from '../components/ModalTerms'
 import BinsNav from '../components/BinsNav'
-import Footer from '../components/Footer'
+import Footer from '../components/BinsFooter'
 
 export default function Bins() {
   const [showTerms, setShowTerms] = useState(false)
