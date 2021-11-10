@@ -46,9 +46,7 @@ export default function Skips() {
         <Row className="pdptop">
           <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Greenwaste_Skip.jpg?v=1632527973536" />
           <Link href="/Skips">
-            <Button variant="outline-primary" className="ProductSwap">
-              Order a different type of skip
-            </Button>{' '}
+
           </Link>
         </Row>
 

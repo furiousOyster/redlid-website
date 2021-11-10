@@ -82,9 +82,7 @@ export default function Skips() {
               <Col sm={12} md={8}>
                 <i>From $8 per collection</i>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                  fermentum, nulla luctus pharetra vulputate, felis tellus
-                  mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                  Ideal for large clean-ups including renovations, moving house, or if you just need a tidy up.
                 </p>
                 <Button variant="primary">Order a general waste skip</Button>{' '}
               </Col>
@@ -110,9 +108,7 @@ export default function Skips() {
               <Col sm={12} md={8}>
                 <i>From $8 per collection</i>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                  fermentum, nulla luctus pharetra vulputate, felis tellus
-                  mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                  Perfect for that big garden clean up.  All green waste is recycled into compost biproducts.
                 </p>
                 <Button variant="primary">Order a green waste skip</Button>{' '}
               </Col>
@@ -138,9 +134,7 @@ export default function Skips() {
               <Col sm={12} md={8}>
                 <i>From $8 per collection</i>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                  fermentum, nulla luctus pharetra vulputate, felis tellus
-                  mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+             This 3m³ skip is perfect for rocks, bricks, concrete, soil, sand and tiles. Low sided skip ideal for heavy loads.  No weight limit.
                 </p>
                 <Button variant="primary">Order a hardfill skip</Button>{' '}
               </Col>
