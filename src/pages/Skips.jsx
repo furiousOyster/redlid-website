@@ -331,6 +331,10 @@ export default function Skips() {
       </Container>
 
       <Footer />
+      
+      
+      
+      
 
       <ModalSkipTerms show={showTerms} onHide={() => setShowTerms(false)} />
       <ModalFaqs show={showFaqs} onHide={() => setShowFaqs(false)} />

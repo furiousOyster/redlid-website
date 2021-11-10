@@ -25,6 +25,8 @@ import BinsNav from '../components/BinsNav'
 import HowItWorks from '../components/HowItWorks'
 import Footer from '../components/Footer'
 
+
+
 export default function BinsBags() {
   const [showTerms, setShowTerms] = useState(false)
   const [showFaqs, setShowFaqs] = useState(false)

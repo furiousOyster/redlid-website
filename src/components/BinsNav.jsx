@@ -6,6 +6,7 @@ import Image from 'react-bootstrap/Image'
 import Button from 'react-bootstrap/Button'
 import { Link } from 'wouter'
 
+   
 export default () => (
   <Navbar
     // onSelect={selectedKey => alert(`selected ${selectedKey}`)}
@@ -48,6 +49,5 @@ export default () => (
       </Nav>
     </Navbar.Collapse>
   </Navbar>
-)
-
-
+      
+  )
