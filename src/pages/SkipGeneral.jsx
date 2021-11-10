@@ -72,51 +72,8 @@ export default function Skips() {
             >
               <Form.Control type="text" placeholder="Enter your address" />
             </FloatingLabel>
-
-            <Form.Group className="mb-3" id="deliveryDate">
-              <Form.Label>
-                What date would you like the skip delivered?
-              </Form.Label>
-              <Form.Control type="date" placeholder="Enter date" />
-              <Form.Text id="deliverydatehelp" muted>
-                If you choose to have a skip delivered on a public holiday, we
-                will need to deliver it the day before.
-              </Form.Text>
-            </Form.Group>
-
-            <FloatingLabel
-              id="fullName"
-              controlId="floatingInput"
-              label="Enter your full name"
-              className="mb-3"
-            >
-              <Form.Control type="text" placeholder="Your name" />
-            </FloatingLabel>
-
-            <FloatingLabel
-              id="phone"
-              controlId="floatingInput"
-              label="Phone number"
-              className="mb-3"
-            >
-              <Form.Control type="phone" placeholder="Phone number" />
-            </FloatingLabel>
-
-            <FloatingLabel
-              id="email"
-              controlId="floatingInput"
-              label="Email address"
-              className="mb-3"
-              aria-describedby="emailHelp"
-            >
-              <Form.Control type="email" placeholder="name@example.com" />
-
-              <Form.Text id="emailHelp" muted>
-                We'll never share your email with anyone else.
-              </Form.Text>
-            </FloatingLabel>
-
-            <h2 className="blacklabel">Choose a skip size</h2>
+            
+               <h2 className="blacklabel">Choose a skip size</h2>
 
             <Form.Group className="mb-3" id="SkipSize">
               <Row>
@@ -165,6 +122,51 @@ export default function Skips() {
                 </Col>
               </Row>
             </Form.Group>
+
+            <Form.Group className="mb-3" id="deliveryDate">
+              <Form.Label>
+                What date would you like the skip delivered?
+              </Form.Label>
+              <Form.Control type="date" placeholder="Enter date" />
+              <Form.Text id="deliverydatehelp" muted>
+                If you choose to have a skip delivered on a public holiday, we
+                will need to deliver it the day before.
+              </Form.Text>
+            </Form.Group>
+
+            <FloatingLabel
+              id="fullName"
+              controlId="floatingInput"
+              label="Enter your full name"
+              className="mb-3"
+            >
+              <Form.Control type="text" placeholder="Your name" />
+            </FloatingLabel>
+
+            <FloatingLabel
+              id="phone"
+              controlId="floatingInput"
+              label="Phone number"
+              className="mb-3"
+            >
+              <Form.Control type="phone" placeholder="Phone number" />
+            </FloatingLabel>
+
+            <FloatingLabel
+              id="email"
+              controlId="floatingInput"
+              label="Email address"
+              className="mb-3"
+              aria-describedby="emailHelp"
+            >
+              <Form.Control type="email" placeholder="name@example.com" />
+
+              <Form.Text id="emailHelp" muted>
+                We'll never share your email with anyone else.
+              </Form.Text>
+            </FloatingLabel>
+
+         
 
             <div className="SkipUnloadTruck">
               <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fskipunloadslowversion9frame.gif?v=1632363782499" />

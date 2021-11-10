@@ -73,7 +73,6 @@ export default function Skips() {
                 />
               </Col>
               <Col sm={12} md={8}>
-                <i>From $8 per collection</i>
                 <p>
                   Ideal for large clean-ups including renovations, moving house,
                   or if you just need a tidy up.
@@ -100,7 +99,6 @@ export default function Skips() {
                 />
               </Col>
               <Col sm={12} md={8}>
-                <i>From $8 per collection</i>
                 <p>
                   Perfect for that big garden clean up. All green waste is
                   recycled into compost biproducts.
@@ -127,7 +125,6 @@ export default function Skips() {
                 />
               </Col>
               <Col sm={12} md={8}>
-                <i>From $8 per collection</i>
                 <p>
                   This 3m³ skip is perfect for rocks, bricks, concrete, soil,
                   sand and tiles. Low sided skip ideal for heavy loads. No

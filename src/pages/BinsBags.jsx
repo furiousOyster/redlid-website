@@ -72,7 +72,6 @@ export default function BinsBags() {
                 />
               </Col>
               <Col sm={12} md={8}>
-                <i>From $8 per collection</i>
                 <p>
                   Clean and convenient – wheel it to where you are working in
                   the garden.
@@ -98,7 +97,6 @@ export default function BinsBags() {
                 />
               </Col>
               <Col sm={12} md={8}>
-                <i>From $8 per collection</i>
                 <p>
                   Free standing frame Large capacity - situated anywhere on your
                   property.
