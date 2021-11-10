@@ -31,6 +31,17 @@ export default ({ show, onHide }) => {
           is found in the skip it will immediately be returned to you, any costs
           associated with the return will be charged for.
         </p>
+
+        <p>
+          Our policy allows one free missed collection per year without charge,
+          this excludes the 8 weekly collection cycle. If you are wanting to use
+          your free missed collection you need to contact the office by phone or
+          email at least 24 hours prior to the next scheduled collection.
+        </p>
+        <p>
+          You can change your collection frequency at anytime by contacting the
+          office.
+        </p>
         <p>A Hardfill skip must not contain any General Waste.</p>
         <p>A General Waste skip must not contain any Hardfill.</p>
         <p>

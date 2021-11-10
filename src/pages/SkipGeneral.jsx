@@ -128,7 +128,7 @@ export default function Skips() {
                     src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FSKipSize9m.jpg?v=1634945630545"
                   />
                   <Form.Check
-                    label="9m² ($280)"
+                    label="9m² ($350)"
                     name="Skip Type"
                     type="inline-radio"
                     id="SkipSize9m"
@@ -142,7 +142,7 @@ export default function Skips() {
                     src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FSKipSize6m.jpg?v=1634945630563"
                   />
                   <Form.Check
-                    label="6m² ($230)"
+                    label="6m² ($290)"
                     name="Skip Type"
                     type="inline-radio"
                     id="SkipSize6m"
@@ -156,7 +156,7 @@ export default function Skips() {
                     src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FSKipSize3m.jpg?v=1634945630510"
                   />
                   <Form.Check
-                    label="3m² ($190)"
+                    label="3m² ($240)"
                     name="Skip Type"
                     type="inline-radio"
                     id="SkipSize3m"
