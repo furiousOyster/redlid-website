@@ -354,6 +354,11 @@ a:hover .btn {
   padding-top: 60px;
 }
 
+.Footer.BinsBags {
+  background-image: url('https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FBinBagTruckGrassFooter.png?v=1636579711349'),
+    url('https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidGrass.jpg?v=1633916313243');
+}
+
 .FooterContents {
   max-width: 1200px;
 }
