@@ -33,10 +33,21 @@ export default () => (
     <Navbar.Toggle />
     <Navbar.Collapse>
       <Nav className="me-auto CollapsableNav">
-        <Link href="/Skips">Red Lid Skips</Link>
+        <Link href="/Skips">Skips</Link>
         <Link href="/BinsBags#HowitWorks">How it works</Link>
+        
+        <Button
+                onClick={() => setShowFaqs(true)}
+                className="FAQBtn"
+                variant="link"
+              >
+                FAQs
+              </Button>
+        
         <Link href="#Contact">Contact</Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>
 )
+
+

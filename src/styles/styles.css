@@ -27,7 +27,8 @@ h3,
 
 /* Nav */
 
-#Redlid .nav-link {
+#Redlid .nav-link,
+#Redlid .FAQBtn {
   color: #e51b24;
   font-weight: 900;
   text-transform: uppercase;
