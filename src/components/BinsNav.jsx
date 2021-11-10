@@ -38,7 +38,7 @@ export default () => (
         <Link href="/BinsBags#HowitWorks">How it works</Link>
         
         <Button
-                onClick={() => setShowFaqs(true)}
+          onClick={() => setShowFaqs(true)} -->
                 className="FAQBtn"
                 variant="link"
               >
