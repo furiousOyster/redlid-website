@@ -30,9 +30,6 @@ import Footer from '../components/BinsFooter'
 
 
 
-
-
-
 export default function Bins() {
   const [showTerms, setShowTerms] = useState(false)
   const [showFaqs, setShowFaqs] = useState(false)
