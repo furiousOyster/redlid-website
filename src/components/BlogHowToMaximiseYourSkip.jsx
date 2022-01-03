@@ -11,12 +11,10 @@ export default () => (
           {/* BLOG POST */}
         <Row id="BlogPost">
           <h2>HOW TO MAXIMISE YOUR SKIP</h2>
-          <i>24 September 2021</i>
           <Col>
             <Image src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Skip_Composite.jpg?v=1633916051057" />
             <p>
-              Summer is here and it's time to take care of that spring
-              overgrowth! Our job is to make your garden waste removal as simple
+              Our job is to make your waste removal as simple
               and cheap as possible. So here are our top eight tips for the most
               efficient rubbish skip fillery imaginable!
             </p>

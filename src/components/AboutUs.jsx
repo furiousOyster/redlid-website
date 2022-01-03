@@ -52,8 +52,7 @@ export default () => (
             This came about as our existing customers were contacting us on a
             regular basis and asking if we had skips. The decision was made to
             provide skips but not just for Greenwaste. We also provide skips for
-            General waste and Hard fill. At this stage we are only providing
-            skips in Hamilton and Cambridge.
+            General waste and Hard fill. Serving the greater Waikato region.
           </p>
 
           <p>

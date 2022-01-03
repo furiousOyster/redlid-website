@@ -67,7 +67,7 @@ export default function Skips() {
           <Form>
             <FloatingLabel
               controlId="floatingInput"
-              label="Find your address"
+              label="Enter your address for pricing"
               className="mb-3"
             >
               <Form.Control type="text" placeholder="Enter your address" />
