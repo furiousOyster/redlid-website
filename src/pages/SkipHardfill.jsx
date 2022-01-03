@@ -78,10 +78,7 @@ export default function Skips() {
                 What date would you like the skip delivered?
               </Form.Label>
               <Form.Control type="date" placeholder="Enter date" />
-              <Form.Text id="deliverydatehelp" muted>
-                If you choose to have a skip delivered on a public holiday, we
-                will need to deliver it the day before.
-              </Form.Text>
+
             </Form.Group>
 
             <FloatingLabel

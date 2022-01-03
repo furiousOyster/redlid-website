@@ -88,7 +88,7 @@ export default function Skips() {
                     type="inline-radio"
                     id="SkipSize9m"
                   /><Form.Text id="WeightHelp" muted>
-                Max 1500kg
+                Weight limit 1500kg
               </Form.Text>
                 </Col>
                 <Col xs={12} sm={4}>
@@ -102,7 +102,7 @@ export default function Skips() {
                     type="inline-radio"
                     id="SkipSize6m"
                   /><Form.Text id="WeightHelp" muted>
-                Max 1000kg
+                Weight limit 1000kg
               </Form.Text>
                 </Col>
                 <Col xs={12} sm={4}>
@@ -117,7 +117,7 @@ export default function Skips() {
                     id="SkipSize3m"
                   />
                   <Form.Text id="WeightHelp" muted>
-                Max 500kg
+                Weight limit 500kg
               </Form.Text>
                 </Col>
               </Row>
@@ -129,10 +129,7 @@ export default function Skips() {
                 What date would you like the skip delivered?
               </Form.Label>
               <Form.Control type="date" placeholder="Enter date" />
-              <Form.Text id="deliverydatehelp" muted>
-                If you choose to have a skip delivered on a public holiday, we
-                will need to deliver it the day before.
-              </Form.Text>
+
             </Form.Group>
 
             <FloatingLabel
