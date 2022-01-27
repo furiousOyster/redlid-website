@@ -55,17 +55,17 @@ export default function Bins() {
              There are no contracts to sign – you are only committed to the Bag for $60 worth of collections.
             </p>
             <p>
-             We will will be in contact to advise the delivery day for your bag.
+             We will be in contact to advise the delivery day for your bag.
             </p>
           </i>
 
           <Form>
             <FloatingLabel
               controlId="floatingInput"
-              label="Find your address"
+              label="FEnter your address for pricing"
               className="mb-3"
             >
-              <Form.Control type="text" placeholder="Enter your address" />
+              <Form.Control type="text" placeholder="Enter your address for pricing" />
             </FloatingLabel>
 
             <h2 className="blacklabel">Choose pickup cycle</h2>

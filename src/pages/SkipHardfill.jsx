@@ -38,7 +38,7 @@ export default function Skips() {
         {/* HEADER */}
 
         <Row className="Header">
-          <h1>Order a General Waste Skip</h1>
+          <h1>Order a Hardfill Skip</h1>
         </Row>
       </Container>
 

@@ -23,13 +23,6 @@ import ModalTerms from '../components/ModalTerms'
 import BinsNav from '../components/BinsNav'
 import Footer from '../components/BinsFooter'
 
-
-
-
-
-
-
-
 export default function Bins() {
   const [showTerms, setShowTerms] = useState(false)
   const [showFaqs, setShowFaqs] = useState(false)
@@ -66,12 +59,13 @@ export default function Bins() {
               – same weekday every collection.
             </p>
             <p>
-             There are no contracts to sign – you are only committed to the Bin for $60 worth of collections.
+              There are no contracts to sign – you are only committed to the Bin
+              for $60 worth of collections.
             </p>
             <p>
-             We will will be in contact to advise the delivery day for your bin.
+              We will be in contact to advise the delivery day for your
+              bin.
             </p>
-
           </i>
 
           <Form>
@@ -82,9 +76,8 @@ export default function Bins() {
             >
               <Form.Control type="text" placeholder="Enter your address" />
             </FloatingLabel>
-            
-            
-             <h2 className="blacklabel">Choose pickup cycle</h2>
+
+            <h2 className="blacklabel">Choose pickup cycle</h2>
 
             <Form.Check
               label="Weekly (Hamilton only) - $8 per collection"
@@ -93,37 +86,30 @@ export default function Bins() {
               id="Weekly"
             />
 
-                 <Form.Check
+            <Form.Check
               label="2-Weekly - $11 per collection"
               name="PickupCycle"
               type="inline-radio"
               id="TwoWeekly"
             />
-                 <Form.Check
+            <Form.Check
               label="4-Weekly - $16 per collection"
               name="PickupCycle"
               type="inline-radio"
               id="FourWeekly"
             />
-                 <Form.Check
+            <Form.Check
               label="8-Weekly - $23 per collection"
               name="PickupCycle"
               type="inline-radio"
               id="EightWeekly"
             />
-              <Form.Check
+            <Form.Check
               label="One-off (I have my own bin) - $22"
               name="PickupCycle"
               type="inline-radio"
               id="OneOff"
             />
-            
-            
-            
-            
-            
-            
-            
 
             <FloatingLabel
               id="fullName"
@@ -156,7 +142,6 @@ export default function Bins() {
                 We'll never share your email with anyone else.
               </Form.Text>
             </FloatingLabel>
-
 
             <h2 className="blacklabel">Payment method</h2>
 
