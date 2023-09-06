@@ -42,6 +42,7 @@ export default function BinsBags() {
         {/* HEADER */}
 
         <Row className="Header">
+          <h1 style={{color: "red", fontSize: "5rem"}}>Welcome to Redlid</h1>
           <h1>Choose a bag or&nbsp;bin</h1>
         </Row>
       </Container>
@@ -50,7 +51,7 @@ export default function BinsBags() {
         <Row>
           <Col md={{ span: 8, offset: 4 }}>
             <p className="Description">
-              Regular or one-off collections for green and garden waste.
+              Regular garden waste collections.
             </p>
           </Col>
         </Row>

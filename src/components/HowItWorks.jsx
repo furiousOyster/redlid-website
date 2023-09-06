@@ -50,7 +50,7 @@ export default () => (
               <td width="74%" valign="top">
                 <p>
                   Hamilton, Te Awamutu, Cambridge, Morrinsville, Matamata,
-                  Ngaruawahia, Te Kowhai
+                  Ngaruawahia, Huntly
                 </p>
               </td>
             </tr>
@@ -63,7 +63,7 @@ export default () => (
               <td width="74%" valign="top">
                 <p>
                   Hamilton, Te Awamutu, Cambridge, Morrinsville, Matamata,
-                  Ngaruawahia, Te Kowhai
+                  Ngaruawahia, Huntly
                 </p>
               </td>
             </tr>
@@ -76,7 +76,7 @@ export default () => (
               <td width="74%" valign="top">
                 <p>
                   Hamilton, Te Awamutu, Cambridge, Morrinsville, Matamata,
-                  Ngaruawahia, Te Kowhai
+                  Ngaruawahia, Huntly
                 </p>
               </td>
             </tr>
@@ -95,15 +95,13 @@ export default () => (
 
             <li>Extra collections are no problem</li>
 
-            <li>We can also leave extra bags for big clean up&rsquo;s</li>
-
             <li>
               We can do one off/casual collections of a 600 litre Garden Bag
             </li>
 
             <li>
-              If you have your own bin or bag we can also do a one off
-              collection
+              If you have your own bin we can also do one off
+              collections
             </li>
           </ul>
 
@@ -147,7 +145,7 @@ export default () => (
             was changed to Red Lid Garden Bins &amp; Bags Ltd.&nbsp; We started
             out with one tandem trailer which was very hard work in the early
             days.&nbsp; But through hard work and a commitment to providing the
-            best customer service, we are now proud of our fleet of 7 purpose
+            best customer service, we are now proud of our fleet of 9 purpose
             built compactor trucks.
           </p>
 
@@ -170,15 +168,6 @@ export default () => (
             Greenwaste we collect is recycled into compost products which
             reduces the estimated 40% of Greenwaste that goes to landfills each
             year.
-          </p>
-
-          <p>
-            2018 has been an exciting year with the addition of RedLid Skips.
-            This came about as our existing customers were contacting us on a
-            regular basis and asking if we had skips. The decision was made to
-            provide skips but not just for Greenwaste. We also provide skips for
-            General waste and Hard fill. At this stage we are only providing
-            skips in Hamilton and Cambridge.
           </p>
 
           <p>
