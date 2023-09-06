@@ -36,10 +36,11 @@ export default ({ show, onHide }) => {
           cycle that has been approved by you either by phone, email or through
           our website, unless we have notified you in advance by email or phone
           message that the date has changed. Where your scheduled collection
-          falls on a public holiday your collection day may change, you will be
-          notified before the scheduled collection day if there is a change.
+          falls on a public holiday your collection day may change, your previous 
+          invoice will have a change of collection day.
         </p>
         <p>
+          
           Our policy allows one free missed collection per year without charge,
           this excludes the 8 weekly collection cycle. If you are wanting to use
           your free missed collection you need to contact the office by phone or

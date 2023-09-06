@@ -77,7 +77,7 @@ export default function BinsBags() {
                   Clean and convenient – wheel it to where you are working in
                   the garden.
                 </p>
-                <Button variant="primary">Order garden waste bins</Button>{' '}
+                <Button variant="primary">Order a garden waste bin</Button>{' '}
               </Col>
             </Row>
           </Link>
@@ -102,7 +102,7 @@ export default function BinsBags() {
                   Free standing frame Large capacity - situated anywhere on your
                   property.
                 </p>
-                <Button variant="primary">Order garden waste bags</Button>{' '}
+                <Button variant="primary">Order a garden waste bag</Button>{' '}
               </Col>
             </Row>
           </Link>

@@ -80,32 +80,32 @@ export default function Bins() {
             <h2 className="blacklabel">Choose pickup cycle</h2>
 
             <Form.Check
-              label="Weekly (Hamilton only) - $8 per collection"
+              label="Weekly (Hamilton only) - $8.50 per collection"
               name="PickupCycle"
               type="inline-radio"
               id="Weekly"
             />
 
             <Form.Check
-              label="2-Weekly - $11 per collection"
+              label="2-Weekly - $12 per collection"
               name="PickupCycle"
               type="inline-radio"
               id="TwoWeekly"
             />
             <Form.Check
-              label="4-Weekly - $16 per collection"
+              label="4-Weekly - $18 per collection"
               name="PickupCycle"
               type="inline-radio"
               id="FourWeekly"
             />
             <Form.Check
-              label="8-Weekly - $23 per collection"
+              label="8-Weekly - $25 per collection"
               name="PickupCycle"
               type="inline-radio"
               id="EightWeekly"
             />
             <Form.Check
-              label="One-off (I have my own bin) - $22"
+              label="One-off (I have my own bin) - $28"
               name="PickupCycle"
               type="inline-radio"
               id="OneOff"
@@ -153,7 +153,7 @@ export default function Bins() {
             />
 
             <Form.Check
-              label="Credit card"
+              label="Credit card (3% surcharge applies)"
               name="PaymentMethod"
               type="inline-radio"
               id="CreditCard"

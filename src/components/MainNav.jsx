@@ -18,10 +18,14 @@ export default () => (
     <Link href="#">
          <NavbarBrand />
     </Link>
-    <Link href="/manage">
+    
+  </Navbar>
+)
+
+/**
+<Link href="/manage">
       <Button variant="outline-secondary" id="ManageServicesBtn">
         Manage Services
       </Button>
     </Link>
-  </Navbar>
-)
+*/

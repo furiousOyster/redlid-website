@@ -34,7 +34,6 @@ export default () => (
     <Navbar.Toggle />
     <Navbar.Collapse>
       <Nav className="me-auto CollapsableNav">
-        <Link href="/Skips">Skips</Link>
         <Link href="/BinsBags#HowitWorks">How it works</Link>
         
         <Button
