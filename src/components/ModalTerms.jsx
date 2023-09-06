@@ -40,10 +40,14 @@ export default ({ show, onHide }) => {
           invoice will have a change of collection day.
         </p>
         <p>
-          
-          Our policy allows one free missed collection per year without charge,
-          this excludes the 8 weekly collection cycle. If you are wanting to use
-          your free missed collection you need to contact the office by phone or
+          Our missed collection policy is as follows:<br/>
+          <b>8 Weekly collection cycle</b> no missed collections without charge<br/>
+          <b>4 Weekly collection cycle</b> 1 missed collection per calendar year without charge<br/>
+          <b>2 Weekly collection cycle</b> 2 missed collection per calendar year without charge<br/>
+          <b>1 Weekly collection cycle</b> 4 missed collection per calendar year without charge<br/>
+        </p>
+        <p>
+          If you are wanting to use a free missed collection you need to contact the office by phone or
           email at least 24 hours prior to the next scheduled collection.
         </p>
         <p>
@@ -62,7 +66,7 @@ export default ({ show, onHide }) => {
           After you receive your Bin or Bag a $60 payment is required before the
           first collection, this advance payment goes onto your account and your
           collection charges are deducted from it, once you have used your $60,
-          simply pay a further $60. Payments can be made by credit card, cheque,
+          simply pay a further $60. Payments can be made by credit card, 
           internet banking or automatic payment.
         </p>
         <h3>6.    Cancelling your service</h3>
@@ -76,14 +80,19 @@ export default ({ show, onHide }) => {
           On cancellation you agree to allow us access to the property for the
           purpose of collecting and removing our Bin or Bag.
         </p>
+        <p>
+          A cancellation charge will apply on the day the garden bin or bag is removed.
+          This applies even if the bin or bag is empty on removal.
+        </p>
         <h3>7.    No access policy</h3>
         <p>
           If we are not able to collect/empty your Bin or Bag due to restricted
           access for example Bin or Bag is behind locked gates, dogs are running
           free or a vehicle is blocking access, please email or phone the office
           and we will collect the Bin or Bag on the next day we are in your area
-          at no extra charge. Your following collection date will remain the
-          same.
+          at no extra charge.  You are allowed 1 collection in lieu per year 
+          otherwise a full collection charge will apply. 
+          Your following collection date will remain the same.
         </p>
         <h3>8.    Using and looking after your Garden Waste Bin or Bag</h3>
         <p>Please DO:</p>
@@ -104,7 +113,8 @@ export default ({ show, onHide }) => {
             Ensure your Garden Waste Bin or Bag contains approved organic waste
             as outlined in clause 9 below. If your Bin is not out for collection
             on your scheduled collection day, our drivers will enter your
-            property to collect it if they can gain access. If you DO NOT want
+            property to collect it if they can gain access.  Drivers will do this
+            as an occasional courtesy, not as part of regular service. If you DO NOT want
             us to enter your property please notify us by email or phone, the
             collection charge will remain.
           </li>
@@ -163,8 +173,8 @@ export default ({ show, onHide }) => {
           From time to time we may need to change these terms, including adding
           new ones. We want to make sure we&rsquo;re acting reasonably and in
           good faith. If any changes we make could have a detrimental impact on
-          you, we will give you at least 28 days&rsquo; notice of the change by
-          emailing or phoning you. Continuing to use our services after being
+          you, we will give you at least 28 days&rsquo; notice of the change. 
+          Continuing to use our services after being
           notified in this way indicates you accept the changes. If you do not
           agree to the changes, you have the right to terminate this agreement.
         </p>
