@@ -62,35 +62,35 @@ export default function Bins() {
           <Form>
             <FloatingLabel
               controlId="floatingInput"
-              label="FEnter your address for pricing"
+              label="Enter your address"
               className="mb-3"
             >
-              <Form.Control type="text" placeholder="Enter your address for pricing" />
+              <Form.Control type="text" placeholder="Enter your address" />
             </FloatingLabel>
 
             <h2 className="blacklabel">Choose pickup cycle</h2>
 
             <Form.Check
-              label="Weekly (Hamilton only) - $18 per collection"
+              label="Weekly (Hamilton only) - $20 per collection"
               name="PickupCycle"
               type="inline-radio"
               id="Weekly"
             />
 
             <Form.Check
-              label="2-Weekly - $20 per collection"
+              label="2-Weekly - $24 per collection"
               name="PickupCycle"
               type="inline-radio"
               id="TwoWeekly"
             />
             <Form.Check
-              label="4-Weekly - $24 per collection"
+              label="4-Weekly - $28 per collection"
               name="PickupCycle"
               type="inline-radio"
               id="FourWeekly"
             />
             <Form.Check
-              label="One-off (Collection within 4 weeks of dropoff) - $40"
+              label="One-off (Collection within 4 weeks of dropoff) - $45"
               name="PickupCycle"
               type="inline-radio"
               id="OneOff"
@@ -139,7 +139,7 @@ export default function Bins() {
             />
 
             <Form.Check
-              label="Credit card"
+              label="Credit card (3% surcharge applies)"
               name="PaymentMethod"
               type="inline-radio"
               id="CreditCard"
