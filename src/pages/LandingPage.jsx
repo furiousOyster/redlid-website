@@ -26,7 +26,7 @@ export default function Home() {
             <Link href="/BinsBags" className="hvr-grow">
               <h1>Garden Bins & Bags</h1>
               <p>
-                For green waste / organic waste. <br />
+                For garden waste collections. <br />
                 We deliver, we collect, Waikato-wide.
               </p>
               <Image
