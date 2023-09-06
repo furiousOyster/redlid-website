@@ -106,6 +106,13 @@ export default () => (
           </ul>
 
           <p>
+            <b>
+              Referrals: We offer one free collection for any referral we receive from a
+              friend or family member once their initial advance payment has been made.
+            </b>
+          </p>
+          
+          <p>
             Garden Bags can be located anywhere on your property with easy
             access- we collect off your section with a hand trolley.
           </p>

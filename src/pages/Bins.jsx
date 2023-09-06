@@ -71,7 +71,7 @@ export default function Bins() {
           <Form>
             <FloatingLabel
               controlId="floatingInput"
-              label="Enter your address for pricing"
+              label="Enter your address"
               className="mb-3"
             >
               <Form.Control type="text" placeholder="Enter your address" />
