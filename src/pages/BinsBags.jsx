@@ -43,7 +43,7 @@ export default function BinsBags() {
 
         <Row className="Header">
           <h1 style={{color: "red", fontSize: "5rem"}}>Welcome to Redlid</h1>
-          <h1>Choose a bag or&nbsp;bin</h1>
+          <h1>Choose a bag or bin</h1>
         </Row>
       </Container>
 
