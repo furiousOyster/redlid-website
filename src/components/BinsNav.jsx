@@ -9,7 +9,6 @@ import { Link } from 'wouter'
    
 export default () => (
   <Navbar
-    // onSelect={selectedKey => alert(`selected ${selectedKey}`)}
     bg="#fff"
     variant="light"
     expand="lg"
@@ -34,7 +33,7 @@ export default () => (
     <Navbar.Toggle />
     <Navbar.Collapse>
       <Nav className="me-auto CollapsableNav">
-        <Link href="/BinsBags#HowitWorks">How it works</Link>
+        <Link href="#HowItWorks">How it works</Link>
         
         <Button
                 className="FAQBtn"
