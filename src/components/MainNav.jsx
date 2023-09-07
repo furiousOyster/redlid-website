@@ -21,11 +21,3 @@ export default () => (
     
   </Navbar>
 )
-
-/**
-<Link href="/manage">
-      <Button variant="outline-secondary" id="ManageServicesBtn">
-        Manage Services
-      </Button>
-    </Link>
-*/

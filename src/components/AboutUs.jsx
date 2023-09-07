@@ -6,7 +6,6 @@ import Row from 'react-bootstrap/Row'
 import { Link } from 'wouter'
 
 export default () => (
-   <>
     <div id="HowItWorks">
         <Row>    {/* HOW IT WORKS */}
           <h2>About us</h2>
@@ -62,6 +61,5 @@ export default () => (
           </p>
         </row>
       </div>
-  </>
 )
 

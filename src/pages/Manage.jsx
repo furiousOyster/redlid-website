@@ -21,7 +21,6 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel'
 import ModalFaqs from '../components/ModalFaqs'
 import ModalTerms from '../components/ModalTerms'
 
-import SkipsNav from '../components/SkipsNav'
 
 export default function Manage() {
   const [showTerms, setShowTerms] = useState(false)
