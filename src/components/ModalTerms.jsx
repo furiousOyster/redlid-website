@@ -34,16 +34,15 @@ export default ({ show, onHide }) => {
         <p>
           We will empty your Bin or Bag on the scheduled collection date &amp;
           cycle that has been approved by you either by phone, email or through
-          our website, unless we have notified you in advance by email or phone
-          message that the date has changed. Where your scheduled collection
-          falls on a public holiday your collection day may change, your previous 
-          invoice will have a change of collection day.
+          our website, unless we have notified you in advance that the date has changed. 
+          Where your scheduled collection falls on a public holiday your collection 
+          day may change, your previous invoice will have a change of collection day.
         </p>
         <p>
-          Our missed collection policy is as follows:<br/>
-          <b>8 Weekly collection cycle</b> no missed collections without charge<br/>
-          <b>4 Weekly collection cycle</b> 1 missed collection per calendar year without charge<br/>
-          <b>2 Weekly collection cycle</b> 2 missed collection per calendar year without charge<br/>
+          Our missed or delayed collection policy is as follows:<br/>
+          <b>8 Weekly collection cycle</b> no missed or delayed collections without charge<br/>
+          <b>4 Weekly collection cycle</b> 1 missed or delayed collections per calendar year without charge<br/>
+          <b>2 Weekly collection cycle</b> 2 missed or delayed collections per calendar year without charge<br/>
           <b>1 Weekly collection cycle</b> 4 missed collection per calendar year without charge<br/>
         </p>
         <p>
@@ -58,8 +57,9 @@ export default ({ show, onHide }) => {
         <p>
           Our price is determined by the service address you provided to us, so
           any change to your address may result in a different price being
-          charged. Our prices include GST. We can also remove extra side rubbish
-          for an additional fee if notified.
+          charged. Our prices include GST. We can also remove Christmas trees plus extra 
+          side rubbish at an additional fee.  Extra side rubbish must be contained in a bag or a bin.
+          No loose material will be taken.
         </p>
         <h3>5.    Payment</h3>
         <p>
@@ -183,8 +183,7 @@ export default ({ show, onHide }) => {
         </p>
         <p>
           We may change our prices from time to time. When we increase the
-          prices for your services we will give you 28 days&rsquo; notice by
-          emailing or phoning you.
+          prices for your services we will give you 28 days&rsquo; notice.
         </p>
         <p>
           <strong>Changes to Services</strong>
@@ -192,7 +191,7 @@ export default ({ show, onHide }) => {
         <p>
           We may change our services from time to time. If the change is within
           our control, we will provide you 28 days&rsquo; notice of such
-          alterations by emailing or phoning you.
+          alterations.
         </p>
         <h3>13.    Privacy</h3>
         <p>

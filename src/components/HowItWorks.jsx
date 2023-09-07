@@ -113,6 +113,14 @@ export default () => (
           </p>
           
           <p>
+            <b>
+              We can also remove Christmas trees plus extra side rubbish at an additional 
+              fee.  Extra side rubbish must be contained in a bag or a bin. No loose material 
+              will be taken.
+            </b>
+          </p>
+                    
+          <p>
             Garden Bags can be located anywhere on your property with easy
             access- we collect off your section with a hand trolley.
           </p>
