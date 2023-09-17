@@ -71,17 +71,12 @@ h3,
 
 .navbar-expand-lg {
   justify-content: space-between;
-  position: relative;
 }
 
 .navbar-brand {
-  position: absolute;
   left: 12px;
 }
 
-.navbar-brand img {
-  min-height: 40px;
-}
 
 .CollapsableNav {
   text-align: right;

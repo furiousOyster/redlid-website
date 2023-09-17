@@ -8,7 +8,7 @@ import { Link } from 'wouter'
 
 export default () => (
   <Navbar bg="#fff" variant="light" expand="lg" collapseOnSelect id="BinsNav">
-    <Container>
+  <Container >
       <Navbar.Brand href="/">
         <Image
           alt="Red Lid Garden Bins and Bags in Waikato, New Zealand."
@@ -20,7 +20,7 @@ export default () => (
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse>
-        <Nav className="me-auto CollapsableNav">
+        <Nav className="me-auto ">
           <Nav.Link href="#HowItWorks">How it works</Nav.Link>
           
           <Nav.Link className="FAQBtn">
