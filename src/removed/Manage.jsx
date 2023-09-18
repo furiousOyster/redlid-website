@@ -1,5 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import '../styles/styles.css'
 import React, { useState } from 'react'
 import { Link } from 'wouter'
 import Container from 'react-bootstrap/Container'
@@ -21,7 +19,6 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel'
 import ModalFaqs from '../components/ModalFaqs'
 import ModalTerms from '../components/ModalTerms'
 
-
 export default function Manage() {
   const [showTerms, setShowTerms] = useState(false)
   const [showFaqs, setShowFaqs] = useState(false)
@@ -42,9 +39,6 @@ export default function Manage() {
         {/* MANAGE FORM */}
 
         <Row>
-        
-          
-
           <Form>
             <FloatingLabel
               controlId="floatingInput"
@@ -61,24 +55,21 @@ export default function Manage() {
                 <option value="4weekly">Every 4 weeks</option>
               </Form.Select>
             </FloatingLabel>
-            
-            
-             <FloatingLabel label="Check payment method">
+
+            <FloatingLabel label="Check payment method">
               <Form.Select aria-label="Floating label select example">
                 <option>Internet banking</option>
                 <option value="cc">Credit card (+3% surcharge)</option>
               </Form.Select>
             </FloatingLabel>
-            
-            
-           <Button
-                onClick={() => setShowTerms(true)}
-                className="TermsModalBtn"
-                variant="link"
-              >
-                Terms & conditions about missing collections
-              </Button>
-            
+
+            <Button
+              onClick={() => setShowTerms(true)}
+              className="TermsModalBtn"
+              variant="link"
+            >
+              Terms & conditions about missing collections
+            </Button>
 
             <p class="msg-error error"></p>
             <button
@@ -161,7 +152,7 @@ export default function Manage() {
           </p>
         </Row>
       </Container>
- 
+
       <ModalTerms show={showTerms} onHide={() => setShowTerms(false)} />
       <ModalFaqs show={showFaqs} onHide={() => setShowFaqs(false)} />
     </>

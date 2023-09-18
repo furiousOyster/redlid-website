@@ -1,48 +1,18 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import '../styles/styles.css'
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'wouter'
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import Nav from 'react-bootstrap/Nav'
-import Navbar from 'react-bootstrap/Navbar'
 import Image from 'react-bootstrap/Image'
 import Button from 'react-bootstrap/Button'
-import Modal from 'react-bootstrap/Modal'
-import ModalDialog from 'react-bootstrap/ModalDialog'
-import ModalHeader from 'react-bootstrap/ModalHeader'
-import ModalTitle from 'react-bootstrap/ModalTitle'
-import ModalBody from 'react-bootstrap/ModalBody'
-import ModalFooter from 'react-bootstrap/ModalFooter'
-import Form from 'react-bootstrap/Form'
-import FloatingLabel from 'react-bootstrap/FloatingLabel'
-import ListGroup from 'react-bootstrap/ListGroup'
-
-import ModalFaqs from '../components/ModalFaqs'
-import ModalTerms from '../components/ModalTerms'
-import BinsNav from '../components/BinsNav'
 import HowItWorks from '../components/HowItWorks'
-import Footer from '../components/BinsFooter'
-
-
 
 export default function BinsBags() {
-  const [showTerms, setShowTerms] = useState(false)
-  const [showFaqs, setShowFaqs] = useState(false)
-
   return (
     <>
-      {/* CONTENT CONTAINER */}
       <Container fluid id="NavContainer">
-        <Row>
-          <BinsNav />
-        </Row>
-
-        {/* HEADER */}
-
         <Row className="Header">
-          <h1 style={{color: "red", fontSize: "5rem"}}>Welcome to Redlid</h1>
+          <h1 style={{ color: 'red', fontSize: '5rem' }}>Welcome to Redlid</h1>
           <h1>Choose a bag or bin</h1>
         </Row>
       </Container>
@@ -50,9 +20,7 @@ export default function BinsBags() {
       <Container>
         <Row>
           <Col md={{ span: 8, offset: 4 }}>
-            <p className="Description">
-              Regular garden waste collections.
-            </p>
+            <p className="Description">Regular garden waste collections.</p>
           </Col>
         </Row>
 
@@ -109,16 +77,7 @@ export default function BinsBags() {
         </Row>
 
         <HowItWorks />
-        
-
-      
       </Container>
-      {/* END OF CONTENT CONTAINER */}
-
-      <Footer />
-
-      <ModalTerms show={showTerms} onHide={() => setShowTerms(false)} />
-      <ModalFaqs show={showFaqs} onHide={() => setShowFaqs(false)} />
     </>
   )
 }
