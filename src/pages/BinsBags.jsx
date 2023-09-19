@@ -24,7 +24,6 @@ export default function BinsBags() {
           </Col>
         </Row>
 
-        {/* LISTING BINS */}
         <Row>
           <Link className="Product hvr-grow" href="/bins">
             <Row>
@@ -50,7 +49,7 @@ export default function BinsBags() {
             </Row>
           </Link>
         </Row>
-        {/* LISTING BAGS */}
+
         <Row>
           <Link className="Product hvr-grow " href="/bags">
             <Row>

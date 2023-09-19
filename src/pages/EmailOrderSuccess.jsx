@@ -2,19 +2,18 @@ import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Image from 'react-bootstrap/Image'
-import OrderForm from '../components/OrderForm'
 
-export default function Bags() {
+export default function EmailOrderSuccess() {
   return (
     <>
       <Container fluid id="NavContainer">
         <Row className="Header">
-          <h1>Order a Garden Bag</h1>
+          <h1>Thank you !</h1>
         </Row>
       </Container>
       <Container id="pdp">
         <Row className="pdptop">
-          <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Bag.jpg?v=1632524809122" />
+          <Image src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidBinBag.jpg?v=1634953281441" />
         </Row>
         <Row>
           <i className="pdpHelptext">
@@ -27,7 +26,6 @@ export default function Bags() {
             </p>
           </i>
         </Row>
-        <OrderForm bag />
       </Container>
     </>
   )

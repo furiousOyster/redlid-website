@@ -6,43 +6,43 @@ import ModalTerms from './ModalTerms'
 
 const CYCLES = {
   Weekly: 'Weekly',
-  TwoWeekly: 'TwoWeekly',
-  FourWeekly: 'FourWeekly',
-  EightWeekly: 'EightWeekly',
-  OneOff: 'OneOff',
+  TwoWeekly: 'Two Weekly',
+  FourWeekly: 'Four Weekly',
+  EightWeekly: 'Eight Weekly',
+  OneOff: 'One Off',
 }
 
 const BagsCycles = () => (
   <>
     <Form.Check
-      label="Weekly (Hamilton only) - $20 per collection"
-      name="PickupCycle"
+      id="pickupCycle"
+      name="Pickup Cycle"
       type="radio"
-      id={CYCLES.Weekly}
+      label="Weekly (Hamilton only) - $20 per collection"
       value={CYCLES.Weekly}
       defaultChecked
       required
     />
 
     <Form.Check
-      label="2-Weekly - $24 per collection"
-      name="PickupCycle"
+      id="pickupCycle"
+      name="Pickup Cycle"
       type="radio"
-      id={CYCLES.TwoWeekly}
+      label="2-Weekly - $24 per collection"
       value={CYCLES.TwoWeekly}
     />
     <Form.Check
-      label="4-Weekly - $28 per collection"
-      name="PickupCycle"
+      id="pickupCycle"
+      name="Pickup Cycle"
       type="radio"
-      id={CYCLES.FourWeekly}
+      label="4-Weekly - $28 per collection"
       value={CYCLES.FourWeekly}
     />
     <Form.Check
-      label="One-off (Collection within 4 weeks of dropoff) - $45"
-      name="PickupCycle"
+      id="pickupCycle"
+      name="Pickup Cycle"
       type="radio"
-      id={CYCLES.OneOff}
+      label="One-off (Collection within 4 weeks of dropoff) - $45"
       value={CYCLES.OneOff}
     />
   </>
@@ -51,40 +51,41 @@ const BagsCycles = () => (
 const BinsCycles = () => (
   <>
     <Form.Check
+      id="pickupCycle"
+      name="Pickup Cycle"
       label="Weekly (Hamilton only) - $8.50 per collection"
-      name="PickupCycle"
       type="radio"
-      id={CYCLES.Weekly}
       value={CYCLES.Weekly}
       defaultChecked
+      required
     />
 
     <Form.Check
-      label="2-Weekly - $12 per collection"
-      name="PickupCycle"
+      id="pickupCycle"
+      name="Pickup Cycle"
       type="radio"
-      id={CYCLES.TwoWeekly}
+      label="2-Weekly - $12 per collection"
       value={CYCLES.TwoWeekly}
     />
     <Form.Check
-      label="4-Weekly - $18 per collection"
-      name="PickupCycle"
+      id="pickupCycle"
+      name="Pickup Cycle"
       type="radio"
-      id={CYCLES.FourWeekly}
+      label="4-Weekly - $18 per collection"
       value={CYCLES.FourWeekly}
     />
     <Form.Check
-      label="8-Weekly - $25 per collection"
-      name="PickupCycle"
+      id="pickupCycle"
+      name="Pickup Cycle"
       type="radio"
-      id={CYCLES.EightWeekly}
+      label="8-Weekly - $25 per collection"
       value={CYCLES.EightWeekly}
     />
     <Form.Check
-      label="One-off (I have my own bin) - $28"
-      name="PickupCycle"
+      id="pickupCycle"
+      name="Pickup Cycle"
       type="radio"
-      id={CYCLES.OneOff}
+      label="One-off (I have my own bin) - $28"
       value={CYCLES.OneOff}
     />
   </>
@@ -96,6 +97,7 @@ export default function OrderForm({ bin = false, bag = false }) {
   }
   const [showTerms, setShowTerms] = useState(false)
   const Cycles = bin ? BinsCycles : BagsCycles
+  const type = bin ? 'Bin' : 'Bag'
   return (
     <>
       <Form
@@ -103,34 +105,105 @@ export default function OrderForm({ bin = false, bag = false }) {
         method="post"
         encType="json"
       >
+        <input name="Order Type" id="orderType" type="hidden" value={type} />
+        <h2 className="blacklabel">Enter your address</h2>
+
         <FloatingLabel
           controlId="floatingInput"
-          label="Enter your address"
+          label="Street number and name"
           className="mb-3"
         >
-          <Form.Control type="text" placeholder="Enter your address" />
+          <Form.Control
+            id="Street"
+            name="Address"
+            type="text"
+            placeholder="Street number and name"
+            required
+          />
+        </FloatingLabel>
+        <FloatingLabel
+          controlId="floatingInput"
+          label="Suburb"
+          className="mb-3"
+        >
+          <Form.Control
+            id="Suburb"
+            name="Suburb"
+            type="text"
+            placeholder="Suburb"
+            required
+          />
+        </FloatingLabel>
+        <FloatingLabel controlId="floatingInput" label="Town" className="mb-3">
+          <Form.Control
+            id="Town"
+            name="Town"
+            type="text"
+            placeholder="Town"
+            required
+          />
+        </FloatingLabel>
+        <FloatingLabel
+          controlId="floatingInput"
+          label="Postcode"
+          className="mb-3"
+        >
+          <Form.Control
+            id="Postcode"
+            name="Postcode"
+            type="text"
+            placeholder="Postcode"
+            required
+          />
         </FloatingLabel>
 
         <h2 className="blacklabel">Choose pickup cycle</h2>
 
         <Cycles />
 
+        <h2 className="blacklabel">Enter contact details</h2>
+
         <FloatingLabel
-          id="fullName"
           controlId="floatingInput"
-          label="Enter your full name"
+          label="First Name"
           className="mb-3"
         >
-          <Form.Control type="text" placeholder="Your name" />
+          <Form.Control
+            id="firstName"
+            name="First Name"
+            type="text"
+            placeholder="First Name"
+            required
+          />
+        </FloatingLabel>
+        <FloatingLabel
+          id="surname"
+          controlId="floatingInput"
+          label="Surname"
+          className="mb-3"
+        >
+          <Form.Control
+            id="lastName"
+            name="Last Name"
+            type="text"
+            placeholder="Last Name"
+            required
+          />
         </FloatingLabel>
 
         <FloatingLabel
           id="phone"
           controlId="floatingInput"
-          label="Phone number"
+          label="Mobile Phone Number"
           className="mb-3"
         >
-          <Form.Control type="phone" placeholder="Phone number" />
+          <Form.Control
+            id="Mobile"
+            name="Mobile"
+            type="tel"
+            placeholder="Mobile Phone Number"
+            required
+          />
         </FloatingLabel>
 
         <FloatingLabel
@@ -140,7 +213,13 @@ export default function OrderForm({ bin = false, bag = false }) {
           className="mb-3"
           aria-describedby="emailHelp"
         >
-          <Form.Control type="email" placeholder="name@example.com" />
+          <Form.Control
+            id="Email"
+            name="Email"
+            type="email"
+            placeholder="name@example.com"
+            required
+          />
 
           <Form.Text id="emailHelp" muted>
             We'll never share your email with anyone else.
@@ -150,18 +229,21 @@ export default function OrderForm({ bin = false, bag = false }) {
         <h2 className="blacklabel">Payment method</h2>
 
         <Form.Check
-          label="Internet banking"
-          name="PaymentMethod"
+          id="Payment"
+          name="Payment"
           type="radio"
-          id="InternetBanking"
+          label="Internet banking"
+          value="Interet banking"
           defaultChecked
+          required
         />
 
         <Form.Check
-          label="Credit card (3% surcharge applies)"
-          name="PaymentMethod"
+          id="Payment"
+          name="Payment"
           type="radio"
-          id="CreditCard"
+          label="Credit card (3% surcharge applies)"
+          value="Credit card"
         />
 
         <Form.Text id="WeightHelp" muted>
@@ -170,6 +252,8 @@ export default function OrderForm({ bin = false, bag = false }) {
 
         <FloatingLabel controlId="floatingTextarea2" label="Comments">
           <Form.Control
+            id="Instructions"
+            name="Instructions"
             as="textarea"
             placeholder="Any comments or special instructions?"
             style={{ height: '100px' }}
@@ -178,9 +262,12 @@ export default function OrderForm({ bin = false, bag = false }) {
 
         <div className="TermsContainer">
           <Form.Check
+            id="Terms"
+            name="Terms"
             type="checkbox"
             label="I have read and agree to the "
             className="TermsCheckbox"
+            value="Agreed to terms and conditions"
             required
           />
 
