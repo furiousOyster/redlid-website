@@ -234,7 +234,7 @@ export default function OrderForm({ bin = false, bag = false }) {
           name="Payment"
           type="radio"
           label="Internet banking"
-          value="Interet banking"
+          value="Internet banking"
           defaultChecked
           required
         />
