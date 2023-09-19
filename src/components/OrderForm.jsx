@@ -106,6 +106,7 @@ export default function OrderForm({ bin = false, bag = false }) {
         encType="json"
       >
         <input name="Order Type" id="orderType" type="hidden" value={type} />
+
         <h2 className="blacklabel">Enter your address</h2>
 
         <FloatingLabel
@@ -279,7 +280,12 @@ export default function OrderForm({ bin = false, bag = false }) {
             Terms & Conditions
           </Button>
         </div>
-        <p className="msg-error error"></p>
+        <input
+          name="g-recaptcha-response"
+          id="g-recaptcha-response"
+          type="hidden"
+          value="v1"
+        />
         <button type="submit" className="btn btn-primary" id="submitBtn">
           Submit order
         </button>
