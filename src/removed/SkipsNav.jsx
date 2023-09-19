@@ -1,6 +1,5 @@
 import * as React from 'react'
 import Nav from 'react-bootstrap/Nav'
-import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import Image from 'react-bootstrap/Image'
 import Button from 'react-bootstrap/Button'
@@ -22,7 +21,7 @@ export default () => (
         height="40"
         className="d-inline-block align-top"
       />
-          <h1>Skips</h1>
+      <h1>Skips</h1>
     </Navbar.Brand>
 
     <Link href="/Manage">

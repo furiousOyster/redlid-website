@@ -1,10 +1,6 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
-import ModalDialog from 'react-bootstrap/ModalDialog'
-import ModalTitle from 'react-bootstrap/ModalTitle'
-import ModalBody from 'react-bootstrap/ModalBody'
-import ModalFooter from 'react-bootstrap/ModalFooter'
 
 export default ({ show, onHide }) => {
   return (
@@ -34,20 +30,31 @@ export default ({ show, onHide }) => {
         <p>
           We will empty your Bin or Bag on the scheduled collection date &amp;
           cycle that has been approved by you either by phone, email or through
-          our website, unless we have notified you in advance that the date has changed. 
-          If your scheduled collection falls on a public holiday your collection 
-          day may change, your previous invoice will have a change of collection day.
+          our website, unless we have notified you in advance that the date has
+          changed. If your scheduled collection falls on a public holiday your
+          collection day may change, your previous invoice will have a change of
+          collection day.
         </p>
         <p>
-          Our missed or delayed collection policy is as follows:<br/>
-          <b>8 Weekly collection cycle</b> no missed or delayed collections without charge<br/>
-          <b>4 Weekly collection cycle</b> 1 missed or delayed collections per calendar year without charge<br/>
-          <b>2 Weekly collection cycle</b> 2 missed or delayed collections per calendar year without charge<br/>
-          <b>1 Weekly collection cycle</b> 4 missed collection per calendar year without charge<br/>
+          Our missed or delayed collection policy is as follows:
+          <br />
+          <b>8 Weekly collection cycle</b> no missed or delayed collections
+          without charge
+          <br />
+          <b>4 Weekly collection cycle</b> 1 missed or delayed collections per
+          calendar year without charge
+          <br />
+          <b>2 Weekly collection cycle</b> 2 missed or delayed collections per
+          calendar year without charge
+          <br />
+          <b>1 Weekly collection cycle</b> 4 missed collection per calendar year
+          without charge
+          <br />
         </p>
         <p>
-          If you are wanting to use a free missed collection you need to contact the office by phone or
-          email at least 24 hours prior to the next scheduled collection.
+          If you are wanting to use a free missed collection you need to contact
+          the office by phone or email at least 24 hours prior to the next
+          scheduled collection.
         </p>
         <p>
           You can change your collection frequency at anytime by contacting the
@@ -57,16 +64,16 @@ export default ({ show, onHide }) => {
         <p>
           Our price is determined by the service address you provided to us, so
           any change to your address may result in a different price being
-          charged. Our prices include GST. We can also remove Christmas trees plus extra 
-          side rubbish at an additional fee.  Extra side rubbish must be contained in a bag or a bin.
-          No loose material will be taken.
+          charged. Our prices include GST. We can also remove Christmas trees
+          plus extra side rubbish at an additional fee. Extra side rubbish must
+          be contained in a bag or a bin. No loose material will be taken.
         </p>
         <h3>5.    Payment</h3>
         <p>
           After you receive your Bin or Bag a $60 payment is required before the
           first collection, this advance payment goes onto your account and your
           collection charges are deducted from it, once you have used your $60,
-          simply pay a further $60. Payments can be made by credit card, 
+          simply pay a further $60. Payments can be made by credit card,
           internet banking or automatic payment.
         </p>
         <h3>6.    Cancelling your service</h3>
@@ -81,8 +88,8 @@ export default ({ show, onHide }) => {
           purpose of collecting and removing our Bin or Bag.
         </p>
         <p>
-          A cancellation charge will apply on the day the garden bin or bag is removed.
-          This applies even if the bin or bag is empty on removal.
+          A cancellation charge will apply on the day the garden bin or bag is
+          removed. This applies even if the bin or bag is empty on removal.
         </p>
         <h3>7.    No access policy</h3>
         <p>
@@ -90,9 +97,9 @@ export default ({ show, onHide }) => {
           access for example Bin or Bag is behind locked gates, dogs are running
           free or a vehicle is blocking access, please email or phone the office
           and we will collect the Bin or Bag on the next day we are in your area
-          at no extra charge.  You are allowed 1 collection in lieu per year 
-          otherwise a full collection charge will apply. 
-          Your following collection date will remain the same.
+          at no extra charge. You are allowed 1 collection in lieu per year
+          otherwise a full collection charge will apply. Your following
+          collection date will remain the same.
         </p>
         <h3>8.    Using and looking after your Garden Waste Bin or Bag</h3>
         <p>Please DO:</p>
@@ -113,10 +120,10 @@ export default ({ show, onHide }) => {
             Ensure your Garden Waste Bin or Bag contains approved organic waste
             as outlined in clause 9 below. If your Bin is not out for collection
             on your scheduled collection day, our drivers will enter your
-            property to collect it if they can gain access.  Drivers will do this
-            as an occasional courtesy, not as part of regular service. If you DO NOT want
-            us to enter your property please notify us by email or phone, the
-            collection charge will remain.
+            property to collect it if they can gain access. Drivers will do this
+            as an occasional courtesy, not as part of regular service. If you DO
+            NOT want us to enter your property please notify us by email or
+            phone, the collection charge will remain.
           </li>
         </ol>
         <p>Please do NOT:</p>
@@ -173,10 +180,10 @@ export default ({ show, onHide }) => {
           From time to time we may need to change these terms, including adding
           new ones. We want to make sure we&rsquo;re acting reasonably and in
           good faith. If any changes we make could have a detrimental impact on
-          you, we will give you at least 28 days&rsquo; notice of the change. 
-          Continuing to use our services after being
-          notified in this way indicates you accept the changes. If you do not
-          agree to the changes, you have the right to terminate this agreement.
+          you, we will give you at least 28 days&rsquo; notice of the change.
+          Continuing to use our services after being notified in this way
+          indicates you accept the changes. If you do not agree to the changes,
+          you have the right to terminate this agreement.
         </p>
         <p>
           <strong>Changes to Charges</strong>

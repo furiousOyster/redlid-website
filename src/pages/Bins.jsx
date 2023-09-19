@@ -1,10 +1,7 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import '../styles/styles.css'
-import React, { useState } from 'react'
+import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Image from 'react-bootstrap/Image'
-import ModalTerms from '../components/ModalTerms'
 import OrderForm from '../components/OrderForm'
 
 export default function Bins() {

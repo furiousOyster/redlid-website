@@ -1,20 +1,10 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import '../styles/styles.css'
 import React, { useState } from 'react'
 import { Link } from 'wouter'
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import Nav from 'react-bootstrap/Nav'
-import Navbar from 'react-bootstrap/Navbar'
 import Image from 'react-bootstrap/Image'
 import Button from 'react-bootstrap/Button'
-import Modal from 'react-bootstrap/Modal'
-import ModalDialog from 'react-bootstrap/ModalDialog'
-import ModalHeader from 'react-bootstrap/ModalHeader'
-import ModalTitle from 'react-bootstrap/ModalTitle'
-import ModalBody from 'react-bootstrap/ModalBody'
-import ModalFooter from 'react-bootstrap/ModalFooter'
 import Form from 'react-bootstrap/Form'
 import FloatingLabel from 'react-bootstrap/FloatingLabel'
 
@@ -45,9 +35,7 @@ export default function Skips() {
       <Container id="pdp">
         <Row className="pdptop">
           <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_GeneralWaste_Skip.jpg?v=1632527973536" />
-          <Link href="/Skips">
-
-          </Link>
+          <Link href="/Skips"></Link>
         </Row>
 
         {/* ORDER FORM */}
@@ -72,8 +60,8 @@ export default function Skips() {
             >
               <Form.Control type="text" placeholder="Enter your address" />
             </FloatingLabel>
-            
-               <h2 className="blacklabel">Choose a skip size</h2>
+
+            <h2 className="blacklabel">Choose a skip size</h2>
 
             <Form.Group className="mb-3" id="SkipSize">
               <Row>
@@ -87,12 +75,17 @@ export default function Skips() {
                     name="Skip Type"
                     type="inline-radio"
                     id="SkipSize9m"
-                  /><Form.Text id="WeightHelp" muted>
-                Weight limit 1500kg<br />
-                  1.8m high<br />
-                  3.6m long<br />
-                  1.5m wide<br />
-              </Form.Text>
+                  />
+                  <Form.Text id="WeightHelp" muted>
+                    Weight limit 1500kg
+                    <br />
+                    1.8m high
+                    <br />
+                    3.6m long
+                    <br />
+                    1.5m wide
+                    <br />
+                  </Form.Text>
                 </Col>
                 <Col xs={12} sm={4}>
                   <Image
@@ -104,12 +97,17 @@ export default function Skips() {
                     name="Skip Type"
                     type="inline-radio"
                     id="SkipSize6m"
-                  /><Form.Text id="WeightHelp" muted>
-                Weight limit 1000kg<br />
-                  1.4m high<br />
-                  3.6m long<br />
-                  1.5m wide<br />
-              </Form.Text>
+                  />
+                  <Form.Text id="WeightHelp" muted>
+                    Weight limit 1000kg
+                    <br />
+                    1.4m high
+                    <br />
+                    3.6m long
+                    <br />
+                    1.5m wide
+                    <br />
+                  </Form.Text>
                 </Col>
                 <Col xs={12} sm={4}>
                   <Image
@@ -123,11 +121,15 @@ export default function Skips() {
                     id="SkipSize3m"
                   />
                   <Form.Text id="WeightHelp" muted>
-                Weight limit 500kg<br />
-                    0.6m high<br />
-                    3.2m long<br />
-                    1.5m wide<br />
-              </Form.Text>
+                    Weight limit 500kg
+                    <br />
+                    0.6m high
+                    <br />
+                    3.2m long
+                    <br />
+                    1.5m wide
+                    <br />
+                  </Form.Text>
                 </Col>
               </Row>
             </Form.Group>
@@ -137,7 +139,6 @@ export default function Skips() {
                 What date would you like the skip delivered?
               </Form.Label>
               <Form.Control type="date" placeholder="Enter date" />
-
             </Form.Group>
 
             <FloatingLabel
@@ -172,8 +173,6 @@ export default function Skips() {
               </Form.Text>
             </FloatingLabel>
 
-         
-
             <div className="SkipUnloadTruck">
               <Image src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Fskipunloadslowversion9frame.gif?v=1632363782499" />
 
@@ -189,43 +188,26 @@ export default function Skips() {
                 />
               </FloatingLabel>
             </div>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-                        <h2 className="blacklabel">Payment method</h2>
 
-            
-             <Form.Check
-                    label="Internet banking"
-                    name="PaymentMethod"
-                    type="inline-radio"
-                    id="InternetBanking"
-                  />
-            
-             <Form.Check
-                    label="Credit card"
-                    name="PaymentMethod"
-                    type="inline-radio"
-                    id="CreditCard"
-                  />
-            
-            
-            
-            
-             <Form.Text id="WeightHelp" muted>
-                We will contact you by phone for your credit card details.
-              </Form.Text>
-            
-            
-            
+            <h2 className="blacklabel">Payment method</h2>
+
+            <Form.Check
+              label="Internet banking"
+              name="PaymentMethod"
+              type="inline-radio"
+              id="InternetBanking"
+            />
+
+            <Form.Check
+              label="Credit card"
+              name="PaymentMethod"
+              type="inline-radio"
+              id="CreditCard"
+            />
+
+            <Form.Text id="WeightHelp" muted>
+              We will contact you by phone for your credit card details.
+            </Form.Text>
 
             <div className="TermsContainer">
               <Form.Check

@@ -1,9 +1,6 @@
 import * as React from 'react'
-import Container from 'react-bootstrap/Container'
-import Image from 'react-bootstrap/Image'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import { Link } from 'wouter'
 
 export default () => (
   <>
