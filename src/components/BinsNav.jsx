@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import Image from 'react-bootstrap/Image'
 import ModalFaqs from '../components/ModalFaqs'
 import Row from 'react-bootstrap/Row'
+import useLocation from './router'
 
 export default () => {
   const [showFaqs, setShowFaqs] = useState(false)
@@ -18,6 +19,8 @@ export default () => {
       element.scrollIntoView({ behavior: 'smooth' })
     }
   }, [])
+
+  const [location] = useLocation()
 
   return (
     <Container fluid id="NavContainer">
@@ -42,8 +45,9 @@ export default () => {
             <Navbar.Toggle />
             <Navbar.Collapse>
               <Nav className="me-auto " onSelect={onSelect}>
-                <Nav.Link eventKey="HowItWorks">How it works</Nav.Link>
-
+                {location === '/' && (
+                  <Nav.Link eventKey="HowItWorks">How it works</Nav.Link>
+                )}
                 <Nav.Link eventKey="faq" className="FAQBtn">
                   FAQs
                 </Nav.Link>
