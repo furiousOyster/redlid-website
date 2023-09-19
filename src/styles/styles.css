@@ -39,7 +39,6 @@ h3,
   color: #000;
 }
 
-
 #ManageServicesBtn {
   margin-left: auto;
   margin-right: 10px;
@@ -76,7 +75,6 @@ h3,
 .navbar-brand {
   left: 12px;
 }
-
 
 .CollapsableNav {
   text-align: right;
@@ -283,7 +281,7 @@ a:hover .btn {
   padding-top: 0px;
   text-transform: uppercase;
   font-weight: 900;
-    color: #000;
+  color: #000;
 }
 
 .TermsCheckbox {
@@ -367,11 +365,9 @@ a:hover .btn {
 }
 
 @media (min-width: 480px) {
-  
   .Footer {
-  padding-bottom: 160px;
-}
-  
+    padding-bottom: 160px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -381,8 +377,6 @@ a:hover .btn {
   .Footer h2 {
     margin: 0 0 60px;
   }
-  
-  
 }
 
 /* Tiny things */
@@ -600,61 +594,47 @@ label {
 }
 
 .blacklabel {
-  
   color: #000;
-    margin: 30px auto 30px;
+  margin: 30px auto 30px;
 }
 
 #SkipSize .col-12 {
   text-align: center;
 }
 
-
-
 @media (max-width: 576px) {
-  
-    
   #SkipSize {
     position: relative;
   }
-  
-  
-#SkipSize img {
-  margin: 10px 0 -30px 0;
-  max-width: 56%;
-}
-  
+
+  #SkipSize img {
+    margin: 10px 0 -30px 0;
+    max-width: 56%;
+  }
+
   #SkipSize .form-check {
-max-width: 41%;
+    max-width: 41%;
     margin: -20px 0 0;
-}
-  
-  
-#SkipSize .col-12 {
-  text-align: right;
-  margin-bottom: 40px;
-  margin-top: -20px;
-}
-  
+  }
+
+  #SkipSize .col-12 {
+    text-align: right;
+    margin-bottom: 40px;
+    margin-top: -20px;
+  }
+
   #SkipSize small {
     left: 0;
     position: absolute;
-    
   }
-  
-  
 }
-
-
-
-
 
 .form-floating > .form-control:focus ~ label,
 .form-floating > .form-control:not(:placeholder-shown) ~ label,
 .form-floating > .form-select ~ label {
   opacity: 1;
   color: #000;
-  transform: scale(.6) translateY(-0.5rem) translateX(0.15rem);
+  transform: scale(0.6) translateY(-0.5rem) translateX(0.15rem);
 }
 
 .pdpHelptext {
@@ -693,8 +673,6 @@ max-width: 41%;
   margin-top: 0;
 }
 
-
-
 /* Blog Posts */
 
 #BlogPost {
@@ -708,14 +686,13 @@ max-width: 41%;
 
 #BlogPost img {
   max-width: 512px;
-  
 }
 
 #BlogPost .list-group-item.active {
-    z-index: 2;
-    color: #fff;
-    background-color: #e51b24;
-    border-color: #e51b24;
+  z-index: 2;
+  color: #fff;
+  background-color: #e51b24;
+  border-color: #e51b24;
   text-transform: uppercase;
   text-align: center;
   font-size: 1.5rem;
