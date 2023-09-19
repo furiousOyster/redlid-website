@@ -20,7 +20,6 @@ const BagsCycles = () => (
       type="radio"
       label="Weekly (Hamilton only) - $20 per collection"
       value={CYCLES.Weekly}
-      defaultChecked
       required
     />
 
@@ -56,7 +55,6 @@ const BinsCycles = () => (
       label="Weekly (Hamilton only) - $8.50 per collection"
       type="radio"
       value={CYCLES.Weekly}
-      defaultChecked
       required
     />
 
@@ -178,9 +176,9 @@ export default function OrderForm({ bin = false, bag = false }) {
           />
         </FloatingLabel>
         <FloatingLabel
-          id="surname"
+          id="lastName"
           controlId="floatingInput"
-          label="Surname"
+          label="Last Name"
           className="mb-3"
         >
           <Form.Control

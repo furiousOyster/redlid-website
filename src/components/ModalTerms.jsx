@@ -35,7 +35,7 @@ export default ({ show, onHide }) => {
           We will empty your Bin or Bag on the scheduled collection date &amp;
           cycle that has been approved by you either by phone, email or through
           our website, unless we have notified you in advance that the date has changed. 
-          Where your scheduled collection falls on a public holiday your collection 
+          If your scheduled collection falls on a public holiday your collection 
           day may change, your previous invoice will have a change of collection day.
         </p>
         <p>
