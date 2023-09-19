@@ -580,6 +580,15 @@ h2 {
   border-radius: 0 5px;
 }
 
+.form-check-input[type='radio'] {
+  border-width: medium;
+  border-color: darkgray;
+}
+.form-check-input[type='radio']:checked {
+  border-width: inherit;
+  border-color: inherit;
+}
+
 #deliveryDate label {
   margin-top: 20px;
 }

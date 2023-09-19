@@ -15,7 +15,7 @@ const CYCLES = {
 const BagsCycles = () => (
   <>
     <Form.Check
-      id="pickupCycle"
+      id="pickupCycle1"
       name="Pickup Cycle"
       type="radio"
       label="Weekly (Hamilton only) - $20 per collection"
@@ -24,21 +24,21 @@ const BagsCycles = () => (
     />
 
     <Form.Check
-      id="pickupCycle"
+      id="pickupCycle2"
       name="Pickup Cycle"
       type="radio"
       label="2-Weekly - $24 per collection"
       value={CYCLES.TwoWeekly}
     />
     <Form.Check
-      id="pickupCycle"
+      id="pickupCycle3"
       name="Pickup Cycle"
       type="radio"
       label="4-Weekly - $28 per collection"
       value={CYCLES.FourWeekly}
     />
     <Form.Check
-      id="pickupCycle"
+      id="pickupCycle4"
       name="Pickup Cycle"
       type="radio"
       label="One-off (Collection within 4 weeks of dropoff) - $45"
@@ -50,7 +50,7 @@ const BagsCycles = () => (
 const BinsCycles = () => (
   <>
     <Form.Check
-      id="pickupCycle"
+      id="pickupCycle1"
       name="Pickup Cycle"
       label="Weekly (Hamilton only) - $8.50 per collection"
       type="radio"
@@ -59,28 +59,28 @@ const BinsCycles = () => (
     />
 
     <Form.Check
-      id="pickupCycle"
+      id="pickupCycle2"
       name="Pickup Cycle"
       type="radio"
       label="2-Weekly - $12 per collection"
       value={CYCLES.TwoWeekly}
     />
     <Form.Check
-      id="pickupCycle"
+      id="pickupCycle3"
       name="Pickup Cycle"
       type="radio"
       label="4-Weekly - $18 per collection"
       value={CYCLES.FourWeekly}
     />
     <Form.Check
-      id="pickupCycle"
+      id="pickupCycle4"
       name="Pickup Cycle"
       type="radio"
       label="8-Weekly - $25 per collection"
       value={CYCLES.EightWeekly}
     />
     <Form.Check
-      id="pickupCycle"
+      id="pickupCycle5"
       name="Pickup Cycle"
       type="radio"
       label="One-off (I have my own bin) - $28"
@@ -196,7 +196,7 @@ export default function OrderForm({ bin = false, bag = false }) {
         <h2 className="blacklabel">Payment method</h2>
 
         <Form.Check
-          id="Payment"
+          id="Payment1"
           name="Payment"
           type="radio"
           label="Internet banking"
@@ -206,7 +206,7 @@ export default function OrderForm({ bin = false, bag = false }) {
         />
 
         <Form.Check
-          id="Payment"
+          id="Payment2"
           name="Payment"
           type="radio"
           label="Credit card (3% surcharge applies)"
