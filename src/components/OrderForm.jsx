@@ -107,11 +107,7 @@ export default function OrderForm({ bin = false, bag = false }) {
 
         <h2 className="blacklabel">Enter your address</h2>
 
-        <FloatingLabel
-          controlId="floatingInput"
-          label="Street number and name"
-          className="mb-3"
-        >
+        <FloatingLabel label="Street number and name" className="mb-3">
           <Form.Control
             id="Street"
             name="Address"
@@ -120,11 +116,7 @@ export default function OrderForm({ bin = false, bag = false }) {
             required
           />
         </FloatingLabel>
-        <FloatingLabel
-          controlId="floatingInput"
-          label="Suburb"
-          className="mb-3"
-        >
+        <FloatingLabel label="Suburb" className="mb-3">
           <Form.Control
             id="Suburb"
             name="Suburb"
@@ -133,7 +125,7 @@ export default function OrderForm({ bin = false, bag = false }) {
             required
           />
         </FloatingLabel>
-        <FloatingLabel controlId="floatingInput" label="Town" className="mb-3">
+        <FloatingLabel label="Town" className="mb-3">
           <Form.Control
             id="Town"
             name="Town"
@@ -142,11 +134,7 @@ export default function OrderForm({ bin = false, bag = false }) {
             required
           />
         </FloatingLabel>
-        <FloatingLabel
-          controlId="floatingInput"
-          label="Postcode"
-          className="mb-3"
-        >
+        <FloatingLabel label="Postcode" className="mb-3">
           <Form.Control
             id="Postcode"
             name="Postcode"
@@ -162,11 +150,7 @@ export default function OrderForm({ bin = false, bag = false }) {
 
         <h2 className="blacklabel">Enter contact details</h2>
 
-        <FloatingLabel
-          controlId="floatingInput"
-          label="First Name"
-          className="mb-3"
-        >
+        <FloatingLabel label="First Name" className="mb-3">
           <Form.Control
             id="firstName"
             name="First Name"
@@ -175,12 +159,7 @@ export default function OrderForm({ bin = false, bag = false }) {
             required
           />
         </FloatingLabel>
-        <FloatingLabel
-          id="lastName"
-          controlId="floatingInput"
-          label="Last Name"
-          className="mb-3"
-        >
+        <FloatingLabel label="Last Name" className="mb-3">
           <Form.Control
             id="lastName"
             name="Last Name"
@@ -190,12 +169,7 @@ export default function OrderForm({ bin = false, bag = false }) {
           />
         </FloatingLabel>
 
-        <FloatingLabel
-          id="phone"
-          controlId="floatingInput"
-          label="Mobile Phone Number"
-          className="mb-3"
-        >
+        <FloatingLabel label="Mobile Phone Number" className="mb-3">
           <Form.Control
             id="Mobile"
             name="Mobile"
@@ -205,13 +179,7 @@ export default function OrderForm({ bin = false, bag = false }) {
           />
         </FloatingLabel>
 
-        <FloatingLabel
-          id="email"
-          controlId="floatingInput"
-          label="Email address"
-          className="mb-3"
-          aria-describedby="emailHelp"
-        >
+        <FloatingLabel label="Email address" className="mb-3">
           <Form.Control
             id="Email"
             name="Email"
@@ -249,7 +217,7 @@ export default function OrderForm({ bin = false, bag = false }) {
           We will contact you by phone for your credit card details.
         </Form.Text>
 
-        <FloatingLabel controlId="floatingTextarea2" label="Comments">
+        <FloatingLabel label="Comments">
           <Form.Control
             id="Instructions"
             name="Instructions"

@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import Image from 'react-bootstrap/Image'
 import ModalFaqs from '../components/ModalFaqs'
 import Row from 'react-bootstrap/Row'
-import useLocation from './router'
+import useLocation from '../hooks/wouter-hash'
 
 export default () => {
   const [showFaqs, setShowFaqs] = useState(false)
