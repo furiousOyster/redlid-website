@@ -403,6 +403,16 @@ a:hover .btn {
   color: #fff;
 }
 
+.Banner {
+  color: red;
+  font-size: 5rem;
+}
+@media (max-width: 500px) {
+  .Banner {
+    font-size: calc(2rem + 1.5vw);
+  }
+}
+
 .Description {
   text-align: center;
   padding: 40px 0;

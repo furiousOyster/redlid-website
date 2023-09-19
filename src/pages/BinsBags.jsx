@@ -12,7 +12,7 @@ export default function BinsBags() {
     <>
       <Container fluid id="NavContainer">
         <Row className="Header">
-          <h1 style={{ color: 'red', fontSize: '5rem' }}>Welcome to Redlid</h1>
+          <h1 className="Banner">Welcome to Redlid</h1>
           <h1>Choose a bag or bin</h1>
         </Row>
       </Container>
