@@ -36,7 +36,7 @@ export default () => {
             <Navbar.Brand href="#">
               <Image
                 alt="Red Lid Garden Bins and Bags in Waikato, New Zealand."
-                src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidLogo40pxH.png?v=1634935640796"
+                src="assets/RedlidLogo40pxH.png"
                 height="40"
                 className="d-inline-block align-top"
               />

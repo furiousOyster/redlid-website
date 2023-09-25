@@ -35,7 +35,7 @@ export default function BinsBags() {
               <Col sm={12} md={4}>
                 <Image
                   className="BinCropper"
-                  src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Bin.jpg?v=1632524809405"
+                  src="assets/Redlid_Bin.jpg"
                   fluid
                 />
               </Col>
@@ -59,10 +59,7 @@ export default function BinsBags() {
             </Row>
             <Row>
               <Col sm={12} md={4}>
-                <Image
-                  src="https://cdn.glitch.com/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlid_Bag.jpg?v=1632524809122"
-                  fluid
-                />
+                <Image src="assets/Redlid_Bag.jpg" fluid />
               </Col>
               <Col sm={12} md={8}>
                 <p>

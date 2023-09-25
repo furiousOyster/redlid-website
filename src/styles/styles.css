@@ -64,7 +64,7 @@ h3,
 }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url(https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2Ficonmonstr-menu-1.svg?v=1634874306667);
+  background-image: url(assets/iconmonstr-menu-1.svg);
   background-size: 50%;
 }
 
@@ -336,8 +336,8 @@ a:hover .btn {
 }
 
 .Footer {
-  background-image: url('https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidTruckGrassFooter.jpg?v=1633916000400'),
-    url('https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidGrass.jpg?v=1633916313243');
+  background-image: url('assets/RedlidTruckGrassFooter.jpg'),
+    url('assets/RedlidGrass.jpg');
   background-repeat: no-repeat, repeat-x;
   background-position: bottom 0 right 0;
   background-size: auto 200px, auto 200px;
@@ -348,8 +348,8 @@ a:hover .btn {
 }
 
 .Footer.BinsBags {
-  background-image: url('https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FBinBagTruckGrassFooter.png?v=1636579711349'),
-    url('https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidGrass.jpg?v=1633916313243');
+  background-image: url('assets/BinBagTruckGrassFooter.png'),
+    url('assets/RedlidGrass.jpg');
 }
 
 .FooterContents {

@@ -14,7 +14,7 @@ export default function Bins() {
       </Container>
       <Container id="pdp">
         <Row className="pdptop">
-          <Image src="https://cdn.glitch.me/62dc5d7b-74d0-43a4-84cf-9d776e17c335%2FRedlidBin.jpg?v=1634953281368" />
+          <Image src="assets/RedlidBin.jpg" />
         </Row>
         <Row>
           <i className="pdpHelptext">
