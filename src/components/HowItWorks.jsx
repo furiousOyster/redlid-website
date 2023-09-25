@@ -6,25 +6,22 @@ export default () => (
   <>
     <div id="HowItWorks">
       <Row>
-        {' '}
-        {/* HOW IT WORKS */}
         <h2>How it works</h2>
-        <Col xs={12} lg={6}>
-          <p>
-            We provide 2 options for Garden Waste Collection, either a 240 litre
-            Wheelie Bin or a 600 litre Garden Bag. You choose your Collection
-            Frequency and you can change the frequency at any time. You can also
-            change between the Wheelie Bin and the Garden Bag.
-          </p>
-        </Col>
         <Col>
-          <i></i>
           <p>
             <strong>THERE ARE NO CONTRACTS TO SIGN</strong>
           </p>
 
           <p>
             <strong>GUARANTEED EXACT DAY OF COLLECTION</strong>
+          </p>
+        </Col>
+        <Col xs={12}>
+          <p>
+            We provide 2 options for Garden Waste Collection, either a 240 litre
+            Wheelie Bin or a 600 litre Garden Bag. You choose your Collection
+            Frequency and you can change the frequency at any time. You can also
+            change between the Wheelie Bin and the Garden Bag.
           </p>
         </Col>
       </Row>
