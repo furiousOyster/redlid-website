@@ -35,7 +35,7 @@ export default function BinsBags() {
               <Col sm={12} md={4}>
                 <Image
                   className="BinCropper"
-                  src="assets/Redlid_Bin.jpg"
+                  src="/assets/Redlid_Bin.jpg"
                   fluid
                 />
               </Col>
@@ -59,7 +59,7 @@ export default function BinsBags() {
             </Row>
             <Row>
               <Col sm={12} md={4}>
-                <Image src="assets/Redlid_Bag.jpg" fluid />
+                <Image src="/assets/Redlid_Bag.jpg" fluid />
               </Col>
               <Col sm={12} md={8}>
                 <p>

@@ -36,7 +36,7 @@ export default () => {
             <Navbar.Brand href="#">
               <Image
                 alt="Red Lid Garden Bins and Bags in Waikato, New Zealand."
-                src="assets/RedlidLogo40pxH.png"
+                src="/assets/RedlidLogo40pxH.png"
                 height="40"
                 className="d-inline-block align-top"
               />

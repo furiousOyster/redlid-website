@@ -14,7 +14,7 @@ export default function Bags() {
       </Container>
       <Container id="pdp">
         <Row className="pdptop">
-          <Image src="assets/Redlid_Bag.jpg" />
+          <Image src="/assets/Redlid_Bag.jpg" />
         </Row>
         <Row>
           <i className="pdpHelptext">

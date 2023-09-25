@@ -14,7 +14,7 @@ export default function Bins() {
       </Container>
       <Container id="pdp">
         <Row className="pdptop">
-          <Image src="assets/RedlidBin.jpg" />
+          <Image src="/assets/RedlidBin.jpg" />
         </Row>
         <Row>
           <i className="pdpHelptext">
