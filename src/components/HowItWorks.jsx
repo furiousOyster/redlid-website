@@ -25,7 +25,7 @@ export default () => (
           </p>
         </Col>
       </Row>
-      <Row>
+      <div>
         <table border="0" cellSpacing="0" cellPadding="0" width="0">
           <tbody>
             <tr>
@@ -184,7 +184,7 @@ export default () => (
           &amp; operated and committed to providing the best Green Waste
           Collection service in the Waikato.
         </p>
-      </Row>
+      </div>
     </div>
   </>
 )

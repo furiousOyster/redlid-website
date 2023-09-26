@@ -19,8 +19,6 @@ export default () => (
               Hillcrest
               <br />
               Hamilton 3253
-              <br />
-              Waikato
             </p>
           </Col>
           <Col md={6}>
@@ -51,9 +49,9 @@ export default () => (
                   <td>Email</td>
 
                   <td>
-                    <Link href="mailto:service@redlid.co.nz">
+                    <a href="mailto:service@redlid.co.nz">
                       service@redlid.co.nz
-                    </Link>
+                    </a>
                   </td>
                 </tr>
               </tbody>
