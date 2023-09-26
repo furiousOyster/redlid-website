@@ -49,7 +49,7 @@ export default () => (
                   <td>Email</td>
 
                   <td>
-                    <a href="mailto:service@redlid.co.nz">
+                    <a href="mailto:service@redlid.co.nz?subject=Website%20Contact:%20">
                       service@redlid.co.nz
                     </a>
                   </td>
