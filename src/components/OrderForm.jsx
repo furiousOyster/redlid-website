@@ -105,6 +105,10 @@ export default function OrderForm({ bin = false, bag = false }) {
       >
         <input name="Order Type" id="orderType" type="hidden" value={type} />
 
+        <h2 className="blacklabel">Choose pickup cycle</h2>
+
+        <Cycles />
+
         <h2 className="blacklabel">Enter your address</h2>
 
         <FloatingLabel label="Street number and name" className="mb-3">
@@ -143,10 +147,6 @@ export default function OrderForm({ bin = false, bag = false }) {
             required
           />
         </FloatingLabel>
-
-        <h2 className="blacklabel">Choose pickup cycle</h2>
-
-        <Cycles />
 
         <h2 className="blacklabel">Enter contact details</h2>
 
