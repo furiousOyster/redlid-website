@@ -2,7 +2,6 @@ import * as React from 'react'
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import { Link } from 'wouter'
 
 export default () => (
   <Container fluid className="Footer BinsBags" id="Footer">
@@ -31,7 +30,7 @@ export default () => (
                   <td>Phone</td>
 
                   <td>
-                    <Link href="tel:078340191">(07)&nbsp;834&nbsp;0191</Link>
+                    <a href="tel:078340191">(07)&nbsp;834&nbsp;0191</a>
                   </td>
                 </tr>
 
@@ -39,9 +38,7 @@ export default () => (
                   <td></td>
 
                   <td>
-                    <Link href="tel:0800733543">
-                      0800 REDLID (0800&nbsp;733543)
-                    </Link>
+                    <a href="tel:0800733543">0800 REDLID (0800&nbsp;733543)</a>
                   </td>
                 </tr>
 
