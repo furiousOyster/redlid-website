@@ -2,7 +2,7 @@ name: Scheduled Deploy to S3
 
 on:
   schedule:
-    - cron: '0 20 * * *'  # 8am NZST (UTC+12)
+    - cron: '0 19 * * *'  # 8am NZST (UTC+12)
 
 concurrency:
   group: deploy-${{ github.event.inputs.environment }}
@@ -30,7 +30,7 @@ jobs:
 
       - name: Merge PR
         if: steps.date_check.outputs.should_deploy == 'true'
-        run: gh pr merge $PR_NUMBER --repo redlid/redlid-website --squash --delete-branch
+        run: echo "test" #gh pr merge $PR_NUMBER --repo redlid/redlid-website --squash --delete-branch
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_NUMBER: ${{ vars.PR_NUMBER_FOR__AUTO_DEPLOYMENT }}
@@ -80,3 +80,14 @@ jobs:
           if [ -n "$DISTRIBUTION_ID" ]; then
             aws cloudfront create-invalidation --distribution-id "$DISTRIBUTION_ID" --paths "/*"
           fi
+
+      - name: Notify Slack
+        if: steps.date_check.outputs.should_deploy == 'true'
+        env:
+          SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+        run: |
+          curl -X POST \
+            -H "Authorization: Bearer $SLACK_TOKEN" \
+            -H "Content-type: application/json; charset=utf-8" \
+            --data '{"channel":"#redlid","text":"The auto deployment is completed for ${{ steps.bucket.outputs.name }}."}' \
+            https://slack.com/api/chat.postMessage
